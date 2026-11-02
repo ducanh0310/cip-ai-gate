@@ -17,7 +17,7 @@ Giả thuyết giá trị: công cụ giúp giảm thời gian kiểm tra hồ s
 
 ## 2. Đầu vào và luồng sử dụng
 
-Các mục trong ảnh đã được Nguyễn Đức Anh xác nhận là cấu trúc MC. Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp mẫu phục vụ phát triển sẽ tự dựng; không chờ tiếp cận dữ liệu hoặc tài liệu nội bộ thật.
+Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp mẫu phục vụ phát triển sẽ tự dựng; không chờ tiếp cận dữ liệu hoặc tài liệu nội bộ thật.
 
 | Mục trong MC đã xác nhận | Kiểu dữ liệu | Cách dựng mockup |
 | --- | --- | --- |
