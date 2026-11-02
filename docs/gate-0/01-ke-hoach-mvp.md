@@ -25,13 +25,20 @@ Giả thuyết giá trị: công cụ giúp giảm thời gian kiểm tra hồ s
 
 ## 2. Đầu vào và luồng sử dụng
 
-| Đầu vào dự kiến | Cách sử dụng | Tình trạng |
+Các mục trong ảnh đã được Nguyễn Đức Anh xác nhận là cấu trúc MC. Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp mẫu phục vụ phát triển sẽ tự dựng; không chờ tiếp cận dữ liệu hoặc tài liệu nội bộ thật.
+
+| Mục trong MC đã xác nhận | Kiểu dữ liệu | Cách dựng mockup |
 | --- | --- | --- |
-| Nội dung MC | Nguồn chính để kiểm tra và soạn email | Đã xác nhận dùng Confluence; chưa có template chi tiết |
-| Ticket Jira, Service, Type, Risk | Kiểm tra sự hiện diện và nội dung theo checklist | Đọc từ ảnh ghi chú; cần xác nhận yêu cầu từng trường |
-| BO sign-off, Request dạng .msg | Bằng chứng liên quan | Đọc từ ảnh ghi chú; cần xác nhận tính bắt buộc và phạm vi xử lý |
-| Checklist CIP | Định nghĩa điều kiện kiểm tra | Chờ mentor xác nhận |
-| Mẫu email | Cấu trúc và thông tin bắt buộc | Chờ cung cấp mẫu trống hoặc mockup |
+| Ticket Jira | Link | URL giả lập, ví dụ `https://jira.example.test/browse/DEMO-001`; không cần gọi Jira thật |
+| Service | Văn bản | Tên dịch vụ giả lập, ví dụ `Demo Notification Service` |
+| Type | Văn bản | Giá trị tự định nghĩa trong danh mục mockup, ghi rõ không phải phân loại nội bộ chính thức |
+| Risk | Văn bản | Mô tả rủi ro giả lập; mức phân loại nếu có là giả định của MVP |
+| BO sign-off | Tệp .msg | Email xác nhận giả lập, người gửi và nội dung tự dựng |
+| Request | Tệp .msg | Email yêu cầu giả lập, có thông tin nhất quán với MC |
+
+Ví dụ trên chỉ minh họa thiết kế dữ liệu, chưa phải bộ mockup đã tạo. Các tệp .msg cần đúng định dạng và đọc được; không đổi đuôi tệp văn bản thành .msg. Cách tạo và đọc tệp sẽ được kiểm chứng ở giai đoạn skeleton.
+
+Checklist kiểm tra và mẫu email cũng do dự án đề xuất cho MVP, tách rõ quy tắc mockup với thông tin nghiệp vụ đã xác nhận. Không coi quy tắc tự dựng là quy định CIP chính thức. Cấu trúc bố cục Confluence sẽ tự mô phỏng từ sáu mục trên, không cần template nội bộ thật.
 
 Luồng đề xuất:
 
@@ -48,7 +55,7 @@ Việc T4 làm UAT và T3 viết CR gửi T2 là bối cảnh đã biết. Chưa
 
 | Trong phạm vi | Kết quả mong đợi |
 | --- | --- |
-| Một phiên bản template MC, một phương thức đầu vào | Nhận diện được các mục đã thống nhất |
+| Một template MC mockup tự dựng theo sáu mục đã xác nhận, một phương thức đầu vào | Nhận diện được các mục và tệp đính kèm |
 | Kiểm tra trường bắt buộc | Liệt kê mục thiếu hoặc chưa điền |
 | Kiểm tra tính nhất quán theo quy tắc đã xác nhận | Chỉ ra thông tin xung đột kèm căn cứ |
 | AI kiểm tra nội dung theo checklist | Nhận xét có trích đoạn; thiếu căn cứ thì chuyển cần xem xét |
@@ -72,7 +79,7 @@ Ngưỡng mục tiêu, cách xử lý mẫu số bằng 0, bộ đánh giá và 
 
 ## 5. Kiến trúc sơ bộ
 
-Đề xuất skeleton nhận HTML mockup mô phỏng trang Confluence. Đây là lựa chọn tạm thời để kiểm chứng luồng; chưa chốt tích hợp API hoặc phương thức đầu vào chính thức.
+Đề xuất skeleton nhận HTML mockup mô phỏng trang Confluence cùng hai tệp .msg giả lập. Nội dung trang, tệp và liên kết đều tự dựng; các link Jira/Confluence giả không cần truy cập mạng. Tích hợp Confluence thật không phải điều kiện để phát triển hoặc demo MVP. Cách đóng gói đầu vào và công cụ đọc .msg sẽ được kiểm chứng ở giai đoạn skeleton.
 
 ```mermaid
 flowchart TD
@@ -117,17 +124,17 @@ Giả định rủi ro nhất đề xuất cho Gate 1: có thể trích xuất M
 | CP2 — 25/11 | MVP trên masked, kết quả Sprint 1, retro |
 | CP3 — 09/12 | Final demo, metric và bàn giao |
 
-Đến CP1 chỉ dùng mockup tự dựng. Sau đó dùng masked do mentor cung cấp trong phạm vi được phép; không commit masked. Không dùng dữ liệu thật.
+Phạm vi phát triển hiện tại sử dụng hoàn toàn dữ liệu tự dựng theo xác nhận của Nguyễn Đức Anh. Kế hoạch chương trình có mốc dữ liệu masked từ 19/11; nếu sau này mentor cung cấp thì chỉ dùng trong phạm vi được phép, lưu riêng và không commit. Không phụ thuộc việc có masked để dựng MVP và không dùng dữ liệu thật.
 
 Câu hỏi cần chốt với mentor:
 
-- Template MC trống, các mục bắt buộc và checklist cụ thể là gì?
+- Sáu mục MC đã rõ; cần đề xuất và thống nhất tiêu chí bắt buộc, hợp lệ và nhất quán trên bộ mockup, không yêu cầu template hoặc hồ sơ thật.
 - Ai trực tiếp sử dụng công cụ? T2 nhận và phê duyệt theo điều kiện nào?
 - CR, kết quả UAT và MC liên kết với nhau ở đâu, bằng bằng chứng gì?
 - BO sign-off và Request có bắt buộc không? MVP có cần đọc nội dung .msg?
-- Mẫu email, người nhận, CC và tài liệu đính kèm được xác định thế nào?
-- Nhận nội dung Confluence bằng cách nào? Công cụ AI nào được phép sử dụng?
-- Ai xác nhận đáp án đánh giá và ngưỡng thành công?
+- Mẫu email tự dựng, người nhận/CC giả lập và danh sách đính kèm đề xuất có phù hợp phạm vi MVP không?
+- Phương án nhận HTML mockup và tệp .msg có phù hợp không? Công cụ AI nào được phép sử dụng?
+- Ai rà soát tính hợp lý của đáp án mockup và ngưỡng thành công?
 
 ## Nguồn
 

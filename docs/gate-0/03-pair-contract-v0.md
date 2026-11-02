@@ -37,7 +37,7 @@ Công cụ CIP phải có cách chạy và đánh giá độc lập. Framework c
 
 Các trường giao diện tối thiểu dự kiến: mã lần chạy, mã tình huống, phiên bản ứng dụng/checklist, kết quả từng tiêu chí, lỗi xử lý và thời gian. Schema chính thức, vị trí lưu và cách xử lý lỗi cần hai bên thống nhất.
 
-Chỉ trao đổi dữ liệu mockup ở giai đoạn đầu. Việc tích hợp với dữ liệu masked về sau phải theo phạm vi mentor cho phép; không đưa masked vào repo.
+Toàn bộ nội dung trao đổi phục vụ phát triển hiện tại là mockup tự dựng: MC theo sáu mục đã xác nhận, link giả lập, tệp .msg và đáp án kỳ vọng. Không phụ thuộc dữ liệu nội bộ thật. Việc tích hợp với dữ liệu masked về sau phải theo phạm vi mentor cho phép; không đưa masked vào repo.
 
 ## 4. Mốc tích hợp và cách đo
 
