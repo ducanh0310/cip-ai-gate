@@ -227,6 +227,7 @@ Công cụ CIP cần chạy độc lập để tiến độ không phụ thuộc
 | R-03 | LLM tự thêm thông tin hoặc trả kết quả sai cấu trúc | Báo cáo và email có thể chứa nội dung không có căn cứ hoặc không xử lý được. | Kiểm tra schema và đối chiếu nguồn; đánh dấu thông tin thiếu; đánh giá lỗi trên bộ mockup. |
 | R-05 | Mockup thiếu tình huống hoặc đáp án gắn nhãn sai | Metric không phản ánh đúng chất lượng hệ thống. | Phủ các nhóm lỗi, rà soát đáp án và tách tập phát triển khỏi tập đánh giá. |
 | R-07 | Phép đo thời gian thiếu cơ sở so sánh | Không xác định được mức tiết kiệm thời gian của công cụ. | Đo thủ công và có công cụ trên cùng tập hồ sơ, cùng người thực hiện; tính cả thời gian rà soát và sửa email. |
+| R-08 | Chưa tìm được cách xác định cấp bậc nhân viên | Chưa đủ căn cứ để kiểm tra cấp bậc của người tham gia và xác định vai trò phù hợp trong hồ sơ, email xin phê duyệt. | Trao đổi với mentor để thống nhất nguồn và cách xác định cấp bậc; dùng bảng ánh xạ nhân viên–cấp bậc giả lập cho MVP; đánh dấu cần xác nhận khi thiếu thông tin, không tự suy đoán. |
 
 ## 7. Testing Documentation
 

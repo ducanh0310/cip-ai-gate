@@ -1,0 +1,9 @@
+{
+  "case_id": "CIP-D11",
+  "dataset_version": "cip-mock-v1",
+  "mc_file": "mc.html",
+  "email_files": [
+    "CIP-D11_bo-sign-off.msg",
+    "CIP-D11_request.msg"
+  ]
+}

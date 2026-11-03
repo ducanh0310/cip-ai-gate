@@ -1,0 +1,1561 @@
+{
+  "version": "cip-mock-v1",
+  "root_page_id": "1081458",
+  "pages": {
+    "dev": {
+      "id": "1277968",
+      "type": "page",
+      "title": "01. Development — 12 MC mockup",
+      "spaceId": "131075",
+      "parentId": "1081458",
+      "webUrl": "/spaces/KAN/pages/1277968/01.+Development+12+MC+mockup",
+      "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+      "version": {
+        "number": 1,
+        "createdAt": "2026-11-03T08:19:36.506Z"
+      },
+      "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+      "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+    },
+    "eval": {
+      "id": "1179756",
+      "type": "page",
+      "title": "02. Evaluation — 12 MC mockup",
+      "spaceId": "131075",
+      "parentId": "1081458",
+      "webUrl": "/spaces/KAN/pages/1179756/02.+Evaluation+12+MC+mockup",
+      "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+      "version": {
+        "number": 1,
+        "createdAt": "2026-11-03T08:19:37.819Z"
+      },
+      "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+      "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+    },
+    "oracle": {
+      "id": "1114221",
+      "type": "page",
+      "title": "03. Evaluation Guide & Ground Truth",
+      "spaceId": "131075",
+      "parentId": "1081458",
+      "webUrl": "/spaces/KAN/pages/1114221/03.+Evaluation+Guide+Ground+Truth",
+      "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+      "version": {
+        "number": 1,
+        "createdAt": "2026-11-03T08:19:39.207Z"
+      },
+      "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+      "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+    }
+  },
+  "cases": [
+    {
+      "case_id": "CIP-D01",
+      "split": "dev",
+      "variant": "complete",
+      "group": "complete",
+      "service": "Demo Notification Service Lab",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-01",
+      "jira": {
+        "id": "10048",
+        "key": "KAN-4",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-4"
+      },
+      "confluence": {
+        "id": "1179774",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D01 — MC Demo Notification Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179774/MOCKUP+CIP-D01+MC+Demo+Notification+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:41.638Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1179905",
+          "fileId": "4c1e26ce-df4e-4930-9b1a-03ea29f268ee",
+          "title": "CIP-D01_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1179774",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179774/child/attachment/att1179905/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179774&preview=%2F1179774%2F1179905%2FCIP-D01_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1278040",
+          "fileId": "60849f2e-a08f-4381-9f34-13bd6bcc3aa3",
+          "title": "CIP-D01_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179774",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179774/child/attachment/att1278040/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179774&preview=%2F1179774%2F1278040%2FCIP-D01_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D01_bo-sign-off.msg",
+        "request": "CIP-D01_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D01.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-4\">KAN-4</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Notification Service Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D01_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D01_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D02",
+      "split": "dev",
+      "variant": "complete",
+      "group": "complete",
+      "service": "Demo Billing Gateway Lab",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-02",
+      "jira": {
+        "id": "10049",
+        "key": "KAN-5",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-5"
+      },
+      "confluence": {
+        "id": "1179793",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D02 — MC Demo Billing Gateway Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179793/MOCKUP+CIP-D02+MC+Demo+Billing+Gateway+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:43.219Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1278046",
+          "fileId": "035493b6-1274-4925-bb89-4465369bae6a",
+          "title": "CIP-D02_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1179793",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179793/child/attachment/att1278046/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179793&preview=%2F1179793%2F1278046%2FCIP-D02_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1015934",
+          "fileId": "6bc54274-194e-43cf-9af6-14465eafe31e",
+          "title": "CIP-D02_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179793",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179793/child/attachment/att1015934/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179793&preview=%2F1179793%2F1015934%2FCIP-D02_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D02_bo-sign-off.msg",
+        "request": "CIP-D02_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D02.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-5\">KAN-5</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Billing Gateway Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D02_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D02_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D03",
+      "split": "dev",
+      "variant": "missing_ticket",
+      "group": "missing_field",
+      "service": "Demo Customer Portal Lab",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-03",
+      "jira": {
+        "id": "10050",
+        "key": "KAN-6",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-6"
+      },
+      "confluence": {
+        "id": "1114238",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D03 — MC Demo Customer Portal Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1114238/MOCKUP+CIP-D03+MC+Demo+Customer+Portal+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:44.545Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1343519",
+          "fileId": "31eec255-cf88-40a6-8735-92dda181cab9",
+          "title": "CIP-D03_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1114238",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114238/child/attachment/att1343519/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114238&preview=%2F1114238%2F1343519%2FCIP-D03_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1278052",
+          "fileId": "f2aa35ee-63ea-4811-b12b-0bb58323c879",
+          "title": "CIP-D03_request.msg",
+          "fileSize": 7168,
+          "pageId": "1114238",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114238/child/attachment/att1278052/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114238&preview=%2F1114238%2F1278052%2FCIP-D03_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D03_bo-sign-off.msg",
+        "request": "CIP-D03_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D03.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Service</p></td><td><p>Demo Customer Portal Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Emergency</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D03_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D03_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D04",
+      "split": "dev",
+      "variant": "blank_risk",
+      "group": "missing_field",
+      "service": "Demo Reporting Service Lab",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-04",
+      "jira": {
+        "id": "10051",
+        "key": "KAN-7",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-7"
+      },
+      "confluence": {
+        "id": "1343500",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D04 — MC Demo Reporting Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1343500/MOCKUP+CIP-D04+MC+Demo+Reporting+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:46.005Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1015940",
+          "fileId": "ecfd6e5d-ea2e-4bdd-afa2-dfc596231c8e",
+          "title": "CIP-D04_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1343500",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1343500/child/attachment/att1015940/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1343500&preview=%2F1343500%2F1015940%2FCIP-D04_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1310825",
+          "fileId": "560ab298-a696-4229-b1fb-4fc46dbf58db",
+          "title": "CIP-D04_request.msg",
+          "fileSize": 7168,
+          "pageId": "1343500",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1343500/child/attachment/att1310825/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1343500&preview=%2F1343500%2F1310825%2FCIP-D04_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D04_bo-sign-off.msg",
+        "request": "CIP-D04_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D04.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-7\">KAN-7</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Reporting Service Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>   </p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D04_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D04_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D05",
+      "split": "dev",
+      "variant": "missing_bo",
+      "group": "missing_evidence",
+      "service": "Demo Inventory API Lab",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-05",
+      "jira": {
+        "id": "10052",
+        "key": "KAN-8",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-8"
+      },
+      "confluence": {
+        "id": "1179812",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D05 — MC Demo Inventory API Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179812/MOCKUP+CIP-D05+MC+Demo+Inventory+API+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:47.400Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1278058",
+          "fileId": "358d9139-ced7-4768-b0db-b821e050568d",
+          "title": "CIP-D05_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179812",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179812/child/attachment/att1278058/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179812&preview=%2F1179812%2F1278058%2FCIP-D05_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D05_bo-sign-off.msg",
+        "request": "CIP-D05_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D05.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-8\">KAN-8</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Inventory API Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D05_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D05_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D06",
+      "split": "dev",
+      "variant": "missing_request",
+      "group": "missing_evidence",
+      "service": "Demo Audit Exporter Lab",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-06",
+      "jira": {
+        "id": "10053",
+        "key": "KAN-9",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-9"
+      },
+      "confluence": {
+        "id": "1277985",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D06 — MC Demo Audit Exporter Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1277985/MOCKUP+CIP-D06+MC+Demo+Audit+Exporter+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:48.800Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1081532",
+          "fileId": "e2082375-8c4e-4c46-9fc1-847a293b62ff",
+          "title": "CIP-D06_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1277985",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1277985/child/attachment/att1081532/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1277985&preview=%2F1277985%2F1081532%2FCIP-D06_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D06_bo-sign-off.msg",
+        "request": "CIP-D06_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D06.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-9\">KAN-9</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Audit Exporter Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Emergency</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D06_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D06_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D07",
+      "split": "dev",
+      "variant": "bad_url",
+      "group": "invalid_format",
+      "service": "Demo Payment Router Lab",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-07",
+      "jira": {
+        "id": "10054",
+        "key": "KAN-10",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-10"
+      },
+      "confluence": {
+        "id": "1179831",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D07 — MC Demo Payment Router Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179831/MOCKUP+CIP-D07+MC+Demo+Payment+Router+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:50.124Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1114331",
+          "fileId": "845ad14e-fc5b-4255-81f2-a941c7a8577c",
+          "title": "CIP-D07_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1179831",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179831/child/attachment/att1114331/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179831&preview=%2F1179831%2F1114331%2FCIP-D07_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1081538",
+          "fileId": "7cd92032-ef78-415b-ab02-16f7a8cad3cf",
+          "title": "CIP-D07_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179831",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179831/child/attachment/att1081538/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179831&preview=%2F1179831%2F1081538%2FCIP-D07_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D07_bo-sign-off.msg",
+        "request": "CIP-D07_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D07.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p>jira-invalid://sandbox/KAN-10</p></td></tr><tr><td><p>Service</p></td><td><p>Demo Payment Router Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D07_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D07_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D08",
+      "split": "dev",
+      "variant": "corrupt_bo",
+      "group": "invalid_format",
+      "service": "Demo Search Service Lab",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-08",
+      "jira": {
+        "id": "10055",
+        "key": "KAN-11",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-11"
+      },
+      "confluence": {
+        "id": "1081475",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D08 — MC Demo Search Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1081475/MOCKUP+CIP-D08+MC+Demo+Search+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:50.991Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1081544",
+          "fileId": "bcfe9d06-d395-44be-8f3c-bdcc20ad5eae",
+          "title": "CIP-D08_bo-sign-off.msg",
+          "fileSize": 44,
+          "pageId": "1081475",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1081475/child/attachment/att1081544/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1081475&preview=%2F1081475%2F1081544%2FCIP-D08_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1278064",
+          "fileId": "826c7118-f8ae-4569-9950-2d2b7c1ad0c7",
+          "title": "CIP-D08_request.msg",
+          "fileSize": 7168,
+          "pageId": "1081475",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1081475/child/attachment/att1278064/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1081475&preview=%2F1081475%2F1278064%2FCIP-D08_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D08_bo-sign-off.msg",
+        "request": "CIP-D08_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D08.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-11\">KAN-11</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Search Service Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D08_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D08_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D09",
+      "split": "dev",
+      "variant": "mismatch_service",
+      "group": "inconsistent",
+      "service": "Demo Identity Adapter Lab",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-09",
+      "jira": {
+        "id": "10056",
+        "key": "KAN-12",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-12"
+      },
+      "confluence": {
+        "id": "1278004",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D09 — MC Demo Identity Adapter Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1278004/MOCKUP+CIP-D09+MC+Demo+Identity+Adapter+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:52.393Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1081550",
+          "fileId": "8b1b3818-2a8e-4e12-a71a-e446949f73e0",
+          "title": "CIP-D09_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1278004",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1278004/child/attachment/att1081550/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1278004&preview=%2F1278004%2F1081550%2FCIP-D09_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1081556",
+          "fileId": "c9432787-07a5-42a3-8820-98ad710f5259",
+          "title": "CIP-D09_request.msg",
+          "fileSize": 7168,
+          "pageId": "1278004",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1278004/child/attachment/att1081556/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1278004&preview=%2F1278004%2F1081556%2FCIP-D09_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D09_bo-sign-off.msg",
+        "request": "CIP-D09_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D09.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-12\">KAN-12</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Identity Adapter Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Emergency</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D09_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D09_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D10",
+      "split": "dev",
+      "variant": "mismatch_ticket",
+      "group": "inconsistent",
+      "service": "Demo Order API Lab",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-10",
+      "jira": {
+        "id": "10057",
+        "key": "KAN-13",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-13"
+      },
+      "confluence": {
+        "id": "1179848",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D10 — MC Demo Order API Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179848/MOCKUP+CIP-D10+MC+Demo+Order+API+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:53.860Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1081562",
+          "fileId": "c4044151-d22c-4b43-88f2-505cb864a5bf",
+          "title": "CIP-D10_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1179848",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179848/child/attachment/att1081562/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179848&preview=%2F1179848%2F1081562%2FCIP-D10_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1015946",
+          "fileId": "3ad82110-209c-4652-973d-6b245b5c062b",
+          "title": "CIP-D10_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179848",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179848/child/attachment/att1015946/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179848&preview=%2F1179848%2F1015946%2FCIP-D10_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D10_bo-sign-off.msg",
+        "request": "CIP-D10_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D10.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-13\">KAN-13</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Order API Lab</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D10_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D10_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D11",
+      "split": "dev",
+      "variant": "reordered",
+      "group": "layout_variant",
+      "service": "Demo Document Service Lab",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-11",
+      "jira": {
+        "id": "10058",
+        "key": "KAN-14",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-14"
+      },
+      "confluence": {
+        "id": "1310730",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D11 — MC Demo Document Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1310730/MOCKUP+CIP-D11+MC+Demo+Document+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:55.591Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1179912",
+          "fileId": "8f43c0be-fad8-4d93-898a-91f83c3649bc",
+          "title": "CIP-D11_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1310730",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310730/child/attachment/att1179912/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310730&preview=%2F1310730%2F1179912%2FCIP-D11_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1278070",
+          "fileId": "af6b24df-fc58-429c-98f7-ff24c24e5fb6",
+          "title": "CIP-D11_request.msg",
+          "fileSize": 7168,
+          "pageId": "1310730",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310730/child/attachment/att1278070/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310730&preview=%2F1310730%2F1278070%2FCIP-D11_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D11_bo-sign-off.msg",
+        "request": "CIP-D11_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D11.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-D11_request.msg</p></td></tr><tr><td><p>Service</p></td><td><p>Demo Document Service Lab</p></td></tr><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-14\">KAN-14</a></p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-D11_bo-sign-off.msg</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-D12",
+      "split": "dev",
+      "variant": "headings",
+      "group": "layout_variant",
+      "service": "Demo Scheduler Lab",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-D-12",
+      "jira": {
+        "id": "10059",
+        "key": "KAN-15",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-15"
+      },
+      "confluence": {
+        "id": "1310749",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D12 — MC Demo Scheduler Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1310749/MOCKUP+CIP-D12+MC+Demo+Scheduler+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:58.934Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1278076",
+          "fileId": "3eaa5dac-34b4-4050-8159-2cac7d1dfa47",
+          "title": "CIP-D12_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1310749",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310749/child/attachment/att1278076/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310749&preview=%2F1310749%2F1278076%2FCIP-D12_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1081568",
+          "fileId": "4dc79b43-ed31-45d4-a320-809dd38c97e6",
+          "title": "CIP-D12_request.msg",
+          "fileSize": 7168,
+          "pageId": "1310749",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310749/child/attachment/att1081568/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310749&preview=%2F1310749%2F1081568%2FCIP-D12_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-D12_bo-sign-off.msg",
+        "request": "CIP-D12_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-D12.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><h2>Ticket Jira</h2><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-15\">KAN-15</a></p><h2>Service</h2><p>Demo Scheduler Lab</p><h2>Type</h2><p>Emergency</p><h2>Risk</h2><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p><h2>BO sign-off</h2><p>CIP-D12_bo-sign-off.msg</p><h2>Request</h2><p>CIP-D12_request.msg</p>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E01",
+      "split": "eval",
+      "variant": "complete",
+      "group": "complete",
+      "service": "Demo Notification Service Sandbox",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-01",
+      "jira": {
+        "id": "10060",
+        "key": "KAN-16",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-16"
+      },
+      "confluence": {
+        "id": "1081494",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E01 — MC Demo Notification Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1081494/MOCKUP+CIP-E01+MC+Demo+Notification+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:10.978Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1114337",
+          "fileId": "72df7f93-0a9f-43e4-99e3-f00753994b20",
+          "title": "CIP-E01_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1081494",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1081494/child/attachment/att1114337/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1081494&preview=%2F1081494%2F1114337%2FCIP-E01_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1310831",
+          "fileId": "09a085e2-a8da-4c23-8eba-515817a89b41",
+          "title": "CIP-E01_request.msg",
+          "fileSize": 7168,
+          "pageId": "1081494",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1081494/child/attachment/att1310831/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1081494&preview=%2F1081494%2F1310831%2FCIP-E01_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E01_bo-sign-off.msg",
+        "request": "CIP-E01_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E01.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-16\">KAN-16</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Notification Service Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E01_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E01_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E02",
+      "split": "eval",
+      "variant": "complete",
+      "group": "complete",
+      "service": "Demo Billing Gateway Sandbox",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-02",
+      "jira": {
+        "id": "10061",
+        "key": "KAN-17",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-17"
+      },
+      "confluence": {
+        "id": "1310768",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E02 — MC Demo Billing Gateway Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1310768/MOCKUP+CIP-E02+MC+Demo+Billing+Gateway+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:12.334Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1310837",
+          "fileId": "28cd910a-0425-4675-9336-4327163b4bd0",
+          "title": "CIP-E02_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1310768",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310768/child/attachment/att1310837/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310768&preview=%2F1310768%2F1310837%2FCIP-E02_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1278082",
+          "fileId": "c0ab3a35-25c7-4978-bee4-66a55d790349",
+          "title": "CIP-E02_request.msg",
+          "fileSize": 7168,
+          "pageId": "1310768",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310768/child/attachment/att1278082/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310768&preview=%2F1310768%2F1278082%2FCIP-E02_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E02_bo-sign-off.msg",
+        "request": "CIP-E02_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E02.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-17\">KAN-17</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Billing Gateway Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E02_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E02_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E03",
+      "split": "eval",
+      "variant": "missing_service",
+      "group": "missing_field",
+      "service": "Demo Customer Portal Sandbox",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-03",
+      "jira": {
+        "id": "10062",
+        "key": "KAN-18",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-18"
+      },
+      "confluence": {
+        "id": "1179867",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E03 — MC Demo Customer Portal Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1179867/MOCKUP+CIP-E03+MC+Demo+Customer+Portal+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:13.768Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1343525",
+          "fileId": "3e071523-2a1d-4597-b630-48243dfc8d92",
+          "title": "CIP-E03_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1179867",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179867/child/attachment/att1343525/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179867&preview=%2F1179867%2F1343525%2FCIP-E03_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1179918",
+          "fileId": "d53ebf2b-97f2-4249-8ebb-14942d122593",
+          "title": "CIP-E03_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179867",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179867/child/attachment/att1179918/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179867&preview=%2F1179867%2F1179918%2FCIP-E03_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E03_bo-sign-off.msg",
+        "request": "CIP-E03_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E03.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-18\">KAN-18</a></p></td></tr><tr><td><p>Type</p></td><td><p>Emergency</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E03_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E03_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E04",
+      "split": "eval",
+      "variant": "blank_type",
+      "group": "missing_field",
+      "service": "Demo Reporting Service Sandbox",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-04",
+      "jira": {
+        "id": "10063",
+        "key": "KAN-19",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-19"
+      },
+      "confluence": {
+        "id": "1114255",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E04 — MC Demo Reporting Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114255/MOCKUP+CIP-E04+MC+Demo+Reporting+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:15.098Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1310843",
+          "fileId": "5d4a6655-64ee-4542-90d2-93293104179b",
+          "title": "CIP-E04_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1114255",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114255/child/attachment/att1310843/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114255&preview=%2F1114255%2F1310843%2FCIP-E04_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1015952",
+          "fileId": "1f962192-43a3-4307-82fe-2d6394be75b2",
+          "title": "CIP-E04_request.msg",
+          "fileSize": 7168,
+          "pageId": "1114255",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114255/child/attachment/att1015952/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114255&preview=%2F1114255%2F1015952%2FCIP-E04_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E04_bo-sign-off.msg",
+        "request": "CIP-E04_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E04.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-19\">KAN-19</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Reporting Service Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p></p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E04_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E04_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E05",
+      "split": "eval",
+      "variant": "missing_bo",
+      "group": "missing_evidence",
+      "service": "Demo Inventory API Sandbox",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-05",
+      "jira": {
+        "id": "10064",
+        "key": "KAN-20",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-20"
+      },
+      "confluence": {
+        "id": "1114274",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E05 — MC Demo Inventory API Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114274/MOCKUP+CIP-E05+MC+Demo+Inventory+API+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:17.644Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1278088",
+          "fileId": "f1707c83-11ac-4fd4-bbb3-e55c37f91be0",
+          "title": "CIP-E05_request.msg",
+          "fileSize": 7168,
+          "pageId": "1114274",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114274/child/attachment/att1278088/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114274&preview=%2F1114274%2F1278088%2FCIP-E05_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E05_bo-sign-off.msg",
+        "request": "CIP-E05_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E05.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-20\">KAN-20</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Inventory API Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E05_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E05_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E06",
+      "split": "eval",
+      "variant": "missing_request",
+      "group": "missing_evidence",
+      "service": "Demo Audit Exporter Sandbox",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-06",
+      "jira": {
+        "id": "10065",
+        "key": "KAN-21",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-21"
+      },
+      "confluence": {
+        "id": "1081513",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E06 — MC Demo Audit Exporter Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1081513/MOCKUP+CIP-E06+MC+Demo+Audit+Exporter+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:18.957Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1114343",
+          "fileId": "5cdcbe92-7eb3-4f57-974e-46250f7a5d77",
+          "title": "CIP-E06_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1081513",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1081513/child/attachment/att1114343/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1081513&preview=%2F1081513%2F1114343%2FCIP-E06_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E06_bo-sign-off.msg",
+        "request": "CIP-E06_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E06.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-21\">KAN-21</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Audit Exporter Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Emergency</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E06_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E06_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E07",
+      "split": "eval",
+      "variant": "corrupt_request",
+      "group": "invalid_format",
+      "service": "Demo Payment Router Sandbox",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-07",
+      "jira": {
+        "id": "10066",
+        "key": "KAN-22",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-22"
+      },
+      "confluence": {
+        "id": "1114293",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E07 — MC Demo Payment Router Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114293/MOCKUP+CIP-E07+MC+Demo+Payment+Router+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:20.328Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1310849",
+          "fileId": "8b1ad598-9b8a-4674-b3a2-44e5b8737ab4",
+          "title": "CIP-E07_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1114293",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114293/child/attachment/att1310849/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114293&preview=%2F1114293%2F1310849%2FCIP-E07_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1310855",
+          "fileId": "a7703134-f1fc-4fc3-a3ee-289c2ade36c4",
+          "title": "CIP-E07_request.msg",
+          "fileSize": 44,
+          "pageId": "1114293",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114293/child/attachment/att1310855/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114293&preview=%2F1114293%2F1310855%2FCIP-E07_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E07_bo-sign-off.msg",
+        "request": "CIP-E07_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E07.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-22\">KAN-22</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Payment Router Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E07_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E07_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E08",
+      "split": "eval",
+      "variant": "bad_url",
+      "group": "invalid_format",
+      "service": "Demo Search Service Sandbox",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-08",
+      "jira": {
+        "id": "10067",
+        "key": "KAN-23",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-23"
+      },
+      "confluence": {
+        "id": "1278023",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E08 — MC Demo Search Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1278023/MOCKUP+CIP-E08+MC+Demo+Search+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:21.634Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1310861",
+          "fileId": "51beede6-04cf-42b2-9cd6-254e93e1b093",
+          "title": "CIP-E08_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1278023",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1278023/child/attachment/att1310861/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1278023&preview=%2F1278023%2F1310861%2FCIP-E08_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1310867",
+          "fileId": "cfdb5025-2c47-4054-904d-b0dd089bc1ed",
+          "title": "CIP-E08_request.msg",
+          "fileSize": 7168,
+          "pageId": "1278023",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1278023/child/attachment/att1310867/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1278023&preview=%2F1278023%2F1310867%2FCIP-E08_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E08_bo-sign-off.msg",
+        "request": "CIP-E08_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E08.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p>jira-invalid://sandbox/KAN-23</p></td></tr><tr><td><p>Service</p></td><td><p>Demo Search Service Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E08_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E08_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E09",
+      "split": "eval",
+      "variant": "mismatch_service",
+      "group": "inconsistent",
+      "service": "Demo Identity Adapter Sandbox",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-09",
+      "jira": {
+        "id": "10068",
+        "key": "KAN-24",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-24"
+      },
+      "confluence": {
+        "id": "1179886",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E09 — MC Demo Identity Adapter Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1179886/MOCKUP+CIP-E09+MC+Demo+Identity+Adapter+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:23.102Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1278094",
+          "fileId": "05011c62-7cd7-40c5-bf5e-3d2725890ef5",
+          "title": "CIP-E09_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1179886",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179886/child/attachment/att1278094/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179886&preview=%2F1179886%2F1278094%2FCIP-E09_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1310873",
+          "fileId": "b4815765-c0ea-47cf-a168-0d63bc169393",
+          "title": "CIP-E09_request.msg",
+          "fileSize": 7168,
+          "pageId": "1179886",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1179886/child/attachment/att1310873/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1179886&preview=%2F1179886%2F1310873%2FCIP-E09_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E09_bo-sign-off.msg",
+        "request": "CIP-E09_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E09.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-24\">KAN-24</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Identity Adapter Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Emergency</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E09_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E09_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E10",
+      "split": "eval",
+      "variant": "mismatch_ticket",
+      "group": "inconsistent",
+      "service": "Demo Order API Sandbox",
+      "type": "Normal",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-10",
+      "jira": {
+        "id": "10069",
+        "key": "KAN-25",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-25"
+      },
+      "confluence": {
+        "id": "1114312",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E10 — MC Demo Order API Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114312/MOCKUP+CIP-E10+MC+Demo+Order+API+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:24.422Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1081574",
+          "fileId": "ec3e4142-4bae-4654-b0db-c98ad69a3ad1",
+          "title": "CIP-E10_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1114312",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114312/child/attachment/att1081574/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114312&preview=%2F1114312%2F1081574%2FCIP-E10_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1179924",
+          "fileId": "4c988a19-3406-425a-8c27-7f7ea43ac52f",
+          "title": "CIP-E10_request.msg",
+          "fileSize": 7168,
+          "pageId": "1114312",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1114312/child/attachment/att1179924/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1114312&preview=%2F1114312%2F1179924%2FCIP-E10_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E10_bo-sign-off.msg",
+        "request": "CIP-E10_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E10.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-25\">KAN-25</a></p></td></tr><tr><td><p>Service</p></td><td><p>Demo Order API Sandbox</p></td></tr><tr><td><p>Type</p></td><td><p>Normal</p></td></tr><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E10_bo-sign-off.msg</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E10_request.msg</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E11",
+      "split": "eval",
+      "variant": "reordered",
+      "group": "layout_variant",
+      "service": "Demo Document Service Sandbox",
+      "type": "Standard",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-11",
+      "jira": {
+        "id": "10070",
+        "key": "KAN-26",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-26"
+      },
+      "confluence": {
+        "id": "1310787",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E11 — MC Demo Document Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1310787/MOCKUP+CIP-E11+MC+Demo+Document+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:25.894Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1179930",
+          "fileId": "54c18df9-6a15-4ac3-868e-a8ea234ae6aa",
+          "title": "CIP-E11_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1310787",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310787/child/attachment/att1179930/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310787&preview=%2F1310787%2F1179930%2FCIP-E11_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1081580",
+          "fileId": "a6d11d56-20db-46a4-9370-1b28e886de52",
+          "title": "CIP-E11_request.msg",
+          "fileSize": 7168,
+          "pageId": "1310787",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310787/child/attachment/att1081580/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310787&preview=%2F1310787%2F1081580%2FCIP-E11_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E11_bo-sign-off.msg",
+        "request": "CIP-E11_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E11.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><table><thead><tr><th>Mục</th><th>Nội dung</th></tr></thead><tbody><tr><td><p>Risk</p></td><td><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p></td></tr><tr><td><p>Request</p></td><td><p>CIP-E11_request.msg</p></td></tr><tr><td><p>Service</p></td><td><p>Demo Document Service Sandbox</p></td></tr><tr><td><p>Ticket Jira</p></td><td><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-26\">KAN-26</a></p></td></tr><tr><td><p>BO sign-off</p></td><td><p>CIP-E11_bo-sign-off.msg</p></td></tr><tr><td><p>Type</p></td><td><p>Standard</p></td></tr></tbody></table>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    },
+    {
+      "case_id": "CIP-E12",
+      "split": "eval",
+      "variant": "headings",
+      "group": "layout_variant",
+      "service": "Demo Scheduler Sandbox",
+      "type": "Emergency",
+      "risk": "Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.",
+      "release": "MOCK-E-12",
+      "jira": {
+        "id": "10071",
+        "key": "KAN-27",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-27"
+      },
+      "confluence": {
+        "id": "1310806",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E12 — MC Demo Scheduler Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1310806/MOCKUP+CIP-E12+MC+Demo+Scheduler+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:27.157Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "attachments": [
+        {
+          "id": "att1310879",
+          "fileId": "53278e1d-49a3-4e7e-a61d-66670f30e0ab",
+          "title": "CIP-E12_bo-sign-off.msg",
+          "fileSize": 7168,
+          "pageId": "1310806",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310806/child/attachment/att1310879/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310806&preview=%2F1310806%2F1310879%2FCIP-E12_bo-sign-off.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        },
+        {
+          "id": "att1179936",
+          "fileId": "9ca7fe7a-715c-4533-a2fa-eaad741db934",
+          "title": "CIP-E12_request.msg",
+          "fileSize": 7168,
+          "pageId": "1310806",
+          "mediaType": "application/vnd.ms-outlook",
+          "_links": {
+            "download": "/rest/api/content/1310806/child/attachment/att1179936/download",
+            "webui": "/pages/viewpageattachments.action?pageId=1310806&preview=%2F1310806%2F1179936%2FCIP-E12_request.msg",
+            "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          }
+        }
+      ],
+      "email_files": {
+        "bo": "CIP-E12_bo-sign-off.msg",
+        "request": "CIP-E12_request.msg"
+      },
+      "mc_html": "<div data-type=\"panel-warning\"><p><strong>MOCKUP ONLY — CIP-E12.</strong> Hồ sơ và email đính kèm là dữ liệu giả lập phục vụ phát triển/đánh giá công cụ CIP.</p></div><h2>Request</h2><p>CIP-E12_request.msg</p><h2>BO sign-off</h2><p>CIP-E12_bo-sign-off.msg</p><h2>Risk</h2><p>Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.</p><h2>Type</h2><p>Emergency</p><h2>Service</h2><p>Demo Scheduler Sandbox</p><h2>Ticket Jira</h2><p><a href=\"https://nguyenducanhflm.atlassian.net/browse/KAN-27\">KAN-27</a></p>",
+      "jira_mc_linked": true,
+      "evidence_links_updated": true
+    }
+  ]
+}

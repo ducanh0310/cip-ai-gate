@@ -1,0 +1,103 @@
+{
+  "case_id": "CIP-E05",
+  "split": "eval",
+  "group": "missing_evidence",
+  "variant": "missing_bo",
+  "checklist_version": "cip-mock-v1",
+  "overall_expected": "fail",
+  "criteria": [
+    {
+      "criterion_id": "MC-01",
+      "status": "pass",
+      "source": "Ticket Jira"
+    },
+    {
+      "criterion_id": "MC-02",
+      "status": "pass",
+      "source": "Service"
+    },
+    {
+      "criterion_id": "MC-03",
+      "status": "pass",
+      "source": "Type"
+    },
+    {
+      "criterion_id": "MC-04",
+      "status": "pass",
+      "source": "Risk"
+    },
+    {
+      "criterion_id": "MC-05",
+      "status": "fail",
+      "source": "BO sign-off",
+      "reason": "Tệp được MC tham chiếu không tồn tại trong gói và không đính kèm trang."
+    },
+    {
+      "criterion_id": "MC-06",
+      "status": "pass",
+      "source": "Request"
+    },
+    {
+      "criterion_id": "FMT-01",
+      "status": "pass",
+      "source": "Ticket Jira"
+    },
+    {
+      "criterion_id": "READ-01",
+      "status": "needs_review",
+      "source": "BO sign-off",
+      "reason": "Thiếu tệp để đọc."
+    },
+    {
+      "criterion_id": "READ-02",
+      "status": "pass",
+      "source": "Request"
+    },
+    {
+      "criterion_id": "MATCH-01",
+      "status": "needs_review",
+      "source": "Service",
+      "reason": "Thiếu một trong hai email để đối chiếu đầy đủ."
+    },
+    {
+      "criterion_id": "MATCH-02",
+      "status": "needs_review",
+      "source": "Ticket Jira",
+      "reason": "Thiếu một trong hai email để đối chiếu đầy đủ."
+    }
+  ],
+  "evidence": {
+    "bo": {
+      "filename": "CIP-E05_bo-sign-off.msg",
+      "present": false
+    },
+    "request": {
+      "filename": "CIP-E05_request.msg",
+      "present": true,
+      "readable": true,
+      "subject": "[MOCKUP][CIP-E05] Yêu cầu thay đổi giả lập — Demo Inventory API Sandbox",
+      "sender": "requester@example.test",
+      "recipient": "reviewer@example.test",
+      "service": "Demo Inventory API Sandbox",
+      "ticket": "KAN-20",
+      "body": "DỮ LIỆU GIẢ LẬP — KHÔNG PHẢI EMAIL THẬT.\r\nCase ID: CIP-E05\r\nTicket: KAN-20\r\nService: Demo Inventory API Sandbox\r\nType: Standard\r\nRelease: MOCK-E-05\r\nNội dung: Đề nghị chuẩn bị hồ sơ CIP cho thay đổi cấu hình nêu trên.\r\nRisk: Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.\r\nThông điệp này chỉ là bằng chứng mẫu để kiểm chứng parser và quy tắc, không có giá trị phê duyệt thực tế.\r\n"
+    }
+  },
+  "email_constraints": {
+    "may_state_complete": false,
+    "must_surface": [
+      "MC-05",
+      "READ-01",
+      "MATCH-01",
+      "MATCH-02"
+    ],
+    "must_not_invent": [
+      "employee_grade",
+      "approver",
+      "recipient",
+      "approval_status",
+      "missing_values"
+    ],
+    "note": "Sender/recipient strings in source emails do not establish employee grades or authority."
+  }
+}

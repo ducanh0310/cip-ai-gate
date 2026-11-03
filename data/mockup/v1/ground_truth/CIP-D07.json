@@ -1,0 +1,106 @@
+{
+  "case_id": "CIP-D07",
+  "split": "dev",
+  "group": "invalid_format",
+  "variant": "bad_url",
+  "checklist_version": "cip-mock-v1",
+  "overall_expected": "fail",
+  "criteria": [
+    {
+      "criterion_id": "MC-01",
+      "status": "pass",
+      "source": "Ticket Jira"
+    },
+    {
+      "criterion_id": "MC-02",
+      "status": "pass",
+      "source": "Service"
+    },
+    {
+      "criterion_id": "MC-03",
+      "status": "pass",
+      "source": "Type"
+    },
+    {
+      "criterion_id": "MC-04",
+      "status": "pass",
+      "source": "Risk"
+    },
+    {
+      "criterion_id": "MC-05",
+      "status": "pass",
+      "source": "BO sign-off"
+    },
+    {
+      "criterion_id": "MC-06",
+      "status": "pass",
+      "source": "Request"
+    },
+    {
+      "criterion_id": "FMT-01",
+      "status": "fail",
+      "source": "Ticket Jira",
+      "reason": "Ticket Jira sử dụng scheme jira-invalid thay vì HTTP(S)."
+    },
+    {
+      "criterion_id": "READ-01",
+      "status": "pass",
+      "source": "BO sign-off"
+    },
+    {
+      "criterion_id": "READ-02",
+      "status": "pass",
+      "source": "Request"
+    },
+    {
+      "criterion_id": "MATCH-01",
+      "status": "pass",
+      "source": "Service"
+    },
+    {
+      "criterion_id": "MATCH-02",
+      "status": "needs_review",
+      "source": "Ticket Jira",
+      "reason": "Ticket Jira trong MC không phải URL hợp lệ để xác định ticket đối chiếu."
+    }
+  ],
+  "evidence": {
+    "bo": {
+      "filename": "CIP-D07_bo-sign-off.msg",
+      "present": true,
+      "readable": true,
+      "subject": "[MOCKUP][CIP-D07] BO sign-off giả lập — Demo Payment Router Lab",
+      "sender": "bo@example.test",
+      "recipient": "reviewer@example.test",
+      "service": "Demo Payment Router Lab",
+      "ticket": "KAN-10",
+      "body": "DỮ LIỆU GIẢ LẬP — KHÔNG PHẢI EMAIL THẬT.\r\nCase ID: CIP-D07\r\nTicket: KAN-10\r\nService: Demo Payment Router Lab\r\nType: Normal\r\nRelease: MOCK-D-07\r\nNội dung: Tôi xác nhận BO sign-off giả lập cho thay đổi cấu hình nêu trên.\r\nRisk: Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.\r\nThông điệp này chỉ là bằng chứng mẫu để kiểm chứng parser và quy tắc, không có giá trị phê duyệt thực tế.\r\n"
+    },
+    "request": {
+      "filename": "CIP-D07_request.msg",
+      "present": true,
+      "readable": true,
+      "subject": "[MOCKUP][CIP-D07] Yêu cầu thay đổi giả lập — Demo Payment Router Lab",
+      "sender": "requester@example.test",
+      "recipient": "reviewer@example.test",
+      "service": "Demo Payment Router Lab",
+      "ticket": "KAN-10",
+      "body": "DỮ LIỆU GIẢ LẬP — KHÔNG PHẢI EMAIL THẬT.\r\nCase ID: CIP-D07\r\nTicket: KAN-10\r\nService: Demo Payment Router Lab\r\nType: Normal\r\nRelease: MOCK-D-07\r\nNội dung: Đề nghị chuẩn bị hồ sơ CIP cho thay đổi cấu hình nêu trên.\r\nRisk: Rủi ro giả lập: thay đổi cấu hình có thể làm gián đoạn dịch vụ trong môi trường thử nghiệm. Biện pháp: kiểm tra sau thay đổi và khôi phục cấu hình cũ nếu kiểm tra không đạt.\r\nThông điệp này chỉ là bằng chứng mẫu để kiểm chứng parser và quy tắc, không có giá trị phê duyệt thực tế.\r\n"
+    }
+  },
+  "email_constraints": {
+    "may_state_complete": false,
+    "must_surface": [
+      "FMT-01",
+      "MATCH-02"
+    ],
+    "must_not_invent": [
+      "employee_grade",
+      "approver",
+      "recipient",
+      "approval_status",
+      "missing_values"
+    ],
+    "note": "Sender/recipient strings in source emails do not establish employee grades or authority."
+  }
+}

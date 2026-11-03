@@ -1,0 +1,8 @@
+{
+  "case_id": "CIP-E05",
+  "dataset_version": "cip-mock-v1",
+  "mc_file": "mc.html",
+  "email_files": [
+    "CIP-E05_request.msg"
+  ]
+}

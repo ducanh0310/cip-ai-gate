@@ -2,7 +2,7 @@
 
 - Thực tập sinh: Nguyễn Đức Anh — Cặp C.
 - Mentor: MinhLQ11.
-- Cập nhật: 02/11/2026.
+- Cập nhật: 03/11/2026 (bổ sung kế hoạch và tiêu chí từ tài liệu dự án; các nội dung đề xuất vẫn chờ mentor/cặp xác nhận).
 - Trạng thái: Bản nháp phục vụ Gate 0, chưa được mentor duyệt.
 - Đầu việc: C2-001, C2-002.
 - Gate 0: chiều 04/11/2026.
@@ -11,7 +11,7 @@
 
 CIP là quy trình cần thực hiện trước khi go-live. MC document được lập theo template trên Confluence để phục vụ quy trình CIP. Công cụ cần hỗ trợ kiểm tra MC và soạn bản nháp email xin phê duyệt.
 
-Người dùng trực tiếp dự kiến là người chuẩn bị hồ sơ CIP: cung cấp nội dung MC, xem kết quả kiểm tra, bổ sung thông tin và rà soát email. Cần mentor xác nhận chức danh và trách nhiệm cụ thể của người dùng này.
+Người dùng trực tiếp là người chuẩn bị hồ sơ CIP: cung cấp nội dung MC, xem kết quả kiểm tra, bổ sung thông tin và rà soát email. Chức danh và trách nhiệm cụ thể vẫn cần mentor xác nhận.
 
 Giả thuyết giá trị: công cụ giúp giảm thời gian kiểm tra hồ sơ và soạn email, phát hiện thông tin thiếu hoặc mâu thuẫn trước khi gửi duyệt, đồng thời cung cấp căn cứ để người dùng kiểm tra lại. Chưa có số liệu hiện trạng để kết luận mức cải thiện.
 
@@ -30,7 +30,7 @@ Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp m�
 
 Ví dụ trên chỉ minh họa thiết kế dữ liệu, chưa phải bộ mockup đã tạo. Các tệp .msg cần đúng định dạng và đọc được; không đổi đuôi tệp văn bản thành .msg. Cách tạo và đọc tệp sẽ được kiểm chứng ở giai đoạn skeleton.
 
-Checklist kiểm tra và mẫu email cũng do dự án đề xuất cho MVP, tách rõ quy tắc mockup với thông tin nghiệp vụ đã xác nhận. Không coi quy tắc tự dựng là quy định CIP chính thức. Cấu trúc bố cục Confluence sẽ tự mô phỏng từ sáu mục trên, không cần template nội bộ thật.
+Checklist kiểm tra và mẫu email do dự án đề xuất cho MVP, tách rõ quy tắc mockup với thông tin nghiệp vụ đã xác nhận. Không coi quy tắc tự dựng là quy định CIP chính thức. Cấu trúc bố cục Confluence sẽ tự mô phỏng từ sáu mục trên, không cần template nội bộ thật. Checklist/prompt/mẫu email cần quản lý phiên bản; lỗi đọc và lỗi LLM phải phân biệt với kết luận nghiệp vụ.
 
 Luồng đề xuất:
 
@@ -53,7 +53,7 @@ Việc T4 làm UAT và T3 viết CR gửi T2 là bối cảnh đã biết. Chưa
 | AI kiểm tra nội dung theo checklist | Nhận xét có trích đoạn; thiếu căn cứ thì chuyển cần xem xét |
 | Báo cáo kiểm tra | Trạng thái từng tiêu chí và gợi ý xử lý |
 | Sinh email theo mẫu | Bản nháp dùng thông tin có trong hồ sơ, đánh dấu phần thiếu |
-| Đánh giá trên mockup | Đối chiếu với đáp án kỳ vọng |
+| Đánh giá trên mockup | Đối chiếu với đáp án kỳ vọng, ghi phiên bản cấu hình và thời gian |
 
 Ngoài phạm vi đề xuất: tự gửi email, tự phê duyệt, ghi lên Confluence/Jira, tra cứu hệ thống nội bộ thật và hỗ trợ nhiều template.
 
@@ -61,13 +61,14 @@ Ngoài phạm vi đề xuất: tự gửi email, tự phê duyệt, ghi lên Con
 
 | Metric | Cách đo dự kiến |
 | --- | --- |
-| Khả năng phát hiện lỗi | Số lỗi phát hiện đúng / tổng lỗi đã gắn nhãn |
-| Chất lượng cảnh báo | Số cảnh báo đúng / tổng cảnh báo do công cụ đưa ra |
-| Độ đúng của căn cứ | Số kết luận có căn cứ đúng / tổng kết luận cần căn cứ |
-| Chất lượng email | Đánh giá độ đầy đủ, chính xác và lượng chỉnh sửa theo checklist email |
-| Thời gian xử lý | So sánh thời gian kiểm tra và soạn email có/không có công cụ trên cùng bộ hồ sơ |
+| Precision phát hiện thiếu | TP / (TP + FP), đơn vị là cặp (case_id, criterion_id); mục không thiếu bị cảnh báo là FP |
+| Recall phát hiện thiếu | TP / (TP + FN); mục thiếu bị bỏ sót là FN |
+| Độ đúng căn cứ | Số căn cứ đúng / tổng căn cứ được trả ra |
+| Email đạt checklist | Số email đạt mọi tiêu chí / tổng email sinh thành công |
+| Email có thông tin thiếu căn cứ | Số email có ít nhất một khẳng định thiếu căn cứ / tổng email sinh thành công; mục tiêu 0 quan sát trên bộ đánh giá, không suy rộng thành bảo đảm |
+| Giảm thời gian hoàn thành | So sánh trung vị thời gian thủ công và có công cụ trên cùng tập hồ sơ, cùng người thực hiện; tính cả rà soát/sửa email |
 
-Ngưỡng mục tiêu, cách xử lý mẫu số bằng 0, bộ đánh giá và rubric mức 2–3–4 sẽ được xây dựng tại C2-004 ngày 03/11 và trình mentor duyệt. Chưa có baseline thực đo.
+Ngưỡng đề xuất: precision và recall ≥ 90%, độ đúng căn cứ ≥ 95%, email đạt checklist ≥ 90%, giảm thời gian ≥ 20%. Mẫu số bằng 0 ghi N/A kèm số đếm, không quy đổi thành 100%. Rubric checkpoint mức 2–3–4 được cụ thể hóa tại tài liệu dự án; cả metric lẫn rubric vẫn chờ mentor duyệt. CSV ghi C2-004 đến C2-008 là kế hoạch ngày 03/11, chưa xác nhận hoàn tất; chưa có baseline thực đo.
 
 ## 5. Kiến trúc sơ bộ
 
@@ -104,7 +105,7 @@ Kết quả mỗi tiêu chí đề xuất gồm: `criterion_id`, `status` (`pass
 
 Nguyên tắc: không đọc được tài liệu không được mặc định là đạt; kết quả AI phải đúng cấu trúc; không tự tạo người phê duyệt hoặc thông tin còn thiếu. Checklist và mẫu email được quản lý riêng, có phiên bản. Lựa chọn công nghệ cụ thể và công cụ AI cần xác nhận tính khả dụng trước khi chốt.
 
-Giả định rủi ro nhất đề xuất cho Gate 1: có thể trích xuất MC đủ chính xác để kiểm tra theo checklist và dẫn căn cứ đúng vị trí. Kiểm chứng trên mockup có bảng, mục thiếu và thông tin mâu thuẫn, đối chiếu với đáp án kỳ vọng.
+Giả định rủi ro nhất đề xuất cho Gate 1: có thể trích xuất MC đủ chính xác để kiểm tra theo checklist và dẫn căn cứ đúng vị trí. Kiểm chứng trên mockup có bảng, mục thiếu và thông tin mâu thuẫn, đối chiếu với đáp án kỳ vọng. Nếu trích xuất không chắc chắn hoặc không đọc được, báo lỗi/`needs_review`, không mặc định đạt.
 
 ## 6. Lộ trình và việc còn mở
 
@@ -115,6 +116,32 @@ Giả định rủi ro nhất đề xuất cho Gate 1: có thể trích xuất M
 | CP1 — 18/11 | Demo MVP trên mockup và tiến độ |
 | CP2 — 25/11 | MVP trên masked, kết quả Sprint 1, retro |
 | CP3 — 09/12 | Final demo, metric và bàn giao |
+
+### Kế hoạch hoàn tất Gate 0 theo tiến độ Cặp C
+
+CSV theo dõi tiến độ là nguồn trạng thái thực thi; các dòng sau 02/11 mới là kế hoạch, chưa phải kết quả đã đạt:
+
+| Ngày | Đầu việc | Trạng thái ghi nhận / đầu ra cần có |
+| --- | --- | --- |
+| 02/11 | C2-001 phân tích nghiệp vụ/phạm vi; C2-002 kiến trúc; C2-003 phương án phối hợp | C2-001 đang làm, C2-002 và C2-003 chưa có trạng thái hoàn tất; phối hợp với Vĩnh cần thống nhất |
+| 03/11 | C2-004 metric/rubric; C2-005 đặc tả mockup; C2-006 pair contract; C2-007 rủi ro; C2-008 biên tập kế hoạch | Kế hoạch trong standup; ghi nhận kết quả thực tế sau khi làm và cập nhật các điểm cần mentor xác nhận |
+| Sáng 04/11 | C2-009 rà soát, xử lý góp ý trước Gate 0 | Cập nhật quyết định đã chốt và việc còn mở; phụ thuộc lịch mentor |
+| Chiều 04/11 | C2-010 trình bày 10 phút, hỏi đáp 5 phút | Trình năm đầu ra Gate 0 và ghi kết quả/hành động tiếp theo |
+
+Đặc tả mockup đề xuất trong bộ tài liệu dự án là 24 gói: 12 gói phát triển/kiểm chứng sớm và 12 gói đánh giá giữ riêng; mỗi tập có hai gói cho mỗi nhóm: đầy đủ, thiếu mục/trường, thiếu bằng chứng, sai định dạng/lỗi đọc, không nhất quán và biến thể bố cục. Mỗi gói có manifest, HTML MC, tệp .msg nếu có và đáp án gồm giá trị/trạng thái/căn cứ. Đây là kế hoạch dữ liệu, chưa phải bộ dữ liệu đã tạo; mentor cần rà soát checklist và nhãn. Tập đánh giá không dùng làm ví dụ prompt; nếu đã dùng để chỉnh hệ thống thì thay tập trước khi báo cáo đánh giá độc lập.
+
+### Rủi ro và phụ thuộc cần theo dõi
+
+| ID | Rủi ro / phụ thuộc | Ảnh hưởng và xử lý đề xuất | Chủ thể / hạn theo dõi |
+| --- | --- | --- | --- |
+| R-01 | Checklist hoặc điều kiện hợp lệ chưa rõ | Kết luận đủ/thiếu có thể sai; rà từng tiêu chí với mentor, ghi điều kiện đạt và phiên bản checklist. | Đức Anh + mentor; Gate 0 |
+| R-02 | Trích xuất HTML/.msg sai hoặc thiếu | Sai dữ liệu/căn cứ; đối chiếu đáp án, giữ vị trí nguồn, báo lỗi hoặc `needs_review`. | Đức Anh; kiểm chứng Gate 1 |
+| R-03 | LLM thêm thông tin hoặc sai schema | Báo cáo/email không đáng tin; kiểm tra schema, đối chiếu nguồn, đánh dấu thiếu dữ liệu và đo trên mockup. | Đức Anh; Gate 1–CP1 |
+| R-05 | Mockup thiếu tình huống hoặc nhãn sai | Metric không đại diện; phủ đủ sáu nhóm, rà đáp án và tách tập phát triển/đánh giá. | Đức Anh + mentor; trước đánh giá |
+| R-07 | So sánh thời gian không công bằng | Kết luận tiết kiệm thời gian không đáng tin; dùng cùng hồ sơ/người làm, cân bằng thứ tự và tính cả rà soát/sửa. | Đức Anh; baseline Gate 1 |
+| R-08 | Chưa có cách xác định cấp bậc nhân viên | Chưa đủ căn cứ kiểm tra cấp bậc/vai trò; hỏi mentor nguồn phù hợp, dùng bảng ánh xạ giả lập cho MVP và chuyển cần xác nhận khi thiếu, không suy đoán. | Đức Anh + mentor; trước chốt checklist |
+| D-01 | C2-003 và pair contract phụ thuộc thống nhất với Vĩnh | Ranh giới, schema trao đổi và mốc tích hợp có thể chưa chốt; dùng phương án đề xuất, ghi rõ phần hai bên xác nhận. | Đức Anh + Vĩnh; 03/11 |
+| D-02 | Quy tắc CIP/mẫu email và dữ liệu masked phụ thuộc mentor | Không dùng giả định thành chính sách; MVP tiếp tục bằng mockup. Chỉ dùng masked từ 19/11 nếu được cấp và cho phép, lưu theo hướng dẫn, không commit. | Mentor; trước CP2 |
 
 Phạm vi phát triển hiện tại sử dụng hoàn toàn dữ liệu tự dựng theo xác nhận của Nguyễn Đức Anh. Kế hoạch chương trình có mốc dữ liệu masked từ 19/11; nếu sau này mentor cung cấp thì chỉ dùng trong phạm vi được phép, lưu riêng và không commit. Không phụ thuộc việc có masked để dựng MVP và không dùng dữ liệu thật.
 

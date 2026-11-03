@@ -1,0 +1,1015 @@
+{
+  "dataset_version": "cip-mock-v1",
+  "provenance": "synthetic-only",
+  "root_page_id": "1081458",
+  "cases": [
+    {
+      "case_id": "CIP-D01",
+      "split": "dev",
+      "group": "complete",
+      "variant": "complete",
+      "jira": {
+        "id": "10048",
+        "key": "KAN-4",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-4"
+      },
+      "confluence": {
+        "id": "1179774",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D01 — MC Demo Notification Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179774/MOCKUP+CIP-D01+MC+Demo+Notification+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:41.638Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D01",
+      "ground_truth": "ground_truth/CIP-D01.json",
+      "files": [
+        {
+          "filename": "CIP-D01_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "c33cd06188aa0052c1f87816cb6636ff4593b9adc421f1ff577006fe421cedc9",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D01_request.msg",
+          "size": 7168,
+          "sha256": "1759487a0aa41dae443eb0a12d649729f1e2898cc1dd3daedfbfe10ed757bf82",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-D02",
+      "split": "dev",
+      "group": "complete",
+      "variant": "complete",
+      "jira": {
+        "id": "10049",
+        "key": "KAN-5",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-5"
+      },
+      "confluence": {
+        "id": "1179793",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D02 — MC Demo Billing Gateway Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179793/MOCKUP+CIP-D02+MC+Demo+Billing+Gateway+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:43.219Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D02",
+      "ground_truth": "ground_truth/CIP-D02.json",
+      "files": [
+        {
+          "filename": "CIP-D02_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "644eb88bb310b903bb4ff608b027d86bb322066796556fc4b5f17df11c0bad2b",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D02_request.msg",
+          "size": 7168,
+          "sha256": "02ba19b179a683c49b81302c05a5d19834f8c241cacf95f8f9093cc71b916fd6",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-D03",
+      "split": "dev",
+      "group": "missing_field",
+      "variant": "missing_ticket",
+      "jira": {
+        "id": "10050",
+        "key": "KAN-6",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-6"
+      },
+      "confluence": {
+        "id": "1114238",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D03 — MC Demo Customer Portal Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1114238/MOCKUP+CIP-D03+MC+Demo+Customer+Portal+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:44.545Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D03",
+      "ground_truth": "ground_truth/CIP-D03.json",
+      "files": [
+        {
+          "filename": "CIP-D03_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "66edcee4a2312018720676ee0684d007213138321324a94dcd5ecf34e5f2ada8",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D03_request.msg",
+          "size": 7168,
+          "sha256": "21fa34f43cf6116e190aac4d243cb2e9b060d31581747b08acf2f12603ed938a",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D04",
+      "split": "dev",
+      "group": "missing_field",
+      "variant": "blank_risk",
+      "jira": {
+        "id": "10051",
+        "key": "KAN-7",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-7"
+      },
+      "confluence": {
+        "id": "1343500",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D04 — MC Demo Reporting Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1343500/MOCKUP+CIP-D04+MC+Demo+Reporting+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:46.005Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D04",
+      "ground_truth": "ground_truth/CIP-D04.json",
+      "files": [
+        {
+          "filename": "CIP-D04_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "3609ff75b98cdbc6096b3ce767e9c7eb78fd4f2b389b96786a6c0c44c199ff3e",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D04_request.msg",
+          "size": 7168,
+          "sha256": "36e30e36e0bd3ee57e67f5d64866acda5c877ee5148af7b0c080ac0f22fed246",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D05",
+      "split": "dev",
+      "group": "missing_evidence",
+      "variant": "missing_bo",
+      "jira": {
+        "id": "10052",
+        "key": "KAN-8",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-8"
+      },
+      "confluence": {
+        "id": "1179812",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D05 — MC Demo Inventory API Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179812/MOCKUP+CIP-D05+MC+Demo+Inventory+API+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:47.400Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D05",
+      "ground_truth": "ground_truth/CIP-D05.json",
+      "files": [
+        {
+          "filename": "CIP-D05_request.msg",
+          "size": 7168,
+          "sha256": "71bfdb8d3699bec2b12ba326e8cabf31cd67aaeff300cf6d4c40887457e4153a",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D06",
+      "split": "dev",
+      "group": "missing_evidence",
+      "variant": "missing_request",
+      "jira": {
+        "id": "10053",
+        "key": "KAN-9",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-9"
+      },
+      "confluence": {
+        "id": "1277985",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D06 — MC Demo Audit Exporter Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1277985/MOCKUP+CIP-D06+MC+Demo+Audit+Exporter+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:48.800Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D06",
+      "ground_truth": "ground_truth/CIP-D06.json",
+      "files": [
+        {
+          "filename": "CIP-D06_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "8b9c94be42c5c6652617b1948d3c42175acfd26c40353b0b9759fec6032e5ac7",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D07",
+      "split": "dev",
+      "group": "invalid_format",
+      "variant": "bad_url",
+      "jira": {
+        "id": "10054",
+        "key": "KAN-10",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-10"
+      },
+      "confluence": {
+        "id": "1179831",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D07 — MC Demo Payment Router Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179831/MOCKUP+CIP-D07+MC+Demo+Payment+Router+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:50.124Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D07",
+      "ground_truth": "ground_truth/CIP-D07.json",
+      "files": [
+        {
+          "filename": "CIP-D07_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "c6f0957a0b0213c99c6d6e829712aa6fdf62be0df6f0fae842a0be2b33831635",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D07_request.msg",
+          "size": 7168,
+          "sha256": "85df441805792f84a0a8d3dc6c3f72fb3c27d1835dec6c81bfb3da494d27125f",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D08",
+      "split": "dev",
+      "group": "invalid_format",
+      "variant": "corrupt_bo",
+      "jira": {
+        "id": "10055",
+        "key": "KAN-11",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-11"
+      },
+      "confluence": {
+        "id": "1081475",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D08 — MC Demo Search Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1081475/MOCKUP+CIP-D08+MC+Demo+Search+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:50.991Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D08",
+      "ground_truth": "ground_truth/CIP-D08.json",
+      "files": [
+        {
+          "filename": "CIP-D08_bo-sign-off.msg",
+          "size": 44,
+          "sha256": "0b9fcf0f0341d2bb45e43e47b30028163648a8b8ab277421415007d76d3acf42",
+          "format": "intentionally-truncated-msg"
+        },
+        {
+          "filename": "CIP-D08_request.msg",
+          "size": 7168,
+          "sha256": "eadb42f3501f8cea65d9e4976f33e5f8ab0265949453b4150cd80a1ede6f80b0",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "needs_review"
+    },
+    {
+      "case_id": "CIP-D09",
+      "split": "dev",
+      "group": "inconsistent",
+      "variant": "mismatch_service",
+      "jira": {
+        "id": "10056",
+        "key": "KAN-12",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-12"
+      },
+      "confluence": {
+        "id": "1278004",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D09 — MC Demo Identity Adapter Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1278004/MOCKUP+CIP-D09+MC+Demo+Identity+Adapter+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:52.393Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D09",
+      "ground_truth": "ground_truth/CIP-D09.json",
+      "files": [
+        {
+          "filename": "CIP-D09_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "2c0d7790bc3bb7fd8f6e40fba1137a4bed9bb959d9b2d838e7622fffa2c64064",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D09_request.msg",
+          "size": 7168,
+          "sha256": "a565e28c92532ff2ce1d4e1a78c66290a50c0e8597614bd32e2d439a74ea9462",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D10",
+      "split": "dev",
+      "group": "inconsistent",
+      "variant": "mismatch_ticket",
+      "jira": {
+        "id": "10057",
+        "key": "KAN-13",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-13"
+      },
+      "confluence": {
+        "id": "1179848",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D10 — MC Demo Order API Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1179848/MOCKUP+CIP-D10+MC+Demo+Order+API+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:53.860Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D10",
+      "ground_truth": "ground_truth/CIP-D10.json",
+      "files": [
+        {
+          "filename": "CIP-D10_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "7e7586e74a931cb32c7ddad44099eafacf68e8854f398ca6b2208f342862943d",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D10_request.msg",
+          "size": 7168,
+          "sha256": "3670758ec5f09a7252f98e93159ae729e8fd596de77a039763944fad211ce099",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-D11",
+      "split": "dev",
+      "group": "layout_variant",
+      "variant": "reordered",
+      "jira": {
+        "id": "10058",
+        "key": "KAN-14",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-14"
+      },
+      "confluence": {
+        "id": "1310730",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D11 — MC Demo Document Service Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1310730/MOCKUP+CIP-D11+MC+Demo+Document+Service+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:55.591Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D11",
+      "ground_truth": "ground_truth/CIP-D11.json",
+      "files": [
+        {
+          "filename": "CIP-D11_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "91ae3980cd82ea906c6d8b81436f5dabe7f51a78a1c9ffb5e1576152350a8b03",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D11_request.msg",
+          "size": 7168,
+          "sha256": "e62486f95af91aa20b97a391c26d97e253385568f61a956e3ad4ab7d9025d616",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-D12",
+      "split": "dev",
+      "group": "layout_variant",
+      "variant": "headings",
+      "jira": {
+        "id": "10059",
+        "key": "KAN-15",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-15"
+      },
+      "confluence": {
+        "id": "1310749",
+        "type": "page",
+        "title": "[MOCKUP] CIP-D12 — MC Demo Scheduler Lab",
+        "spaceId": "131075",
+        "parentId": "1277968",
+        "webUrl": "/spaces/KAN/pages/1310749/MOCKUP+CIP-D12+MC+Demo+Scheduler+Lab",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:22:58.934Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "dev/CIP-D12",
+      "ground_truth": "ground_truth/CIP-D12.json",
+      "files": [
+        {
+          "filename": "CIP-D12_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "4819c622a060886b2953fec70fa844a9b5be4c5ef3208762fa70c1f3f73794b8",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-D12_request.msg",
+          "size": 7168,
+          "sha256": "d349da47b57fd5a82f34637490a6b64b6da67fc31b4f9850a0b8022e9d6c0e61",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-E01",
+      "split": "eval",
+      "group": "complete",
+      "variant": "complete",
+      "jira": {
+        "id": "10060",
+        "key": "KAN-16",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-16"
+      },
+      "confluence": {
+        "id": "1081494",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E01 — MC Demo Notification Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1081494/MOCKUP+CIP-E01+MC+Demo+Notification+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:10.978Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E01",
+      "ground_truth": "ground_truth/CIP-E01.json",
+      "files": [
+        {
+          "filename": "CIP-E01_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "b8a5f450a2e4016e94ddc6e268da1f4356f435790a230dcc42584b8c2163b024",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E01_request.msg",
+          "size": 7168,
+          "sha256": "33dee286e82e539c9a2c9451095466c0244609d35de9907c4d90314ef8226536",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-E02",
+      "split": "eval",
+      "group": "complete",
+      "variant": "complete",
+      "jira": {
+        "id": "10061",
+        "key": "KAN-17",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-17"
+      },
+      "confluence": {
+        "id": "1310768",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E02 — MC Demo Billing Gateway Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1310768/MOCKUP+CIP-E02+MC+Demo+Billing+Gateway+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:12.334Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E02",
+      "ground_truth": "ground_truth/CIP-E02.json",
+      "files": [
+        {
+          "filename": "CIP-E02_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "dd6d4127999813b61a3ad7abe4e395baca8d51101aaf1ddda8d36f19d9c83909",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E02_request.msg",
+          "size": 7168,
+          "sha256": "5f4758b5701f3ac1060fe28c8341707cf6024533ad50cab49f662f93c5f9bc41",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-E03",
+      "split": "eval",
+      "group": "missing_field",
+      "variant": "missing_service",
+      "jira": {
+        "id": "10062",
+        "key": "KAN-18",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-18"
+      },
+      "confluence": {
+        "id": "1179867",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E03 — MC Demo Customer Portal Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1179867/MOCKUP+CIP-E03+MC+Demo+Customer+Portal+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:13.768Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E03",
+      "ground_truth": "ground_truth/CIP-E03.json",
+      "files": [
+        {
+          "filename": "CIP-E03_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "08d9046979a7c5771909140b97cb6497898ea9d4943dba372076b70c408cc2be",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E03_request.msg",
+          "size": 7168,
+          "sha256": "c50b1c3518a9948406e21694f1e7e78b874ea8deb9071962c75f0e3ab1ea46f9",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E04",
+      "split": "eval",
+      "group": "missing_field",
+      "variant": "blank_type",
+      "jira": {
+        "id": "10063",
+        "key": "KAN-19",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-19"
+      },
+      "confluence": {
+        "id": "1114255",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E04 — MC Demo Reporting Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114255/MOCKUP+CIP-E04+MC+Demo+Reporting+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:15.098Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E04",
+      "ground_truth": "ground_truth/CIP-E04.json",
+      "files": [
+        {
+          "filename": "CIP-E04_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "e00fcfeb67bc082fe4f6aaf513e9aea3b6ed891b2e57cd09a9c082ef486ceca2",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E04_request.msg",
+          "size": 7168,
+          "sha256": "645f9c6743157ce141329bc67a1d14a80280af7a68517c1eaa5d0558b52637f2",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E05",
+      "split": "eval",
+      "group": "missing_evidence",
+      "variant": "missing_bo",
+      "jira": {
+        "id": "10064",
+        "key": "KAN-20",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-20"
+      },
+      "confluence": {
+        "id": "1114274",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E05 — MC Demo Inventory API Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114274/MOCKUP+CIP-E05+MC+Demo+Inventory+API+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:17.644Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E05",
+      "ground_truth": "ground_truth/CIP-E05.json",
+      "files": [
+        {
+          "filename": "CIP-E05_request.msg",
+          "size": 7168,
+          "sha256": "e073777d2c4408b0f00f2a1fc2c8821bf9589b9bd195a69d5fbc82585659bb2f",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E06",
+      "split": "eval",
+      "group": "missing_evidence",
+      "variant": "missing_request",
+      "jira": {
+        "id": "10065",
+        "key": "KAN-21",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-21"
+      },
+      "confluence": {
+        "id": "1081513",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E06 — MC Demo Audit Exporter Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1081513/MOCKUP+CIP-E06+MC+Demo+Audit+Exporter+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:18.957Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E06",
+      "ground_truth": "ground_truth/CIP-E06.json",
+      "files": [
+        {
+          "filename": "CIP-E06_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "02bba69645e505cfa168bac324adf38d769cf6afc1048bef66aee6fd53f8d4ee",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E07",
+      "split": "eval",
+      "group": "invalid_format",
+      "variant": "corrupt_request",
+      "jira": {
+        "id": "10066",
+        "key": "KAN-22",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-22"
+      },
+      "confluence": {
+        "id": "1114293",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E07 — MC Demo Payment Router Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114293/MOCKUP+CIP-E07+MC+Demo+Payment+Router+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:20.328Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E07",
+      "ground_truth": "ground_truth/CIP-E07.json",
+      "files": [
+        {
+          "filename": "CIP-E07_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "81d0cfbdef2a9c46dffd592a9e0e5ef8ecc08d6802907dbc800bd664997f6627",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E07_request.msg",
+          "size": 44,
+          "sha256": "0b9fcf0f0341d2bb45e43e47b30028163648a8b8ab277421415007d76d3acf42",
+          "format": "intentionally-truncated-msg"
+        }
+      ],
+      "overall_expected": "needs_review"
+    },
+    {
+      "case_id": "CIP-E08",
+      "split": "eval",
+      "group": "invalid_format",
+      "variant": "bad_url",
+      "jira": {
+        "id": "10067",
+        "key": "KAN-23",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-23"
+      },
+      "confluence": {
+        "id": "1278023",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E08 — MC Demo Search Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1278023/MOCKUP+CIP-E08+MC+Demo+Search+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:21.634Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E08",
+      "ground_truth": "ground_truth/CIP-E08.json",
+      "files": [
+        {
+          "filename": "CIP-E08_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "b991422d7bb43ee03e485a6d21b40c18a5c83d33101f261c9f564a0b0373ff6f",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E08_request.msg",
+          "size": 7168,
+          "sha256": "551dd137a4f14ebec93172915a3b7ce9acaa6b50adef68fd766adeb3f3fc1700",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E09",
+      "split": "eval",
+      "group": "inconsistent",
+      "variant": "mismatch_service",
+      "jira": {
+        "id": "10068",
+        "key": "KAN-24",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-24"
+      },
+      "confluence": {
+        "id": "1179886",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E09 — MC Demo Identity Adapter Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1179886/MOCKUP+CIP-E09+MC+Demo+Identity+Adapter+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:23.102Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E09",
+      "ground_truth": "ground_truth/CIP-E09.json",
+      "files": [
+        {
+          "filename": "CIP-E09_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "65d7bb4dcd5a67b3e0cb032e725422d0e6bbf6c9a4f987c80c5b34cc5697409d",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E09_request.msg",
+          "size": 7168,
+          "sha256": "d305a18c75e75d1ef0cbd1a24aac4fe6dac842a5fafa02bec7b0a4c824c1c311",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E10",
+      "split": "eval",
+      "group": "inconsistent",
+      "variant": "mismatch_ticket",
+      "jira": {
+        "id": "10069",
+        "key": "KAN-25",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-25"
+      },
+      "confluence": {
+        "id": "1114312",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E10 — MC Demo Order API Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1114312/MOCKUP+CIP-E10+MC+Demo+Order+API+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:24.422Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E10",
+      "ground_truth": "ground_truth/CIP-E10.json",
+      "files": [
+        {
+          "filename": "CIP-E10_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "e5399b25c6d474b0ea6d3be4654c4dabbbac731d0ff3acda12ee5253e47ed60d",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E10_request.msg",
+          "size": 7168,
+          "sha256": "c12bb343be3006b90d0ef82d1cf38a8231243f74370a81189e631431919471ad",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "fail"
+    },
+    {
+      "case_id": "CIP-E11",
+      "split": "eval",
+      "group": "layout_variant",
+      "variant": "reordered",
+      "jira": {
+        "id": "10070",
+        "key": "KAN-26",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-26"
+      },
+      "confluence": {
+        "id": "1310787",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E11 — MC Demo Document Service Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1310787/MOCKUP+CIP-E11+MC+Demo+Document+Service+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:25.894Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E11",
+      "ground_truth": "ground_truth/CIP-E11.json",
+      "files": [
+        {
+          "filename": "CIP-E11_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "07e2fb3d94ead31cfbbf169d74b917b5a9f192bee3f57bedd176a75fda7013e9",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E11_request.msg",
+          "size": 7168,
+          "sha256": "fe4db51e365fa44e257be09907c6a1e94304537e9839d0bdeea1153cce237532",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    },
+    {
+      "case_id": "CIP-E12",
+      "split": "eval",
+      "group": "layout_variant",
+      "variant": "headings",
+      "jira": {
+        "id": "10071",
+        "key": "KAN-27",
+        "url": "https://nguyenducanhflm.atlassian.net/browse/KAN-27"
+      },
+      "confluence": {
+        "id": "1310806",
+        "type": "page",
+        "title": "[MOCKUP] CIP-E12 — MC Demo Scheduler Sandbox",
+        "spaceId": "131075",
+        "parentId": "1179756",
+        "webUrl": "/spaces/KAN/pages/1310806/MOCKUP+CIP-E12+MC+Demo+Scheduler+Sandbox",
+        "baseUrl": "https://nguyenducanhflm.atlassian.net/wiki",
+        "version": {
+          "number": 1,
+          "createdAt": "2026-11-03T08:23:27.157Z"
+        },
+        "ownerId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+        "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe"
+      },
+      "input_dir": "eval/CIP-E12",
+      "ground_truth": "ground_truth/CIP-E12.json",
+      "files": [
+        {
+          "filename": "CIP-E12_bo-sign-off.msg",
+          "size": 7168,
+          "sha256": "7e86e1f49433fd04c22d5db5233fecad20e07bee980a063b728dee993489a3f5",
+          "format": "outlook-msg-unicode"
+        },
+        {
+          "filename": "CIP-E12_request.msg",
+          "size": 7168,
+          "sha256": "bc76d3ba84a240ec436462c8f40a44285754a2c72288377c82ebc927d0700a9e",
+          "format": "outlook-msg-unicode"
+        }
+      ],
+      "overall_expected": "pass"
+    }
+  ]
+}

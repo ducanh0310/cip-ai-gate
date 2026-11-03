@@ -1,0 +1,243 @@
+{
+  "dataset_version": "cip-mock-v1",
+  "cases": [
+    {
+      "case_id": "CIP-D01",
+      "page_id": "1179774",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D01_bo-sign-off.msg",
+        "CIP-D01_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D02",
+      "page_id": "1179793",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D02_bo-sign-off.msg",
+        "CIP-D02_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D03",
+      "page_id": "1114238",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D03_bo-sign-off.msg",
+        "CIP-D03_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D04",
+      "page_id": "1343500",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D04_bo-sign-off.msg",
+        "CIP-D04_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D05",
+      "page_id": "1179812",
+      "remote_attachment_count": 1,
+      "attachment_names": [
+        "CIP-D05_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D06",
+      "page_id": "1277985",
+      "remote_attachment_count": 1,
+      "attachment_names": [
+        "CIP-D06_bo-sign-off.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D07",
+      "page_id": "1179831",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D07_bo-sign-off.msg",
+        "CIP-D07_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D08",
+      "page_id": "1081475",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D08_bo-sign-off.msg",
+        "CIP-D08_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D09",
+      "page_id": "1278004",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D09_bo-sign-off.msg",
+        "CIP-D09_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D10",
+      "page_id": "1179848",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D10_bo-sign-off.msg",
+        "CIP-D10_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D11",
+      "page_id": "1310730",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D11_bo-sign-off.msg",
+        "CIP-D11_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-D12",
+      "page_id": "1310749",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-D12_bo-sign-off.msg",
+        "CIP-D12_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E01",
+      "page_id": "1081494",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E01_bo-sign-off.msg",
+        "CIP-E01_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E02",
+      "page_id": "1310768",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E02_bo-sign-off.msg",
+        "CIP-E02_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E03",
+      "page_id": "1179867",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E03_bo-sign-off.msg",
+        "CIP-E03_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E04",
+      "page_id": "1114255",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E04_bo-sign-off.msg",
+        "CIP-E04_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E05",
+      "page_id": "1114274",
+      "remote_attachment_count": 1,
+      "attachment_names": [
+        "CIP-E05_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E06",
+      "page_id": "1081513",
+      "remote_attachment_count": 1,
+      "attachment_names": [
+        "CIP-E06_bo-sign-off.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E07",
+      "page_id": "1114293",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E07_bo-sign-off.msg",
+        "CIP-E07_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E08",
+      "page_id": "1278023",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E08_bo-sign-off.msg",
+        "CIP-E08_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E09",
+      "page_id": "1179886",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E09_bo-sign-off.msg",
+        "CIP-E09_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E10",
+      "page_id": "1114312",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E10_bo-sign-off.msg",
+        "CIP-E10_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E11",
+      "page_id": "1310787",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E11_bo-sign-off.msg",
+        "CIP-E11_request.msg"
+      ],
+      "verified": true
+    },
+    {
+      "case_id": "CIP-E12",
+      "page_id": "1310806",
+      "remote_attachment_count": 2,
+      "attachment_names": [
+        "CIP-E12_bo-sign-off.msg",
+        "CIP-E12_request.msg"
+      ],
+      "verified": true
+    }
+  ],
+  "verified_case_count": 24,
+  "verified_attachment_count": 44
+}

@@ -1,0 +1,64 @@
+{
+  "version": "cip-mock-v1",
+  "approval": "proposed-not-mentor-approved",
+  "scope": "Mockup only; completeness is not authorization to approve.",
+  "aggregation": "fail if any criterion fails; otherwise needs_review if any criterion needs review; otherwise pass.",
+  "missing_dependency": "Dependent checks are needs_review when source field/file is missing, unreadable or invalid.",
+  "criteria": [
+    {
+      "criterion_id": "MC-01",
+      "field": "Ticket Jira",
+      "description": "Mục Ticket Jira có giá trị."
+    },
+    {
+      "criterion_id": "MC-02",
+      "field": "Service",
+      "description": "Mục Service có giá trị."
+    },
+    {
+      "criterion_id": "MC-03",
+      "field": "Type",
+      "description": "Mục Type có giá trị trong danh mục mockup Normal/Standard/Emergency."
+    },
+    {
+      "criterion_id": "MC-04",
+      "field": "Risk",
+      "description": "Mục Risk có nội dung, không chỉ là khoảng trắng."
+    },
+    {
+      "criterion_id": "MC-05",
+      "field": "BO sign-off",
+      "description": "Có tệp .msg BO sign-off đúng tên được MC tham chiếu."
+    },
+    {
+      "criterion_id": "MC-06",
+      "field": "Request",
+      "description": "Có tệp .msg Request đúng tên được MC tham chiếu."
+    },
+    {
+      "criterion_id": "FMT-01",
+      "field": "Ticket Jira",
+      "description": "Ticket Jira là URL HTTP(S), host Jira của sandbox và path /browse/KEY hợp lệ."
+    },
+    {
+      "criterion_id": "READ-01",
+      "field": "BO sign-off",
+      "description": "Đọc được subject, sender, recipient và body của .msg BO sign-off."
+    },
+    {
+      "criterion_id": "READ-02",
+      "field": "Request",
+      "description": "Đọc được subject, sender, recipient và body của .msg Request."
+    },
+    {
+      "criterion_id": "MATCH-01",
+      "field": "Service",
+      "description": "Service trong hai email đọc được khớp chính xác Service trong MC."
+    },
+    {
+      "criterion_id": "MATCH-02",
+      "field": "Ticket Jira",
+      "description": "Ticket trong hai email đọc được khớp ticket được MC tham chiếu."
+    }
+  ]
+}
