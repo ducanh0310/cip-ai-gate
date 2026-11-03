@@ -27,7 +27,7 @@ Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp m�
 | BO sign-off | Tệp .msg | Email xác nhận giả lập, người gửi và nội dung tự dựng |
 | Request | Tệp .msg | Email yêu cầu giả lập, có thông tin nhất quán với MC |
 
-Ví dụ trên chỉ minh họa thiết kế dữ liệu, chưa phải bộ mockup đã tạo. Các tệp .msg cần đúng định dạng và đọc được; không đổi đuôi tệp văn bản thành .msg. Cách tạo và đọc tệp sẽ được kiểm chứng ở giai đoạn skeleton.
+Quy ước dữ liệu và các tình huống mock được đặc tả tại mục 7. Các tệp .msg cần đúng định dạng và đọc được; không đổi đuôi tệp văn bản thành .msg. Cách tạo và đọc tệp sẽ được kiểm chứng ở giai đoạn skeleton.
 
 Checklist kiểm tra và mẫu email do dự án đề xuất cho MVP, tách rõ quy tắc mockup với thông tin nghiệp vụ đã xác nhận. Không coi quy tắc tự dựng là quy định CIP chính thức. Cấu trúc bố cục Confluence sẽ tự mô phỏng từ sáu mục trên, không cần template nội bộ thật. Checklist/prompt/mẫu email cần quản lý phiên bản; lỗi đọc và lỗi LLM phải phân biệt với kết luận nghiệp vụ.
 
@@ -134,11 +134,117 @@ Giả định rủi ro nhất đề xuất cho Gate 1: có thể trích xuất M
 | CP2 — 25/11 | MVP trên masked, kết quả Sprint 1, retro |
 | CP3 — 09/12 | Final demo, metric và bàn giao |
 
-### Bộ dữ liệu phục vụ phát triển và đánh giá
+## 7. Đặc tả dữ liệu mock — phiên bản v1
 
-Đặc tả mockup đề xuất trong bộ tài liệu dự án là 24 gói: 12 gói phát triển/kiểm chứng sớm và 12 gói đánh giá giữ riêng; mỗi tập có hai gói cho mỗi nhóm: đầy đủ, thiếu mục/trường, thiếu bằng chứng, sai định dạng/lỗi đọc, không nhất quán và biến thể bố cục. Mỗi gói có manifest, HTML MC, tệp .msg nếu có và đáp án gồm giá trị/trạng thái/căn cứ. Đây là kế hoạch dữ liệu, chưa phải bộ dữ liệu đã tạo; checklist và nhãn được rà soát trước khi dùng để đánh giá. Tập đánh giá không dùng làm ví dụ prompt; nếu đã dùng để chỉnh hệ thống thì thay tập trước khi báo cáo đánh giá độc lập.
+### 7.1. Cấu trúc bộ dữ liệu
 
-## 7. Rủi ro và phụ thuộc
+Bộ mock gồm 24 hồ sơ, chia thành `dev` (12 hồ sơ) và `eval` (12 hồ sơ). Mỗi tập có hai hồ sơ cho mỗi nhóm: đầy đủ, thiếu mục/trường trống, thiếu bằng chứng, sai định dạng/lỗi đọc, không nhất quán và biến thể bố cục. Đây là đặc tả để tạo dữ liệu, không phải báo cáo dữ liệu đã được sinh hoặc kiểm thử.
+
+```text
+mock/v1/
+├── checklist.json
+├── dev/
+│   └── CIP-DEV-001/
+│       ├── manifest.json
+│       ├── mc.html
+│       ├── attachments/
+│       │   ├── bo-sign-off.msg
+│       │   └── request.msg
+│       └── expected.json
+└── eval/
+    └── CIP-EVAL-001/
+        └── ... (cùng cấu trúc với dev)
+```
+
+`mc.html` và các tệp trong `attachments/` là đầu vào của công cụ. `manifest.json` phục vụ bộ chạy đánh giá; `expected.json` là đáp án, không được đưa vào parser, prompt kiểm tra hoặc prompt sinh email. Đường dẫn tệp là đường dẫn tương đối trong thư mục hồ sơ. Tệp thiếu hoặc hỏng chỉ xuất hiện trong tình huống lỗi có chủ đích.
+
+### 7.2. Nội dung MC và email bằng chứng
+
+Các quy ước dưới đây là quy tắc riêng của mock v1, không phải quy định CIP chính thức. Sáu mục đều bắt buộc trong hồ sơ đầy đủ.
+
+| Khóa chuẩn | Nhãn trong HTML | Kiểu và điều kiện hợp lệ của mock v1 | Giá trị mẫu |
+| --- | --- | --- | --- |
+| `ticket_jira` | Ticket Jira | URL dạng `https://jira.example.test/browse/DEMO-<số>`; mã ticket được lấy từ phần cuối URL | `https://jira.example.test/browse/DEMO-001` |
+| `service` | Service | Văn bản không rỗng sau khi bỏ khoảng trắng đầu/cuối | `Demo Notification Service` |
+| `type` | Type | Một trong `standard`, `normal`, `emergency`; danh mục chỉ dùng cho mock | `normal` |
+| `risk` | Risk | Văn bản mô tả rủi ro và cách xử lý, không chỉ ghi mức rủi ro | `Thông báo có thể bị trễ; theo dõi hàng đợi và rollback nếu lỗi tăng.` |
+| `bo_sign_off` | BO sign-off | Liên kết tới `attachments/bo-sign-off.msg`; tệp đọc được, có nội dung xác nhận rõ cho cùng ticket/service | Email xác nhận mock |
+| `request` | Request | Liên kết tới `attachments/request.msg`; tệp đọc được, có yêu cầu cho cùng ticket/service | Email yêu cầu mock |
+
+HTML dùng UTF-8, chứa sáu mục trong bảng nhãn–giá trị hoặc các section có heading. Link tệp dùng đường dẫn tương đối; link Jira không cần truy cập mạng. Bộ trích xuất phải giữ được vị trí theo CSS selector hoặc đường dẫn phần tử, không phụ thuộc duy nhất vào thứ tự hàng.
+
+Hai email dùng định dạng Outlook `.msg` thực, có các trường `sender`, `to`, `cc`, `subject`, `sent_at`, `body`. Người gửi/nhận dùng miền `example.test`; thời gian biểu diễn theo ISO 8601 có múi giờ. Mỗi body chứa `Ticket: DEMO-001` và `Service: Demo Notification Service`. BO sign-off có thêm câu xác nhận `Tôi xác nhận đồng ý với yêu cầu DEMO-001 cho Demo Notification Service.`; Request có câu `Đề nghị triển khai DEMO-001 cho Demo Notification Service.`. Đây là nội dung của bằng chứng đầu vào, không phải email xin phê duyệt do công cụ sinh.
+
+Đối chiếu ticket sau khi trim và chuẩn hóa chữ hoa; service sau khi trim, gộp khoảng trắng và chuyển chữ thường. Không suy đoán hai tên dịch vụ khác nhau là cùng một dịch vụ. Thiếu nội dung để đối chiếu hoặc xác nhận ý nghĩa thì trả `needs_review`.
+
+### 7.3. Manifest và đáp án
+
+Ví dụ `manifest.json` cho hồ sơ đầy đủ:
+
+```json
+{
+  "dataset_version": "v1",
+  "checklist_version": "mock-v1",
+  "case_id": "CIP-DEV-001",
+  "split": "dev",
+  "group": "complete",
+  "input": {
+    "mc": "mc.html",
+    "attachments": ["attachments/bo-sign-off.msg", "attachments/request.msg"]
+  },
+  "intentional_faults": []
+}
+```
+
+`case_id` là duy nhất; `split` nhận `dev` hoặc `eval`; `group` nhận `complete`, `missing_field`, `missing_evidence`, `invalid_input`, `inconsistent` hoặc `layout_variant`. `input.attachments` chỉ liệt kê tệp thực có trong gói. `intentional_faults` là mảng đối tượng `{target, fault}` mô tả lỗi chủ đích, chỉ dùng khi đánh giá và không truyền cho công cụ kiểm tra.
+
+| Thành phần trong `expected.json` | Nội dung bắt buộc |
+| --- | --- |
+| `case_id`, `dataset_version`, `checklist_version` | Khớp manifest và checklist |
+| `fields` | Đủ sáu khóa chuẩn; mỗi trường chứa `value`, `state`, `sources`; email có thêm `reference` và dữ liệu email đọc được |
+| `criteria` | Đủ các tiêu chí trong checklist; mỗi mục có `criterion_id`, `status`, `reason`, `evidence`, `is_missing` |
+| `expected_errors` | Danh sách `{code, source_file}`; rỗng nếu không có lỗi xử lý |
+| `email` | `allowed_facts`, `missing_information`, `forbidden_claims`; dùng chấm nội dung, không yêu cầu email khớp nguyên văn |
+
+`state` nhận `present`, `missing`, `empty`, `missing_file`, `unreadable` hoặc `invalid`; `value` là `null` khi không có giá trị đọc được. `sources` và `evidence` là các mảng đối tượng `{source_file, location, excerpt}`. Trường bị thiếu dùng vị trí vùng MC đã kiểm tra với `excerpt: null`; tệp thiếu/hỏng dùng vị trí liên kết trong MC. Không dựng trích đoạn cho nội dung không đọc được.
+
+`is_missing` là nhãn boolean để tính precision/recall phát hiện thiếu: `true` khi thiếu mục, mục trống hoặc thiếu tệp bằng chứng; `false` cho lỗi định dạng, lỗi đọc và mâu thuẫn. Các lỗi này vẫn được chấm bằng trạng thái tiêu chí và thống kê lỗi riêng.
+
+### 7.4. Checklist gắn nhãn
+
+`checklist.json` chứa `version: mock-v1` và mảng tiêu chí với `criterion_id`, mô tả, điều kiện `pass`/`fail`/`needs_review`. Các mã sau được dùng nhất quán trong đáp án và đầu ra:
+
+| Mã tiêu chí | Điều kiện đánh giá |
+| --- | --- |
+| `MC-01`–`MC-06` | Theo thứ tự sáu trường tại mục 7.2: có mục và có giá trị/tham chiếu không rỗng thì `pass`; thiếu/trống thì `fail` |
+| `FMT-01` | Ticket Jira đúng định dạng mock thì `pass`; có giá trị sai định dạng thì `fail`; thiếu trường thì `needs_review` |
+| `FMT-02` | Type thuộc danh mục mock thì `pass`; ngoài danh mục thì `fail`; thiếu trường thì `needs_review` |
+| `FILE-01`, `FILE-02` | Lần lượt BO sign-off và Request: tệp hiện diện thì `pass`; tham chiếu có nhưng tệp thiếu thì `fail`; không có tham chiếu thì `needs_review` |
+| `READ-01`, `READ-02` | Tệp đọc thành công thì `pass`; tệp hỏng/sai định dạng thì `needs_review` và ghi lỗi `MSG_READ_ERROR`; không có tệp thì `needs_review` |
+| `MATCH-01`, `MATCH-02` | Lần lượt đối chiếu ticket và service giữa MC với cả hai email; khớp thì `pass`, có xung đột rõ thì `fail`, thiếu dữ liệu đối chiếu thì `needs_review` |
+| `CONTENT-01` | BO sign-off xác nhận rõ cùng ticket/service thì `pass`; từ chối rõ hoặc xác nhận cho ticket/service khác thì `fail`; mơ hồ hoặc thiếu nội dung thì `needs_review` |
+| `CONTENT-02` | Request có yêu cầu rõ cùng ticket/service thì `pass`; nội dung rõ ràng cho yêu cầu khác thì `fail`; mơ hồ hoặc thiếu nội dung thì `needs_review` |
+
+Mỗi lỗi chỉ gắn `is_missing: true` cho tiêu chí trực tiếp phản ánh thiếu: `MC-*` khi thiếu/trống mục, `FILE-*` khi thiếu tệp. Các tiêu chí phụ thuộc dữ liệu thiếu trả `needs_review` và `is_missing: false`, tránh đếm lặp cùng một lỗi thiếu.
+
+### 7.5. Danh sách hồ sơ và kết quả kỳ vọng
+
+Mỗi ID trong bảng dưới đây mang tiền tố `CIP-`. Hồ sơ lỗi được tạo từ hồ sơ đầy đủ của cùng tập bằng thay đổi được chỉ định; các thành phần còn lại giữ hợp lệ. Tập eval dùng ticket, tên service, nội dung Risk và danh tính email khác tập dev.
+
+| Nhóm | ID dev / biến thể | ID eval / biến thể | Kết quả chính |
+| --- | --- | --- | --- |
+| Đầy đủ | `DEV-001`: Type normal; `DEV-002`: Type standard | `EVAL-001`: Type emergency; `EVAL-002`: Type normal | Tất cả tiêu chí `pass`; không có lỗi xử lý |
+| Thiếu mục/trường trống | `DEV-003`: bỏ Service; `DEV-004`: Risk chỉ có khoảng trắng | `EVAL-003`: bỏ Ticket Jira; `EVAL-004`: Type rỗng | Lần lượt `MC-02`, `MC-04`, `MC-01`, `MC-03` là `fail` và `is_missing: true`; tiêu chí phụ thuộc dữ liệu thiếu là `needs_review` |
+| Thiếu bằng chứng | `DEV-005`: thiếu tệp BO sign-off; `DEV-006`: thiếu tệp Request | `EVAL-005`: thiếu tệp BO sign-off; `EVAL-006`: thiếu tệp Request | Giữ link trong MC; `FILE-01` hoặc `FILE-02` là `fail`, `is_missing: true`; tiêu chí đọc/nội dung liên quan là `needs_review` |
+| Sai định dạng/lỗi đọc | `DEV-007`: URL Jira sai; `DEV-008`: BO sign-off.msg bị cắt hỏng | `EVAL-007`: URL Jira sai; `EVAL-008`: Request.msg chứa văn bản thuần có chủ đích | URL sai: `FMT-01: fail`, `MATCH-01: needs_review`; tệp lỗi: `READ-* : needs_review` và `MSG_READ_ERROR`; không gắn nhãn thiếu |
+| Không nhất quán | `DEV-009`: ticket Request khác MC; `DEV-010`: service BO sign-off khác MC | `EVAL-009`: ticket BO sign-off khác MC; `EVAL-010`: service Request khác MC | `MATCH-01` hoặc `MATCH-02: fail`; tiêu chí nội dung của email khác hồ sơ là `fail`; giữ căn cứ từ hai nguồn mâu thuẫn |
+| Biến thể bố cục | `DEV-011`: đảo thứ tự hàng; `DEV-012`: đổi bảng thành section | `EVAL-011`: chia sáu mục vào hai bảng; `EVAL-012`: đổi thứ tự section và thêm wrapper HTML | Giá trị và kết quả như hồ sơ đầy đủ; vị trí căn cứ phản ánh đúng HTML từng hồ sơ |
+
+Đáp án email chỉ cho phép dùng dữ liệu đọc được từ hồ sơ, kèm nguồn và trạng thái kiểm tra. Thông tin mâu thuẫn phải được nêu là mâu thuẫn; thông tin thiếu dùng dấu `[CẦN BỔ SUNG: ...]`. Không tự tạo người phê duyệt, cấp bậc, người nhận/CC hoặc tuyên bố hồ sơ đã được duyệt. Không đưa vào email các giá trị chỉ có trong đáp án.
+
+Tập `eval` được giữ riêng, không dùng làm ví dụ prompt hoặc chỉnh luật. Nếu một hồ sơ eval đã được dùng để chỉnh hệ thống, ghi nhận việc sử dụng và thay hồ sơ đó trước khi báo cáo đánh giá độc lập. Repo chỉ chứa dữ liệu tự dựng; masked được quản lý riêng khi có quyền sử dụng.
+
+## 8. Rủi ro và phụ thuộc
 
 | ID | Rủi ro / phụ thuộc | Ảnh hưởng và xử lý đề xuất |
 | --- | --- | --- |
