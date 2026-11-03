@@ -2,8 +2,8 @@
 
 - Thực tập sinh: Nguyễn Đức Anh — Cặp C.
 - Mentor: MinhLQ11.
-- Cập nhật: 03/11/2026 (bổ sung kế hoạch và tiêu chí từ tài liệu dự án; các nội dung đề xuất vẫn chờ mentor/cặp xác nhận).
-- Trạng thái: Bản nháp phục vụ Gate 0, chưa được mentor duyệt.
+- Cập nhật: 03/11/2026.
+- Trạng thái: Kế hoạch phục vụ Gate 0.
 - Đầu việc: C2-001, C2-002.
 - Gate 0: chiều 04/11/2026.
 
@@ -11,7 +11,7 @@
 
 CIP là quy trình cần thực hiện trước khi go-live. MC document được lập theo template trên Confluence để phục vụ quy trình CIP. Công cụ cần hỗ trợ kiểm tra MC và soạn bản nháp email xin phê duyệt.
 
-Người dùng trực tiếp là người chuẩn bị hồ sơ CIP: cung cấp nội dung MC, xem kết quả kiểm tra, bổ sung thông tin và rà soát email. Chức danh và trách nhiệm cụ thể vẫn cần mentor xác nhận.
+Người dùng trực tiếp là người chuẩn bị hồ sơ CIP: cung cấp nội dung MC, xem kết quả kiểm tra, bổ sung thông tin và rà soát email.
 
 Giả thuyết giá trị: công cụ giúp giảm thời gian kiểm tra hồ sơ và soạn email, phát hiện thông tin thiếu hoặc mâu thuẫn trước khi gửi duyệt, đồng thời cung cấp căn cứ để người dùng kiểm tra lại. Chưa có số liệu hiện trạng để kết luận mức cải thiện.
 
@@ -68,7 +68,7 @@ Ngoài phạm vi đề xuất: tự gửi email, tự phê duyệt, ghi lên Con
 | Email có thông tin thiếu căn cứ | Số email có ít nhất một khẳng định thiếu căn cứ / tổng email sinh thành công; mục tiêu 0 quan sát trên bộ đánh giá, không suy rộng thành bảo đảm |
 | Giảm thời gian hoàn thành | So sánh trung vị thời gian thủ công và có công cụ trên cùng tập hồ sơ, cùng người thực hiện; tính cả rà soát/sửa email |
 
-Ngưỡng đề xuất: precision và recall ≥ 90%, độ đúng căn cứ ≥ 95%, email đạt checklist ≥ 90%, giảm thời gian ≥ 20%. Mẫu số bằng 0 ghi N/A kèm số đếm, không quy đổi thành 100%. Rubric checkpoint mức 2–3–4 được cụ thể hóa tại tài liệu dự án; cả metric lẫn rubric vẫn chờ mentor duyệt. CSV ghi C2-004 đến C2-008 là kế hoạch ngày 03/11, chưa xác nhận hoàn tất; chưa có baseline thực đo.
+Ngưỡng đề xuất: precision và recall ≥ 90%, độ đúng căn cứ ≥ 95%, email đạt checklist ≥ 90%, giảm thời gian ≥ 20%. Mẫu số bằng 0 ghi N/A kèm số đếm, không quy đổi thành 100%. Rubric checkpoint mức 2–3–4 được cụ thể hóa tại tài liệu dự án. CSV ghi C2-004 đến C2-008 là kế hoạch ngày 03/11, chưa xác nhận hoàn tất; chưa có baseline thực đo.
 
 ## 5. Kiến trúc sơ bộ
 
@@ -124,28 +124,28 @@ CSV theo dõi tiến độ là nguồn trạng thái thực thi; các dòng sau 
 | Ngày | Đầu việc | Trạng thái ghi nhận / đầu ra cần có |
 | --- | --- | --- |
 | 02/11 | C2-001 phân tích nghiệp vụ/phạm vi; C2-002 kiến trúc; C2-003 phương án phối hợp | C2-001 đang làm, C2-002 và C2-003 chưa có trạng thái hoàn tất; phối hợp với Vĩnh cần thống nhất |
-| 03/11 | C2-004 metric/rubric; C2-005 đặc tả mockup; C2-006 pair contract; C2-007 rủi ro; C2-008 biên tập kế hoạch | Kế hoạch trong standup; ghi nhận kết quả thực tế sau khi làm và cập nhật các điểm cần mentor xác nhận |
-| Sáng 04/11 | C2-009 rà soát, xử lý góp ý trước Gate 0 | Cập nhật quyết định đã chốt và việc còn mở; phụ thuộc lịch mentor |
+| 03/11 | C2-004 metric/rubric; C2-005 đặc tả mockup; C2-006 pair contract; C2-007 rủi ro; C2-008 biên tập kế hoạch | Kế hoạch trong standup; ghi nhận kết quả thực tế và cập nhật các quyết định sau khi thực hiện |
+| Sáng 04/11 | C2-009 rà soát, xử lý góp ý trước Gate 0 | Rà soát tính nhất quán của năm đầu ra; cập nhật quyết định và việc còn mở |
 | Chiều 04/11 | C2-010 trình bày 10 phút, hỏi đáp 5 phút | Trình năm đầu ra Gate 0 và ghi kết quả/hành động tiếp theo |
 
-Đặc tả mockup đề xuất trong bộ tài liệu dự án là 24 gói: 12 gói phát triển/kiểm chứng sớm và 12 gói đánh giá giữ riêng; mỗi tập có hai gói cho mỗi nhóm: đầy đủ, thiếu mục/trường, thiếu bằng chứng, sai định dạng/lỗi đọc, không nhất quán và biến thể bố cục. Mỗi gói có manifest, HTML MC, tệp .msg nếu có và đáp án gồm giá trị/trạng thái/căn cứ. Đây là kế hoạch dữ liệu, chưa phải bộ dữ liệu đã tạo; mentor cần rà soát checklist và nhãn. Tập đánh giá không dùng làm ví dụ prompt; nếu đã dùng để chỉnh hệ thống thì thay tập trước khi báo cáo đánh giá độc lập.
+Đặc tả mockup đề xuất trong bộ tài liệu dự án là 24 gói: 12 gói phát triển/kiểm chứng sớm và 12 gói đánh giá giữ riêng; mỗi tập có hai gói cho mỗi nhóm: đầy đủ, thiếu mục/trường, thiếu bằng chứng, sai định dạng/lỗi đọc, không nhất quán và biến thể bố cục. Mỗi gói có manifest, HTML MC, tệp .msg nếu có và đáp án gồm giá trị/trạng thái/căn cứ. Đây là kế hoạch dữ liệu, chưa phải bộ dữ liệu đã tạo; checklist và nhãn được rà soát trước khi dùng để đánh giá. Tập đánh giá không dùng làm ví dụ prompt; nếu đã dùng để chỉnh hệ thống thì thay tập trước khi báo cáo đánh giá độc lập.
 
 ### Rủi ro và phụ thuộc cần theo dõi
 
-| ID | Rủi ro / phụ thuộc | Ảnh hưởng và xử lý đề xuất | Chủ thể / hạn theo dõi |
-| --- | --- | --- | --- |
-| R-01 | Checklist hoặc điều kiện hợp lệ chưa rõ | Kết luận đủ/thiếu có thể sai; rà từng tiêu chí với mentor, ghi điều kiện đạt và phiên bản checklist. | Đức Anh + mentor; Gate 0 |
-| R-02 | Trích xuất HTML/.msg sai hoặc thiếu | Sai dữ liệu/căn cứ; đối chiếu đáp án, giữ vị trí nguồn, báo lỗi hoặc `needs_review`. | Đức Anh; kiểm chứng Gate 1 |
-| R-03 | LLM thêm thông tin hoặc sai schema | Báo cáo/email không đáng tin; kiểm tra schema, đối chiếu nguồn, đánh dấu thiếu dữ liệu và đo trên mockup. | Đức Anh; Gate 1–CP1 |
-| R-05 | Mockup thiếu tình huống hoặc nhãn sai | Metric không đại diện; phủ đủ sáu nhóm, rà đáp án và tách tập phát triển/đánh giá. | Đức Anh + mentor; trước đánh giá |
-| R-07 | So sánh thời gian không công bằng | Kết luận tiết kiệm thời gian không đáng tin; dùng cùng hồ sơ/người làm, cân bằng thứ tự và tính cả rà soát/sửa. | Đức Anh; baseline Gate 1 |
-| R-08 | Chưa có cách xác định cấp bậc nhân viên | Chưa đủ căn cứ kiểm tra cấp bậc/vai trò; hỏi mentor nguồn phù hợp, dùng bảng ánh xạ giả lập cho MVP và chuyển cần xác nhận khi thiếu, không suy đoán. | Đức Anh + mentor; trước chốt checklist |
-| D-01 | C2-003 và pair contract phụ thuộc thống nhất với Vĩnh | Ranh giới, schema trao đổi và mốc tích hợp có thể chưa chốt; dùng phương án đề xuất, ghi rõ phần hai bên xác nhận. | Đức Anh + Vĩnh; 03/11 |
-| D-02 | Quy tắc CIP/mẫu email và dữ liệu masked phụ thuộc mentor | Không dùng giả định thành chính sách; MVP tiếp tục bằng mockup. Chỉ dùng masked từ 19/11 nếu được cấp và cho phép, lưu theo hướng dẫn, không commit. | Mentor; trước CP2 |
+| ID | Rủi ro / phụ thuộc | Ảnh hưởng và xử lý đề xuất |
+| --- | --- | --- |
+| R-01 | Checklist hoặc điều kiện hợp lệ chưa rõ | Kết luận đủ/thiếu có thể sai; rà từng tiêu chí, ghi điều kiện đạt và phiên bản checklist. |
+| R-02 | Trích xuất HTML/.msg sai hoặc thiếu | Sai dữ liệu/căn cứ; đối chiếu đáp án, giữ vị trí nguồn, báo lỗi hoặc `needs_review`. |
+| R-03 | LLM thêm thông tin hoặc sai schema | Báo cáo/email không đáng tin; kiểm tra schema, đối chiếu nguồn, đánh dấu thiếu dữ liệu và đo trên mockup. |
+| R-05 | Mockup thiếu tình huống hoặc nhãn sai | Metric không đại diện; phủ đủ sáu nhóm, rà đáp án và tách tập phát triển/đánh giá. |
+| R-07 | So sánh thời gian không công bằng | Kết luận tiết kiệm thời gian không đáng tin; dùng cùng hồ sơ/người làm, cân bằng thứ tự và tính cả rà soát/sửa. |
+| R-08 | Chưa có cách xác định cấp bậc nhân viên | Chưa đủ căn cứ kiểm tra cấp bậc/vai trò; xác định nguồn phù hợp, dùng bảng ánh xạ giả lập cho MVP và chuyển cần xác nhận khi thiếu, không suy đoán. |
+| D-01 | C2-003 và pair contract phụ thuộc thống nhất với Vĩnh | Ranh giới, schema trao đổi và mốc tích hợp có thể chưa chốt; dùng phương án đề xuất, ghi rõ phần hai bên xác nhận. |
+| D-02 | Quy tắc CIP/mẫu email và dữ liệu masked phụ thuộc mentor | Không dùng giả định thành chính sách; MVP tiếp tục bằng mockup. Chỉ dùng masked từ 19/11 nếu được cấp và cho phép, lưu theo hướng dẫn, không commit. |
 
 Phạm vi phát triển hiện tại sử dụng hoàn toàn dữ liệu tự dựng theo xác nhận của Nguyễn Đức Anh. Kế hoạch chương trình có mốc dữ liệu masked từ 19/11; nếu sau này mentor cung cấp thì chỉ dùng trong phạm vi được phép, lưu riêng và không commit. Không phụ thuộc việc có masked để dựng MVP và không dùng dữ liệu thật.
 
-Câu hỏi cần chốt với mentor:
+Các vấn đề nghiệp vụ cần làm rõ:
 
 - Sáu mục MC đã rõ; cần đề xuất và thống nhất tiêu chí bắt buộc, hợp lệ và nhất quán trên bộ mockup, không yêu cầu template hoặc hồ sơ thật.
 - Ai trực tiếp sử dụng công cụ? T2 nhận và phê duyệt theo điều kiện nào?
@@ -160,5 +160,3 @@ Câu hỏi cần chốt với mentor:
 - [Kế hoạch thực tập 6 tuần](../../Kế%20hoạch%20thực%20tập%206%20tuần.pdf).
 - [Theo dõi tiến độ Cặp C](../../Theo_doi_tien_do_thuc_tap(Cặp%20C).csv).
 - [Ảnh ghi chú nghiệp vụ](../../Pasted%20image.png), đọc cùng các đính chính của Nguyễn Đức Anh trong chat ngày 02/11/2026.
-
-Tài liệu này chưa phải bộ Gate 0 hoàn chỉnh. Metric/rubric chi tiết, đặc tả mockup và danh sách rủi ro riêng thuộc kế hoạch ngày 03/11.
