@@ -13,19 +13,11 @@ CIP là quy trình cần thực hiện trước khi go-live. MC document đượ
 
 Người dùng trực tiếp dự kiến là người chuẩn bị hồ sơ CIP: cung cấp nội dung MC, xem kết quả kiểm tra, bổ sung thông tin và rà soát email. Cần mentor xác nhận chức danh và trách nhiệm cụ thể của người dùng này.
 
-| Thông tin đã xác nhận | Nội dung |
-| --- | --- |
-| Cấp bậc | Số càng nhỏ, cấp bậc càng cao: T2 > T3 > T4 |
-| T4 | Thực hiện UAT |
-| T3 | Viết CR để gửi T2 |
-| T2 | Nhận CR từ T3; điều kiện phê duyệt chưa được xác nhận |
-| MC | Sử dụng template trên Confluence |
-
 Giả thuyết giá trị: công cụ giúp giảm thời gian kiểm tra hồ sơ và soạn email, phát hiện thông tin thiếu hoặc mâu thuẫn trước khi gửi duyệt, đồng thời cung cấp căn cứ để người dùng kiểm tra lại. Chưa có số liệu hiện trạng để kết luận mức cải thiện.
 
 ## 2. Đầu vào và luồng sử dụng
 
-Các mục trong ảnh đã được Nguyễn Đức Anh xác nhận là cấu trúc MC. Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp mẫu phục vụ phát triển sẽ tự dựng; không chờ tiếp cận dữ liệu hoặc tài liệu nội bộ thật.
+Toàn bộ giá trị cụ thể, tài khoản, liên kết, email và tệp mẫu phục vụ phát triển sẽ tự dựng; không chờ tiếp cận dữ liệu hoặc tài liệu nội bộ thật.
 
 | Mục trong MC đã xác nhận | Kiểu dữ liệu | Cách dựng mockup |
 | --- | --- | --- |
