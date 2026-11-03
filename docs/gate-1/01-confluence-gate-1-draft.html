@@ -1,0 +1,165 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Gate 1 — CIP</title><style>body{font-family:Arial,sans-serif;max-width:1120px;margin:36px auto;padding:0 24px;color:#172b4d;line-height:1.6}h1,h2,h3{line-height:1.3}h2{margin-top:36px}table{border-collapse:collapse;width:100%;margin:18px 0}td,th{border:1px solid #dfe1e6;padding:9px 12px;text-align:left;vertical-align:top}th{background:#f4f5f7}a{color:#0052cc}li{margin-bottom:6px}</style></head><body><h1>Gate 1 — CIP Completeness Checker &amp; Email Draft Generator</h1>
+<table><tbody>
+<tr><th>Thông tin</th><th>Nội dung</th></tr>
+<tr><td>Tên dự án tiếng Việt</td><td>Xây dựng công cụ tự động kiểm tra tính đầy đủ của hồ sơ CIP và đề xuất bản nháp email phê duyệt tích hợp LLM và Rule-based</td></tr>
+<tr><td>Tên dự án tiếng Anh</td><td>Building an Automated CIP Completeness Checker and Email Draft Generator Powered by LLM and Rule-based Techniques</td></tr>
+<tr><td>Người thực hiện</td><td>Nguyễn Đức Anh — Cặp C</td></tr>
+<tr><td>Mentor</td><td>MinhLQ11</td></tr>
+<tr><td>Ngày Gate 1</td><td>11/11/2026</td></tr>
+<tr><td>Phiên bản</td><td>v0.1 — 03/11/2026</td></tr>
+<tr><td>Trạng thái</td><td>Bản nháp chuẩn bị Gate 1; chưa có bằng chứng skeleton chạy hoặc baseline thực đo</td></tr>
+</tbody></table>
+<p>Tài liệu trình bày bài toán, thiết kế và kế hoạch kiểm chứng cho Gate 1. Các lựa chọn kỹ thuật và tiêu chí dưới đây là đề xuất; kết quả thực nghiệm chỉ được điền khi có bằng chứng chạy thực tế. Trong tài liệu này, “email phê duyệt” được hiểu là bản nháp email xin phê duyệt CIP để người dùng rà soát.</p>
+<h2>1. Introduction</h2>
+<h3>1.1 Problem &amp; Motivation</h3>
+<p>CIP là quy trình cần thực hiện trước khi go-live. Trong phạm vi bài toán đã ghi nhận, MC document được lập theo template trên Confluence và gồm sáu mục: Ticket Jira, Service, Type, Risk, BO sign-off và Request. Hai mục BO sign-off và Request chứa tệp email định dạng .msg. Người dùng trực tiếp dự kiến là người chuẩn bị hồ sơ CIP; vai trò cụ thể cần được mentor xác nhận.</p>
+<p>Việc kiểm tra thủ công đòi hỏi người chuẩn bị hồ sơ đối chiếu các mục trong MC, đọc bằng chứng liên quan và tổng hợp thông tin để viết email xin phê duyệt. Những thao tác này có khả năng gây bỏ sót thông tin hoặc đưa nội dung chưa nhất quán vào email. Đây là giả thuyết về vấn đề cần kiểm chứng; dự án chưa có số liệu về thời gian xử lý hoặc tỷ lệ sai sót hiện tại.</p>
+<p>Dự án đề xuất kết hợp Rule-based và LLM. Bộ luật kiểm tra những điều kiện có thể xác định rõ, như mục bắt buộc, giá trị trống và định dạng. LLM hỗ trợ đọc nội dung theo checklist và tạo bản nháp email dựa trên dữ liệu đã trích xuất cùng kết quả kiểm tra. Mỗi nhận xét cần gắn với nguồn để người dùng kiểm tra lại.</p>
+<p>Giá trị kỳ vọng là giảm thao tác kiểm tra, phát hiện mục còn thiếu và giảm thời gian soạn email. Mức cải thiện sẽ được đánh giá bằng thực nghiệm. Bộ mockup được tự dựng theo sáu mục đã xác nhận, không phụ thuộc truy cập Confluence hoặc Jira nội bộ.</p>
+<h3>1.2 Related Works</h3>
+<p>Các công trình sau cung cấp nền tảng cho thiết kế. Liên hệ với dự án CIP là hướng áp dụng đề xuất, không phải kết quả ứng dụng CIP đã được chứng minh trong các bài báo.</p>
+<table><tbody>
+<tr><th>Công trình</th><th>Nội dung liên quan</th><th>Vai trò trong dự án</th></tr>
+<tr><td>Vaswani và cộng sự, 2017 — Attention Is All You Need [1]</td><td>Giới thiệu kiến trúc Transformer sử dụng cơ chế attention.</td><td>Nền tảng lý thuyết để giải thích mô hình ngôn ngữ.</td></tr>
+<tr><td>Devlin và cộng sự, 2019 — BERT [2]</td><td>Biểu diễn ngôn ngữ theo ngữ cảnh hai chiều và tinh chỉnh cho các tác vụ hiểu văn bản.</td><td>Tham khảo cho hướng phân loại hoặc trích xuất thông tin; chưa đề xuất triển khai BERT riêng trong skeleton.</td></tr>
+<tr><td>Brown và cộng sự, 2020 — Language Models are Few-Shot Learners [3]</td><td>Khả năng thực hiện tác vụ bằng hướng dẫn và ví dụ trong ngữ cảnh.</td><td>Cơ sở thiết kế prompt kèm ví dụ email và quy ước đầu ra.</td></tr>
+<tr><td>Ji và cộng sự, 2023 — Survey of Hallucination in Natural Language Generation [4]</td><td>Tổng quan hiện tượng sinh nội dung thiếu căn cứ, cách đo và giảm thiểu.</td><td>Cơ sở xây dựng tiêu chí đánh giá thông tin sai hoặc không có trong nguồn khi sinh email.</td></tr>
+<tr><td>Lewis và cộng sự, 2020 — Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks [5]</td><td>Kết hợp truy xuất tài liệu với sinh ngôn ngữ.</td><td>Hướng mở rộng khi cần truy xuất quy trình hoặc hướng dẫn; chưa thuộc skeleton Gate 1.</td></tr>
+</tbody></table>
+<p>Trong tập tài liệu đang có, các nghiên cứu trên chưa trực tiếp giải quyết việc kiểm tra sáu mục MC của dự án và tạo email từ kết quả luật. Bài toán ứng dụng cần làm rõ là cách nối dữ liệu hồ sơ, checklist có phiên bản, kết quả kiểm tra và bản nháp email thành một luồng có thể kiểm chứng. Nhận định này chỉ áp dụng cho tập tài liệu đã chọn, chưa phải kết luận về toàn bộ nghiên cứu hiện có. Nguồn học thuật riêng cho phương pháp Rule-based cần được bổ sung và kiểm tra trước khi hoàn thiện báo cáo.</p>
+<h3>1.3 Contribution/Objectives</h3>
+<p>Mục tiêu tổng thể là xây dựng MVP kiểm tra tính đầy đủ của hồ sơ CIP và hỗ trợ người dùng soạn email xin phê duyệt bằng cách kết hợp Rule-based với LLM.</p>
+<p>Các mục tiêu cụ thể và đóng góp dự kiến gồm:</p>
+<ol>
+<li>Chuẩn hóa sáu mục MC thành dữ liệu có cấu trúc, kèm vị trí nguồn và trạng thái trích xuất.</li>
+<li>Xây dựng checklist có phiên bản, phân công rõ tiêu chí do luật xử lý và tiêu chí cần LLM hỗ trợ.</li>
+<li>Tổng hợp kết quả từng tiêu chí thành đạt, chưa đạt hoặc cần xem xét, kèm lý do và căn cứ.</li>
+<li>Tạo bản nháp email từ thông tin hồ sơ và kết quả kiểm tra; đánh dấu nội dung thiếu để người dùng bổ sung.</li>
+<li>Xây dựng bộ mockup có đáp án kỳ vọng và quy trình đo chất lượng trích xuất, kiểm tra, email và thời gian xử lý.</li>
+</ol>
+<p>Đầu ra Gate 1 tập trung vào skeleton xuyên suốt, kiểm chứng giả định rủi ro nhất, kế hoạch đã điều chỉnh, baseline và backlog Sprint 1. Các mục tiêu trên chưa được xem là kết quả đã đạt.</p>
+<h2>2. Scope &amp; Skeleton Design</h2>
+<h3>2.1 Phạm vi</h3>
+<table><tbody>
+<tr><th>Hạng mục</th><th>Phạm vi Gate 1 đề xuất</th></tr>
+<tr><td>Đầu vào</td><td>Một gói hồ sơ gồm HTML mockup mô phỏng MC và hai tệp .msg giả lập theo manifest.</td></tr>
+<tr><td>Trích xuất</td><td>Ticket Jira, Service, Type, Risk, BO sign-off, Request; nội dung email đọc được và vị trí nguồn.</td></tr>
+<tr><td>Rule-based</td><td>Kiểm tra mục bắt buộc theo checklist mockup, dữ liệu trống, định dạng URL và khả năng đọc tệp.</td></tr>
+<tr><td>LLM</td><td>Kiểm tra nội dung được chọn theo checklist; tạo bản nháp email từ dữ liệu và kết quả kiểm tra.</td></tr>
+<tr><td>Đầu ra</td><td>Báo cáo theo tiêu chí, lỗi xử lý, bản nháp email và thời gian xử lý.</td></tr>
+<tr><td>Cách chạy</td><td>Đề xuất CLI để có thể demo và đánh giá độc lập; giao diện người dùng được ưu tiên sau skeleton.</td></tr>
+<tr><td>Ngoài phạm vi</td><td>Tự phê duyệt, gửi email, ghi lên hệ thống nội bộ, đọc hồ sơ thật, nhiều template và RAG.</td></tr>
+</tbody></table>
+<p>Tính bắt buộc của từng mục và điều kiện hợp lệ trong mockup là quy ước thử nghiệm, chờ mentor rà soát. Không mặc định sự hiện diện của mục BO sign-off đồng nghĩa đã có phê duyệt hợp lệ.</p>
+<h3>2.2 Luồng xử lý</h3>
+<p>Gói hồ sơ mockup → Đọc HTML/.msg → Chuẩn hóa dữ liệu và nguồn → Chạy luật và kiểm tra nội dung bằng LLM → Tổng hợp kết quả → Sinh bản nháp email → Người dùng rà soát.</p>
+<table><tbody>
+<tr><th>Thành phần</th><th>Trách nhiệm</th><th>Đầu ra</th></tr>
+<tr><td>Input/Parser</td><td>Đọc manifest, HTML và .msg; ghi lỗi đọc và vị trí nguồn.</td><td>MC có cấu trúc, evidence và extraction_errors.</td></tr>
+<tr><td>Rule Engine</td><td>Thực hiện checklist xác định.</td><td>Kết quả luật theo criterion_id.</td></tr>
+<tr><td>LLM Checker</td><td>Đọc nội dung theo tiêu chí được giao; trả đúng schema.</td><td>Nhận xét có evidence hoặc needs_review.</td></tr>
+<tr><td>Aggregator</td><td>Tổng hợp kết quả; giữ lỗi đọc và bất đồng giữa các bộ kiểm tra.</td><td>Báo cáo thống nhất.</td></tr>
+<tr><td>Email Generator</td><td>Tạo bản nháp theo mẫu và kết quả kiểm tra.</td><td>Tiêu đề và nội dung email.</td></tr>
+<tr><td>Evaluator</td><td>So sánh đầu ra với đáp án và ghi thời gian.</td><td>Baseline theo case và metric tổng hợp.</td></tr>
+</tbody></table>
+<p>Kết quả mỗi tiêu chí gồm: criterion_id, status (pass/fail/needs_review), reason, evidence, suggestion, checker và checklist_version. Evidence cần chứa tệp nguồn, vị trí và trích đoạn khi có. Đây là schema đề xuất, chưa phải giao diện đã triển khai.</p>
+<p>Không đọc được đầu vào phải tạo lỗi xử lý hoặc needs_review. Kết quả LLM sai schema phải được ghi nhận; không đổi thành pass. Bản nháp email không được tự điền người nhận, trạng thái phê duyệt hoặc thông tin thiếu bằng suy đoán. Nếu hồ sơ còn thiếu, email phải thể hiện điều đó và chưa được xem là sẵn sàng xin duyệt.</p>
+<h3>2.3 Tiêu chí demo skeleton</h3>
+<ul>
+<li>Chạy một lệnh cho một gói mockup và tạo được báo cáo cùng bản nháp email.</li>
+<li>Demo tối thiểu ba tình huống: đầy đủ theo checklist mockup, thiếu mục và lỗi đọc tệp.</li>
+<li>Có ít nhất một bước LLM thực sự chạy để kiểm chứng đường tích hợp; nếu dùng stub phải ghi rõ phần chưa được kiểm chứng.</li>
+<li>Chỉ ra được nguồn của thông tin chính và cách hệ thống thể hiện mục thiếu.</li>
+<li>Ghi lại lệnh chạy, phiên bản, đầu ra và thời gian để người khác có thể đối chiếu.</li>
+</ul>
+<h2>3. Riskiest Assumption &amp; Validation</h2>
+<p>Giả định rủi ro nhất được chọn từ kế hoạch Gate 0: có thể trích xuất MC và email .msg đủ chính xác để kiểm tra theo checklist và dẫn căn cứ đúng vị trí. Nếu dữ liệu hoặc nguồn bị trích xuất sai, kết quả luật và email phía sau đều có thể sai.</p>
+<table><tbody>
+<tr><th>Nội dung</th><th>Thiết kế kiểm chứng đề xuất</th></tr>
+<tr><td>Bộ dữ liệu</td><td>12 gói mockup: 3 đầy đủ, 3 thiếu mục hoặc tệp, 3 thay đổi bố cục HTML/thông tin đối chiếu, 3 lỗi định dạng hoặc tệp không đọc được.</td></tr>
+<tr><td>Đáp án</td><td>Nhãn hiện diện, giá trị kỳ vọng, trạng thái đọc và vị trí nguồn của sáu mục; quy ước xử lý trường rỗng và tệp lỗi.</td></tr>
+<tr><td>Cách chạy</td><td>Cố định phiên bản parser và checklist; chạy toàn bộ bộ kiểm chứng; đối chiếu đầu ra với đáp án.</td></tr>
+<tr><td>Tiêu chí thử nghiệm</td><td>Tỷ lệ mục trích xuất đúng ≥ 95%; căn cứ đúng ≥ 95%; cả ba ca lỗi đọc phải được báo lỗi/needs_review, không âm thầm cho đạt.</td></tr>
+<tr><td>Nếu chưa đạt</td><td>Phân loại lỗi HTML/.msg/ánh xạ nguồn; thu hẹp bố cục được hỗ trợ hoặc sửa parser rồi chạy lại và lưu cả hai lần đo.</td></tr>
+<tr><td>Bằng chứng cần lưu</td><td>Dataset manifest, đáp án, lệnh chạy, phiên bản, kết quả từng case và phân tích sai lệch.</td></tr>
+<tr><td>Kết quả hiện tại</td><td>Chưa thực hiện; ngưỡng trên là đề xuất, chưa được mentor duyệt.</td></tr>
+</tbody></table>
+<p>Tệp .msg dùng trong thử nghiệm phải đúng định dạng và được kiểm tra bằng trình đọc phù hợp. Không dùng tệp văn bản đổi đuôi làm bằng chứng đã hỗ trợ .msg. Quy tắc chấm trích xuất đúng phải được chốt trước khi chạy; một mục chỉ đúng khi cả trạng thái hiện diện, giá trị và liên kết bằng chứng phù hợp đáp án. Một mục bắt buộc không có trong hồ sơ vẫn được xem là trích xuất đúng nếu hệ thống nhận diện chính xác là thiếu.</p>
+<h2>4. Baseline Metrics</h2>
+<p>Baseline là số đo lần chạy đầu tiên, chưa phải mục tiêu chất lượng đã đạt. Bộ 12 gói ở mục 3 phục vụ kiểm chứng sớm; cần bộ đánh giá riêng trước khi kết luận về chất lượng tổng quát.</p>
+<table><tbody>
+<tr><th>Metric</th><th>Cách đo</th><th>Baseline hiện tại</th></tr>
+<tr><td>Độ đúng trích xuất</td><td>Số mục trích xuất đúng / tổng mục được gắn nhãn.</td><td>Chưa đo</td></tr>
+<tr><td>Precision phát hiện thiếu</td><td>TP / (TP + FP): tỷ lệ cảnh báo thiếu đúng trong các cảnh báo thiếu.</td><td>Chưa đo</td></tr>
+<tr><td>Recall phát hiện thiếu</td><td>TP / (TP + FN): tỷ lệ mục thiếu được phát hiện trong các mục thiếu theo đáp án.</td><td>Chưa đo</td></tr>
+<tr><td>Độ đúng của căn cứ</td><td>Số liên kết căn cứ đúng / tổng liên kết căn cứ được trả ra.</td><td>Chưa đo</td></tr>
+<tr><td>Tỷ lệ email có thông tin thiếu căn cứ</td><td>Số email chứa ít nhất một khẳng định không được đầu vào hoặc kết quả kiểm tra hỗ trợ / tổng email sinh thành công.</td><td>Chưa đo</td></tr>
+<tr><td>Tỷ lệ email đáp ứng checklist</td><td>Số email đạt toàn bộ tiêu chí nội dung / tổng email sinh thành công.</td><td>Chưa đo</td></tr>
+<tr><td>Tỷ lệ hoàn thành luồng</td><td>Số gói hợp lệ tạo đủ báo cáo và email / tổng gói đầu vào hợp lệ.</td><td>Chưa đo</td></tr>
+<tr><td>Thời gian xử lý</td><td>Trung vị và lớn nhất của thời gian mỗi gói; ghi riêng thời gian gọi LLM.</td><td>Chưa đo</td></tr>
+</tbody></table>
+<p>TP là mục thiếu được cảnh báo đúng; FP là mục không thiếu nhưng bị cảnh báo thiếu; FN là mục thiếu bị bỏ sót. Đơn vị đếm là cặp (case_id, criterion_id). Lỗi đọc thuộc nhóm lỗi xử lý, được báo cáo riêng để tránh gộp với lỗi thiếu dữ liệu.</p>
+<p>Checklist email đề xuất: thông tin hồ sơ chính xác, thể hiện đúng trạng thái kiểm tra, liệt kê mục thiếu khi có, không tự thêm người nhận hoặc phê duyệt, có nội dung đề nghị phù hợp và giữ thông tin chưa biết dưới dạng cần bổ sung. Người rà soát, phiên bản checklist và lý do không đạt phải được ghi lại.</p>
+<p>Nếu mẫu số bằng 0, ghi N/A kèm số đếm; không quy đổi thành 100%. Ghi riêng số lần lỗi sinh email để tỷ lệ tính trên email thành công không che khuất lỗi toàn luồng. Với LLM, lưu model, prompt_version, tham số khả dụng, số lần chạy và đầu ra từng lần.</p>
+<p>Để đo giá trị tiết kiệm thời gian ở giai đoạn sau, cần bổ sung baseline thủ công trên cùng tập hồ sơ, ghi rõ người thực hiện và điểm bắt đầu/kết thúc. Chưa có dữ liệu để công bố mức giảm thời gian.</p>
+<h2>5. Revised Plan &amp; Dependencies</h2>
+<h3>5.1 Kế hoạch chuẩn bị Gate 1</h3>
+<table><tbody>
+<tr><th>Ngày</th><th>Công việc dự kiến</th><th>Bằng chứng/đầu ra</th></tr>
+<tr><td>05/11</td><td>Tổng hợp góp ý Gate 0; chốt checklist mockup, schema và metric.</td><td>Nhật ký thay đổi, checklist v0.1 và tiêu chí đánh giá.</td></tr>
+<tr><td>06/11</td><td>Dựng HTML/.msg mockup và đáp án; kiểm chứng thư viện đọc .msg.</td><td>Bộ dữ liệu thử nghiệm và kết quả đọc tệp mẫu.</td></tr>
+<tr><td>07/11</td><td>Dựng parser và Rule Engine tối thiểu.</td><td>MC có cấu trúc và kết quả luật trên case mẫu.</td></tr>
+<tr><td>09/11</td><td>Tích hợp LLM, tổng hợp và tạo email; nối CLI.</td><td>Lần chạy xuyên suốt đầu tiên và đầu ra lưu được.</td></tr>
+<tr><td>10/11</td><td>Chạy kiểm chứng giả định và baseline; phân tích lỗi.</td><td>Báo cáo thực đo, log và thay đổi kế hoạch.</td></tr>
+<tr><td>11/11</td><td>Sửa lỗi chặn demo, hoàn thiện backlog và tài liệu; trình Gate 1.</td><td>Gói demo, link bằng chứng và nội dung trình bày.</td></tr>
+</tbody></table>
+<p>Lịch trên là đề xuất tại ngày 03/11, chưa phản ánh công việc đã hoàn thành. Lịch tuân theo ngày làm 07/11 trong kế hoạch thực tập.</p>
+<h3>5.2 Ghi nhận điều chỉnh sau Gate 0</h3>
+<table><tbody>
+<tr><th>Góp ý/phát hiện</th><th>Điều chỉnh</th><th>Ảnh hưởng</th><th>Bằng chứng</th></tr>
+<tr><td>Chưa có góp ý Gate 0 được ghi nhận trong tài liệu này.</td><td>Bổ sung sau buổi 04/11.</td><td>Chưa xác định.</td><td>Chưa có.</td></tr>
+</tbody></table>
+<h3>5.3 Rủi ro và phụ thuộc</h3>
+<table><tbody>
+<tr><th>Rủi ro/phụ thuộc</th><th>Ảnh hưởng</th><th>Cách xử lý đề xuất</th></tr>
+<tr><td>Checklist chưa được mentor thống nhất</td><td>Không có tiêu chuẩn đáng tin cậy để xác định hồ sơ đủ.</td><td>Gắn nhãn quy tắc mockup; trình mentor rà soát và quản lý phiên bản.</td></tr>
+<tr><td>Khó tạo/đọc .msg hợp lệ</td><td>Chặn việc trích xuất bằng chứng.</td><td>Kiểm chứng ngày 06/11; ghi rõ giới hạn nếu phải dùng định dạng thay thế được thống nhất.</td></tr>
+<tr><td>LLM thiếu căn cứ hoặc trả sai schema</td><td>Báo cáo/email có thể không đúng.</td><td>Kiểm tra schema, liên kết nguồn, đánh dấu needs_review và đo sai lệch.</td></tr>
+<tr><td>Model/API chưa khả dụng</td><td>Chặn tích hợp LLM thực tế.</td><td>Xác nhận công cụ được phép và khả năng gọi sớm; ghi rõ stub không hoàn thành kiểm chứng LLM.</td></tr>
+<tr><td>Bố cục HTML biến đổi</td><td>Parser bỏ sót hoặc gắn nhầm nguồn.</td><td>Kiểm thử biến thể mockup, công bố template hỗ trợ.</td></tr>
+<tr><td>Chưa thống nhất giao diện với Vĩnh</td><td>Chậm tích hợp theo cặp.</td><td>Duy trì chạy độc lập, đề xuất JSON + CLI và thống nhất schema.</td></tr>
+</tbody></table>
+<p>Phối hợp Cặp C hiện là đề xuất: công cụ của Đức Anh xuất kết quả đánh giá có cấu trúc để framework của Vĩnh có thể điều phối. Chưa ghi nhận giao diện hoặc mốc tích hợp đã được cả hai thống nhất.</p>
+<h2>6. Sprint 1 Backlog — 12/11–25/11</h2>
+<p>Đây là backlog đề xuất, cần cập nhật theo kết quả Gate 1. P0 là việc cần hoàn thành cho luồng cốt lõi; P1 thực hiện sau khi P0 ổn định.</p>
+<table><tbody>
+<tr><th>ID</th><th>Công việc</th><th>Ưu tiên</th><th>Phụ trách</th><th>Điều kiện hoàn thành</th></tr>
+<tr><td>S1-01</td><td>Hoàn thiện parser HTML/.msg và ánh xạ nguồn</td><td>P0</td><td>Đức Anh</td><td>Mọi biến thể nằm trong phạm vi có kết quả đối chiếu; lỗi đọc được báo rõ.</td></tr>
+<tr><td>S1-02</td><td>Hoàn thiện checklist và Rule Engine</td><td>P0</td><td>Đức Anh; mentor rà soát nghiệp vụ</td><td>Mỗi luật có mã, mô tả, phiên bản và ca đúng/sai; mọi giả định chưa duyệt được đánh dấu.</td></tr>
+<tr><td>S1-03</td><td>Hoàn thiện kiểm tra bằng LLM</td><td>P0</td><td>Đức Anh</td><td>Đầu ra được kiểm tra schema; kết luận có nguồn hoặc needs_review; có đánh giá sai lệch.</td></tr>
+<tr><td>S1-04</td><td>Hoàn thiện email draft</td><td>P0</td><td>Đức Anh</td><td>Email bám đầu vào và kết quả; các ca thiếu dữ liệu không bị mô tả là đã đủ.</td></tr>
+<tr><td>S1-05</td><td>Xây giao diện rà soát tối thiểu</td><td>P1</td><td>Đức Anh</td><td>Xem báo cáo, nguồn, mục cần bổ sung và sao chép email.</td></tr>
+<tr><td>S1-06</td><td>Chuẩn hóa bộ đánh giá và báo cáo</td><td>P0</td><td>Đức Anh</td><td>Có tập phát triển/tập đánh giá riêng, lệnh chạy và kết quả theo phiên bản; tính được metric đã thống nhất.</td></tr>
+<tr><td>S1-07</td><td>Thử giao diện tích hợp Cặp C</td><td>P1</td><td>Đức Anh phụ trách phía CIP; phần Vĩnh chờ thống nhất</td><td>Có ví dụ request/result và một lần gọi thử nếu hai bên thống nhất; vẫn chạy độc lập được.</td></tr>
+<tr><td>S1-08</td><td>Chuẩn bị CP1 và CP2</td><td>P0</td><td>Đức Anh</td><td>CP1 demo mockup ngày 18/11; CP2 demo, kết quả Sprint 1 và retro ngày 25/11.</td></tr>
+</tbody></table>
+<p>Từ 19/11, chỉ sử dụng dữ liệu masked nếu được mentor cung cấp và cho phép; lưu tại nơi được chỉ định, không commit. Repo chỉ chứa dữ liệu mockup. Việc tiếp nhận masked không phải điều kiện để hoàn thành skeleton Gate 1.</p>
+<h2>7. Gate 1 Evidence &amp; Review</h2>
+<table><tbody>
+<tr><th>Đầu ra bắt buộc</th><th>Nội dung trong tài liệu</th><th>Bằng chứng còn cần bổ sung</th></tr>
+<tr><td>Skeleton end-to-end</td><td>Mục 2</td><td>Link mã nguồn, phiên bản, lệnh chạy, input/output demo.</td></tr>
+<tr><td>Kiểm chứng giả định rủi ro nhất</td><td>Mục 3</td><td>Bộ mockup, đáp án, kết quả chạy và phân tích lỗi.</td></tr>
+<tr><td>Kế hoạch điều chỉnh</td><td>Mục 5</td><td>Góp ý Gate 0 và thay đổi có căn cứ.</td></tr>
+<tr><td>Baseline metric</td><td>Mục 4</td><td>Số đo thực tế, số đếm và cấu hình chạy.</td></tr>
+<tr><td>Backlog Sprint 1</td><td>Mục 6</td><td>Ưu tiên và phạm vi được cập nhật sau Gate 1.</td></tr>
+</tbody></table>
+<p>Kịch bản trình bày 10 phút đề xuất: 1 phút nêu bài toán và phạm vi; 4 phút chạy demo; 2 phút trình bày kiểm chứng; 2 phút baseline và điều chỉnh; 1 phút backlog. Dành 5 phút hỏi đáp theo kế hoạch thực tập. Khi có trang Confluence và bằng chứng, ghi link đầu ra vào sheet “Mốc”.</p>
+<h2>8. References</h2>
+<ol>
+<li>Vaswani, A., et al. (2017). Attention Is All You Need. <a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></li>
+<li>Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. <a href="https://aclanthology.org/N19-1423/">https://aclanthology.org/N19-1423/</a></li>
+<li>Brown, T. B., et al. (2020). Language Models are Few-Shot Learners. <a href="https://arxiv.org/abs/2005.14165">https://arxiv.org/abs/2005.14165</a></li>
+<li>Ji, Z., et al. (2023). Survey of Hallucination in Natural Language Generation. ACM Computing Surveys. <a href="https://doi.org/10.1145/3571730">https://doi.org/10.1145/3571730</a> — bản arXiv: <a href="https://arxiv.org/abs/2202.03629">https://arxiv.org/abs/2202.03629</a> (có các bản cập nhật sau xuất bản).</li>
+<li>Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. <a href="https://arxiv.org/abs/2005.11401">https://arxiv.org/abs/2005.11401</a></li>
+</ol>
+<p>Nguồn yêu cầu Gate 1: Kế hoạch thực tập 6 tuần, mục “Mốc và đầu ra bắt buộc”. Bối cảnh dự án kế thừa từ kế hoạch MVP và pair contract v0 ngày 02/11/2026 trong repo. Khi đưa lên Confluence, bổ sung liên kết tới bản kế hoạch và các trang dự án mà người đọc có quyền truy cập.</p></body></html>
