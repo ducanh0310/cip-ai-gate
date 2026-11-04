@@ -33,14 +33,14 @@
       "files": [
         {
           "filename": "CIP-D01_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "c33cd06188aa0052c1f87816cb6636ff4593b9adc421f1ff577006fe421cedc9",
+          "size": 7680,
+          "sha256": "fa82168cae79e7917f42989988edf9cf0bce3cf5077740ba12bb8bcc70a53542",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D01_request.msg",
-          "size": 7168,
-          "sha256": "1759487a0aa41dae443eb0a12d649729f1e2898cc1dd3daedfbfe10ed757bf82",
+          "size": 7680,
+          "sha256": "c095012b8debaf917cdca094175e7ac7b9261ffe3aad484281fec53e2a6263f8",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -76,14 +76,14 @@
       "files": [
         {
           "filename": "CIP-D02_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "644eb88bb310b903bb4ff608b027d86bb322066796556fc4b5f17df11c0bad2b",
+          "size": 7680,
+          "sha256": "8e15733a453602f7168d307e3354e6bafe100769d2bb3a8c2087cbd67a3e7201",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D02_request.msg",
-          "size": 7168,
-          "sha256": "02ba19b179a683c49b81302c05a5d19834f8c241cacf95f8f9093cc71b916fd6",
+          "size": 7680,
+          "sha256": "18208dcc6d10a32ae6c7baf464a9abac592d5588925465c862632a44efcb7ea1",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -119,14 +119,14 @@
       "files": [
         {
           "filename": "CIP-D03_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "66edcee4a2312018720676ee0684d007213138321324a94dcd5ecf34e5f2ada8",
+          "size": 7680,
+          "sha256": "c3132c7a4baf993bd3da84f222561693b590b15be7b458f516eedb6218f3661d",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D03_request.msg",
-          "size": 7168,
-          "sha256": "21fa34f43cf6116e190aac4d243cb2e9b060d31581747b08acf2f12603ed938a",
+          "size": 7680,
+          "sha256": "1d336af76a31b7d58227688b68d958490ce27dd046ab455e2196061fdfa144ab",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -162,14 +162,14 @@
       "files": [
         {
           "filename": "CIP-D04_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "3609ff75b98cdbc6096b3ce767e9c7eb78fd4f2b389b96786a6c0c44c199ff3e",
+          "size": 7680,
+          "sha256": "b45f2558d189845be92d6017c985858d5472af8873a90348570940e5db8b769b",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D04_request.msg",
-          "size": 7168,
-          "sha256": "36e30e36e0bd3ee57e67f5d64866acda5c877ee5148af7b0c080ac0f22fed246",
+          "size": 7680,
+          "sha256": "9dc1d7d80ab95d6c439ddef76e269ebe203fafcef491a823175d4da22d5fb4f3",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -205,8 +205,8 @@
       "files": [
         {
           "filename": "CIP-D05_request.msg",
-          "size": 7168,
-          "sha256": "71bfdb8d3699bec2b12ba326e8cabf31cd67aaeff300cf6d4c40887457e4153a",
+          "size": 7680,
+          "sha256": "88bfbc296cb65300d97214550fc49d4bee262ebf87db10db0254a46ac2469b85",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -242,8 +242,8 @@
       "files": [
         {
           "filename": "CIP-D06_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "8b9c94be42c5c6652617b1948d3c42175acfd26c40353b0b9759fec6032e5ac7",
+          "size": 7680,
+          "sha256": "7e5204da08bf0a696ac6777e591b75464933d338be7c6810b86a6d9c2a60aa6a",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -279,14 +279,14 @@
       "files": [
         {
           "filename": "CIP-D07_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "c6f0957a0b0213c99c6d6e829712aa6fdf62be0df6f0fae842a0be2b33831635",
+          "size": 7680,
+          "sha256": "20d129abc412e9d15f5baf36d99a2029da38ca331b88fc2cbd6ef3a61e262eaa",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D07_request.msg",
-          "size": 7168,
-          "sha256": "85df441805792f84a0a8d3dc6c3f72fb3c27d1835dec6c81bfb3da494d27125f",
+          "size": 7680,
+          "sha256": "44f628997a6eb09218a4d04d380e6554d002631c9affc773406e452d87ab80d9",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -328,8 +328,8 @@
         },
         {
           "filename": "CIP-D08_request.msg",
-          "size": 7168,
-          "sha256": "eadb42f3501f8cea65d9e4976f33e5f8ab0265949453b4150cd80a1ede6f80b0",
+          "size": 7680,
+          "sha256": "d9775fe39dcb65e94e428c7db3a20db78cebcda391d59391eda3b6e259897d38",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -365,14 +365,14 @@
       "files": [
         {
           "filename": "CIP-D09_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "2c0d7790bc3bb7fd8f6e40fba1137a4bed9bb959d9b2d838e7622fffa2c64064",
+          "size": 7680,
+          "sha256": "d0b12c6281402ec3aeb2412d1cdeb5483333a79d00d36c5144c751a036d96498",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D09_request.msg",
-          "size": 7168,
-          "sha256": "a565e28c92532ff2ce1d4e1a78c66290a50c0e8597614bd32e2d439a74ea9462",
+          "size": 7680,
+          "sha256": "840bf15d2fa3466ad1dda91d517b4e562fb51cd77a5eb4f2e088bee29377b9ba",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -408,14 +408,14 @@
       "files": [
         {
           "filename": "CIP-D10_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "7e7586e74a931cb32c7ddad44099eafacf68e8854f398ca6b2208f342862943d",
+          "size": 7680,
+          "sha256": "1de350a342cd385e01c1ac8c5807c925cb6b65da88a68c11a7e326f35ae3fcad",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D10_request.msg",
-          "size": 7168,
-          "sha256": "3670758ec5f09a7252f98e93159ae729e8fd596de77a039763944fad211ce099",
+          "size": 7680,
+          "sha256": "88dbcd35dcfea33acf1044f1282cdfc7e038c4dbd4c87ed56ff9ee20e524db44",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -451,14 +451,14 @@
       "files": [
         {
           "filename": "CIP-D11_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "91ae3980cd82ea906c6d8b81436f5dabe7f51a78a1c9ffb5e1576152350a8b03",
+          "size": 7680,
+          "sha256": "2c07175bf082dac2944dcb94ad781413f9905e3f939819be4ebe3294ad7450f2",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D11_request.msg",
-          "size": 7168,
-          "sha256": "e62486f95af91aa20b97a391c26d97e253385568f61a956e3ad4ab7d9025d616",
+          "size": 7680,
+          "sha256": "91ef04c42f1a20bf9e69fd147292a8f81e9a0e1c28fa54cf261993c00cf4fbc4",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -494,14 +494,14 @@
       "files": [
         {
           "filename": "CIP-D12_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "4819c622a060886b2953fec70fa844a9b5be4c5ef3208762fa70c1f3f73794b8",
+          "size": 7680,
+          "sha256": "b156cd94c2e8c22ad70e3e3d5955c7fc3a5b4291d7a0f7bfb242e9ec5b1f3e35",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-D12_request.msg",
-          "size": 7168,
-          "sha256": "d349da47b57fd5a82f34637490a6b64b6da67fc31b4f9850a0b8022e9d6c0e61",
+          "size": 7680,
+          "sha256": "45e83e54e134c6a95b56ec7205dbedc0f18a4408454141af2ee31584061e6d8d",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -537,14 +537,14 @@
       "files": [
         {
           "filename": "CIP-E01_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "b8a5f450a2e4016e94ddc6e268da1f4356f435790a230dcc42584b8c2163b024",
+          "size": 7680,
+          "sha256": "6a74ab14e9f8e0c2e7ce070e6d23d6ab7ed4b4466efbe2368e4abe088640b97c",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E01_request.msg",
-          "size": 7168,
-          "sha256": "33dee286e82e539c9a2c9451095466c0244609d35de9907c4d90314ef8226536",
+          "size": 7680,
+          "sha256": "01b4fe267ee9a91e8d3b7aff0af891ec3bd9f80a6ecef5a22ca78e39d3c9b642",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -580,14 +580,14 @@
       "files": [
         {
           "filename": "CIP-E02_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "dd6d4127999813b61a3ad7abe4e395baca8d51101aaf1ddda8d36f19d9c83909",
+          "size": 7680,
+          "sha256": "f232bf025a5ae089ed03ffc0d46d06f9367f5825d3c30668f8bdf923f372204e",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E02_request.msg",
-          "size": 7168,
-          "sha256": "5f4758b5701f3ac1060fe28c8341707cf6024533ad50cab49f662f93c5f9bc41",
+          "size": 7680,
+          "sha256": "b0952904895937c0e353b8757835efe019cc896569216cc769e0dc8f68fa9dce",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -623,14 +623,14 @@
       "files": [
         {
           "filename": "CIP-E03_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "08d9046979a7c5771909140b97cb6497898ea9d4943dba372076b70c408cc2be",
+          "size": 7680,
+          "sha256": "f1f4322ffbd46feb4dfbb1c3f93f16358392fb8a2e83b4466459f68d3ffbee0c",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E03_request.msg",
-          "size": 7168,
-          "sha256": "c50b1c3518a9948406e21694f1e7e78b874ea8deb9071962c75f0e3ab1ea46f9",
+          "size": 7680,
+          "sha256": "f1b53a38d4f6132e1c0d6aed45789e19042e50bf653058a1056b4de4609c3221",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -666,14 +666,14 @@
       "files": [
         {
           "filename": "CIP-E04_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "e00fcfeb67bc082fe4f6aaf513e9aea3b6ed891b2e57cd09a9c082ef486ceca2",
+          "size": 7680,
+          "sha256": "f7d7cb61bcb8c3fcf83d85bc64604ebc20f9290ec2acfc34b4026edd04962fb9",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E04_request.msg",
-          "size": 7168,
-          "sha256": "645f9c6743157ce141329bc67a1d14a80280af7a68517c1eaa5d0558b52637f2",
+          "size": 7680,
+          "sha256": "951c95267db1422b43dce13b7937fc4d55824715a991add0af7cae64d0227aa9",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -709,8 +709,8 @@
       "files": [
         {
           "filename": "CIP-E05_request.msg",
-          "size": 7168,
-          "sha256": "e073777d2c4408b0f00f2a1fc2c8821bf9589b9bd195a69d5fbc82585659bb2f",
+          "size": 7680,
+          "sha256": "7768a3b892a1cafef9adb07612ab4dce16e76d8a5b37c7c9413063ceeb4e8fe6",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -746,8 +746,8 @@
       "files": [
         {
           "filename": "CIP-E06_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "02bba69645e505cfa168bac324adf38d769cf6afc1048bef66aee6fd53f8d4ee",
+          "size": 7680,
+          "sha256": "f1c49dfea5e1dc1e6378cf8ba09d442a9f955ec0bcf4dd4ebdee2b3a64241fc0",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -783,8 +783,8 @@
       "files": [
         {
           "filename": "CIP-E07_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "81d0cfbdef2a9c46dffd592a9e0e5ef8ecc08d6802907dbc800bd664997f6627",
+          "size": 7680,
+          "sha256": "45bca9c6fb7b4afc17b7db34e6c7439f3347cc857a9e7a47a331d975e279e832",
           "format": "outlook-msg-unicode"
         },
         {
@@ -826,14 +826,14 @@
       "files": [
         {
           "filename": "CIP-E08_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "b991422d7bb43ee03e485a6d21b40c18a5c83d33101f261c9f564a0b0373ff6f",
+          "size": 7680,
+          "sha256": "dd87dd5b2037925519243e104e4808395ac7e1904681542f36a88e4d19fd4cde",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E08_request.msg",
-          "size": 7168,
-          "sha256": "551dd137a4f14ebec93172915a3b7ce9acaa6b50adef68fd766adeb3f3fc1700",
+          "size": 7680,
+          "sha256": "c563b5ce5687954f75e8d00f87be04cc7534d661e5e5139b6bd71ef88ead22a2",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -869,14 +869,14 @@
       "files": [
         {
           "filename": "CIP-E09_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "65d7bb4dcd5a67b3e0cb032e725422d0e6bbf6c9a4f987c80c5b34cc5697409d",
+          "size": 7680,
+          "sha256": "ad72aa7d6da7e5ce0a22251a6001ee8d36c0f30405624e0d9a695694c8abe527",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E09_request.msg",
-          "size": 7168,
-          "sha256": "d305a18c75e75d1ef0cbd1a24aac4fe6dac842a5fafa02bec7b0a4c824c1c311",
+          "size": 7680,
+          "sha256": "665a4eb4ee1fb373666479087219c64550aadb6ae8fcc96200481b58abb80651",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -912,14 +912,14 @@
       "files": [
         {
           "filename": "CIP-E10_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "e5399b25c6d474b0ea6d3be4654c4dabbbac731d0ff3acda12ee5253e47ed60d",
+          "size": 7680,
+          "sha256": "cd1fafa44fdc34585e7397b62b03dab0fc4a348393bb4f99d5eab154ddcfc146",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E10_request.msg",
-          "size": 7168,
-          "sha256": "c12bb343be3006b90d0ef82d1cf38a8231243f74370a81189e631431919471ad",
+          "size": 7680,
+          "sha256": "15644a6509f09427749049f1e83a417a4c0d9aa10088afe9509d3c0481ae7fca",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -955,14 +955,14 @@
       "files": [
         {
           "filename": "CIP-E11_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "07e2fb3d94ead31cfbbf169d74b917b5a9f192bee3f57bedd176a75fda7013e9",
+          "size": 7680,
+          "sha256": "8aa92d702146dae7ef835efc12dae7339f717ab080a519e9adaebbf2f2cf112a",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E11_request.msg",
-          "size": 7168,
-          "sha256": "fe4db51e365fa44e257be09907c6a1e94304537e9839d0bdeea1153cce237532",
+          "size": 7680,
+          "sha256": "055d138ef3c3b55bf5c384c08eef95d412291ce98a5270c63e08e98977697370",
           "format": "outlook-msg-unicode"
         }
       ],
@@ -998,14 +998,14 @@
       "files": [
         {
           "filename": "CIP-E12_bo-sign-off.msg",
-          "size": 7168,
-          "sha256": "7e86e1f49433fd04c22d5db5233fecad20e07bee980a063b728dee993489a3f5",
+          "size": 7680,
+          "sha256": "75032015f1dd27ceefd80472daaca8a526fb228304dbb7629a9d0cafdbf9a953",
           "format": "outlook-msg-unicode"
         },
         {
           "filename": "CIP-E12_request.msg",
-          "size": 7168,
-          "sha256": "bc76d3ba84a240ec436462c8f40a44285754a2c72288377c82ebc927d0700a9e",
+          "size": 7680,
+          "sha256": "dd96a7fa620b20c642f9321d7f4958e7a0f6e2cd7518f651df38b5992a9a481a",
           "format": "outlook-msg-unicode"
         }
       ],

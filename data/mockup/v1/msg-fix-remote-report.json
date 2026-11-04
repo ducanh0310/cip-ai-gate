@@ -1,0 +1,417 @@
+{
+  "revision": "msg-fix-1",
+  "pages": [
+    {
+      "case_id": "CIP-D01",
+      "page_id": "1179774",
+      "files": [
+        {
+          "id": "att1179905",
+          "name": "CIP-D01_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1278040",
+          "name": "CIP-D01_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D02",
+      "page_id": "1179793",
+      "files": [
+        {
+          "id": "att1015934",
+          "name": "CIP-D02_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1278046",
+          "name": "CIP-D02_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D03",
+      "page_id": "1114238",
+      "files": [
+        {
+          "id": "att1278052",
+          "name": "CIP-D03_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1343519",
+          "name": "CIP-D03_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D04",
+      "page_id": "1343500",
+      "files": [
+        {
+          "id": "att1015940",
+          "name": "CIP-D04_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310825",
+          "name": "CIP-D04_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D05",
+      "page_id": "1179812",
+      "files": [
+        {
+          "id": "att1278058",
+          "name": "CIP-D05_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D06",
+      "page_id": "1277985",
+      "files": [
+        {
+          "id": "att1081532",
+          "name": "CIP-D06_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D07",
+      "page_id": "1179831",
+      "files": [
+        {
+          "id": "att1081538",
+          "name": "CIP-D07_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1114331",
+          "name": "CIP-D07_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D08",
+      "page_id": "1081475",
+      "files": [
+        {
+          "id": "att1081544",
+          "name": "CIP-D08_bo-sign-off.msg",
+          "size": 44,
+          "version": 1
+        },
+        {
+          "id": "att1278064",
+          "name": "CIP-D08_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D09",
+      "page_id": "1278004",
+      "files": [
+        {
+          "id": "att1081550",
+          "name": "CIP-D09_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1081556",
+          "name": "CIP-D09_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D10",
+      "page_id": "1179848",
+      "files": [
+        {
+          "id": "att1015946",
+          "name": "CIP-D10_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1081562",
+          "name": "CIP-D10_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D11",
+      "page_id": "1310730",
+      "files": [
+        {
+          "id": "att1179912",
+          "name": "CIP-D11_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1278070",
+          "name": "CIP-D11_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-D12",
+      "page_id": "1310749",
+      "files": [
+        {
+          "id": "att1081568",
+          "name": "CIP-D12_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1278076",
+          "name": "CIP-D12_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E01",
+      "page_id": "1081494",
+      "files": [
+        {
+          "id": "att1114337",
+          "name": "CIP-E01_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310831",
+          "name": "CIP-E01_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E02",
+      "page_id": "1310768",
+      "files": [
+        {
+          "id": "att1278082",
+          "name": "CIP-E02_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310837",
+          "name": "CIP-E02_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E03",
+      "page_id": "1179867",
+      "files": [
+        {
+          "id": "att1179918",
+          "name": "CIP-E03_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1343525",
+          "name": "CIP-E03_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E04",
+      "page_id": "1114255",
+      "files": [
+        {
+          "id": "att1015952",
+          "name": "CIP-E04_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310843",
+          "name": "CIP-E04_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E05",
+      "page_id": "1114274",
+      "files": [
+        {
+          "id": "att1278088",
+          "name": "CIP-E05_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E06",
+      "page_id": "1081513",
+      "files": [
+        {
+          "id": "att1114343",
+          "name": "CIP-E06_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E07",
+      "page_id": "1114293",
+      "files": [
+        {
+          "id": "att1310849",
+          "name": "CIP-E07_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310855",
+          "name": "CIP-E07_request.msg",
+          "size": 44,
+          "version": 1
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E08",
+      "page_id": "1278023",
+      "files": [
+        {
+          "id": "att1310861",
+          "name": "CIP-E08_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310867",
+          "name": "CIP-E08_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E09",
+      "page_id": "1179886",
+      "files": [
+        {
+          "id": "att1278094",
+          "name": "CIP-E09_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310873",
+          "name": "CIP-E09_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E10",
+      "page_id": "1114312",
+      "files": [
+        {
+          "id": "att1081574",
+          "name": "CIP-E10_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1179924",
+          "name": "CIP-E10_request.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E11",
+      "page_id": "1310787",
+      "files": [
+        {
+          "id": "att1081580",
+          "name": "CIP-E11_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1179930",
+          "name": "CIP-E11_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    },
+    {
+      "case_id": "CIP-E12",
+      "page_id": "1310806",
+      "files": [
+        {
+          "id": "att1179936",
+          "name": "CIP-E12_request.msg",
+          "size": 7680,
+          "version": 2
+        },
+        {
+          "id": "att1310879",
+          "name": "CIP-E12_bo-sign-off.msg",
+          "size": 7680,
+          "version": 2
+        }
+      ]
+    }
+  ],
+  "outlook_open_test": "not_performed",
+  "updated_files": 42,
+  "deliberately_corrupt_preserved": 2,
+  "CIP-D09_download_matches_local_bytes": true
+}

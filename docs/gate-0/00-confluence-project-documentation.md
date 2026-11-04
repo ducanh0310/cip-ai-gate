@@ -25,13 +25,15 @@ Công cụ đề xuất kết hợp Rule-based để kiểm tra điều kiện x
 
 ### 1.2 Related Works
 
-| Nghiên cứu | Nội dung liên quan | Cách sử dụng trong dự án |
+Các sản phẩm dưới đây được đối chiếu theo cùng một tác vụ: trích xuất dữ liệu từ tài liệu và dùng dữ liệu đó để tạo email nháp. Đây là các luồng có thể cấu hình bằng những tính năng của từng sản phẩm.
+
+| Sản phẩm | Cách lấy dữ liệu từ tài liệu | Cách tự soạn email |
 | --- | --- | --- |
-| Vaswani và cộng sự (2017), Attention Is All You Need [1] | Kiến trúc Transformer dựa trên attention. | Cơ sở lý thuyết về mô hình ngôn ngữ. |
-| Devlin và cộng sự (2019), BERT [2] | Biểu diễn ngôn ngữ hai chiều và tinh chỉnh cho tác vụ hiểu văn bản. | Tham khảo hướng hiểu/trích xuất văn bản; chưa chọn triển khai BERT riêng. |
-| Brown và cộng sự (2020), Language Models are Few-Shot Learners [3] | Thực hiện tác vụ bằng hướng dẫn và một số ví dụ trong ngữ cảnh. | Cơ sở thiết kế prompt và ví dụ mẫu email. |
-| Ji và cộng sự (2023), Survey of Hallucination in Natural Language Generation [4] | Tổng quan nội dung sinh thiếu căn cứ và các hướng đánh giá, giảm thiểu. | Cơ sở đánh giá độ trung thực của email với hồ sơ. |
-| Lewis và cộng sự (2020), Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks [5] | Kết hợp truy xuất tài liệu với sinh ngôn ngữ. | Hướng tham khảo mở rộng; chưa đưa RAG vào phạm vi MVP. |
+| Microsoft Power Automate + AI Builder + Outlook [1] | AI Builder đọc tài liệu theo mô hình xử lý tài liệu và trả về các trường đã cấu hình. | Power Automate đưa các trường trích xuất vào tiêu đề và nội dung theo mẫu, sau đó lưu email nháp bằng trình kết nối Outlook. |
+| n8n + Gmail [2] | Bước Extract From File lấy văn bản từ PDF. Bước Information Extractor có thể chuyển văn bản thành các trường có cấu trúc. | Luồng có thể điền các trường vào mẫu email và dùng thao tác tạo bản nháp của Gmail để lưu kết quả. |
+| Zapier + Docparser + Gmail [3] | Docparser trích xuất các trường theo quy tắc đã thiết lập. Zapier nhận kết quả qua sự kiện Parsed Document Data Available. | Zapier có thể ánh xạ các trường vào tiêu đề và nội dung của thao tác Create Draft trong Gmail. |
+
+CIP áp dụng cùng luồng từ tài liệu đến email nháp cho hồ sơ MC và bằng chứng .msg. Giữa hai bước, công cụ kiểm tra dữ liệu theo checklist, trả về căn cứ và đánh dấu thông tin còn thiếu trong bản nháp.
 
 ### 1.3 Contribution/Objectives
 
@@ -59,11 +61,9 @@ Các mục tiêu và đóng góp dự kiến:
 
 ### 1.5 References
 
-1. Vaswani, A., et al. (2017). Attention Is All You Need. https://arxiv.org/abs/1706.03762
-2. Devlin, J., et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. https://aclanthology.org/N19-1423/
-3. Brown, T. B., et al. (2020). Language Models are Few-Shot Learners. https://arxiv.org/abs/2005.14165
-4. Ji, Z., et al. (2023). Survey of Hallucination in Natural Language Generation. https://doi.org/10.1145/3571730 — bản arXiv tương ứng: https://arxiv.org/abs/2202.03629 (có cập nhật sau xuất bản).
-5. Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. https://arxiv.org/abs/2005.11401
+1. Microsoft Learn. [Dùng mô hình xử lý tài liệu trong Power Automate](https://learn.microsoft.com/en-us/ai-builder/form-processing-model-in-flow) và [trình kết nối Office 365 Outlook](https://learn.microsoft.com/en-us/connectors/office365/).
+2. n8n Docs. [Extract From File](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.extractfromfile/), [Information Extractor](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.information-extractor/) và [thao tác với bản nháp Gmail](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.gmail/draft-operations/).
+3. Zapier. [Tích hợp Docparser với Gmail](https://zapier.com/apps/docparser/integrations/gmail).
 
 ## 2. Business Requirements
 

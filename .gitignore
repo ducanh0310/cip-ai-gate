@@ -6,3 +6,4 @@ build/
 .next/
 *.log
 docs/related/
+output/msg-validation

@@ -276,5 +276,8 @@
       "expected": "readable-msg",
       "verified": true
     }
-  ]
+  ],
+  "msg_revision": "msg-fix-1",
+  "structural_validation_report": "msg-structure-validation.json",
+  "outlook_open_test": "not_performed"
 }

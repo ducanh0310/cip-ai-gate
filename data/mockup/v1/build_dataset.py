@@ -24,6 +24,12 @@ def write_message(path, subject, body, sender_name, sender_email):
     writer = OleWriter()
     root_properties = []
 
+    # MS-OXMSG 2.3 requires one named-property mapping storage, even when no
+    # named properties are used. Its three mapping streams are then empty.
+    writer.addEntry('__nameid_version1.0', storage=True)
+    for mapping_stream in ('00020102', '00030102', '00040102'):
+        writer.addEntry('__nameid_version1.0/__substg1.0_' + mapping_stream, b'')
+
     def fixed(tag, value, dest, props):
         props.append(struct.pack('<II', tag, 6) + value.ljust(8,b'\x00'))
 
@@ -38,6 +44,10 @@ def write_message(path, subject, body, sender_name, sender_email):
                       (0x0E04,'Demo Reviewer'),(0x007D,f'From: {sender_name} <{sender_email}>\r\nTo: Demo Reviewer <reviewer@example.test>\r\nSubject: {subject}\r\nDate: Tue, 03 Nov 2026 08:00:00 +0000\r\nX-CIP-Mockup: cip-mock-v1\r\n')]:
         string(pid,value,'',root_properties)
     fixed(0x0E070003,struct.pack('<I',1),'',root_properties)
+    # MS-OXMSG 2.1.3: all our 001F strings are Unicode. Without this flag,
+    # strict clients must treat the file as non-Unicode.
+    fixed(0x340D0003,struct.pack('<I',0x00040000),'',root_properties)
+    fixed(0x0FFE0003,struct.pack('<I',5),'',root_properties)
     fixed(0x3FDE0003,struct.pack('<I',65001),'',root_properties)
     fixed(0x0E060040,struct.pack('<Q',filetime),'',root_properties)
     recipient='__recip_version1.0_#00000000/'
@@ -46,6 +56,7 @@ def write_message(path, subject, body, sender_name, sender_email):
     for pid,value in [(0x3001,'Demo Reviewer'),(0x3002,'SMTP'),(0x3003,'reviewer@example.test'),(0x39FE,'reviewer@example.test')]:
         string(pid,value,recipient,recipient_props)
     fixed(0x0C150003,struct.pack('<I',1),recipient,recipient_props)
+    fixed(0x0FFE0003,struct.pack('<I',6),recipient,recipient_props)
     writer.addEntry(recipient+'__properties_version1.0',bytes(8)+b''.join(recipient_props))
     header=bytes(8)+struct.pack('<IIII',1,0,1,0)+bytes(8)
     writer.addEntry('__properties_version1.0',header+b''.join(root_properties))

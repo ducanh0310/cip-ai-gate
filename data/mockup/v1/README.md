@@ -8,6 +8,7 @@ Toàn bộ nội dung ở đây là dữ liệu giả lập để phát triển 
 - [Development — 12 MC](https://nguyenducanhflm.atlassian.net/wiki/spaces/KAN/pages/1277968).
 - [Evaluation — 12 MC](https://nguyenducanhflm.atlassian.net/wiki/spaces/KAN/pages/1179756).
 - [Evaluation Guide & Ground Truth](https://nguyenducanhflm.atlassian.net/wiki/spaces/KAN/pages/1114221).
+- [Email Previews — đọc 42 email ngay trong trình duyệt](https://nguyenducanhflm.atlassian.net/wiki/spaces/KAN/pages/1114418). Đây là trang đọc cho người xem, không đưa vào checker.
 - Jira: project KAN; 24 ticket từ KAN-4 đến KAN-27; tìm bằng JQL `project = KAN AND labels = cip-mock-v1 ORDER BY key ASC`.
 
 ## Thành phần bộ dữ liệu
@@ -68,6 +69,16 @@ Checklist chỉ kiểm tra 11 tiêu chí về sáu mục MC, định dạng, kh�
 - Chưa kiểm chứng bằng Outlook; chưa có kết quả chạy checker hoặc metric chất lượng ứng dụng.
 
 ## Dựng lại dữ liệu cục bộ
+
+### Kiểm chứng bản đính kèm thực tế
+
+`remote-msg-validation-report.json` ghi kết quả tải lại 42 tệp dự kiến đọc được từ Confluence: so sánh SHA-256 với bản cục bộ, mở bằng extract-msg, đối chiếu subject/sender/recipient/body với đáp án, đọc trực tiếp các stream subject/body và kiểm tra những điều kiện cấu trúc được liệt kê trong báo cáo. Cả 42 tệp vượt qua các phép kiểm tra này. Hai tệp hỏng và bốn tệp thiếu có chủ đích không thuộc tập 42 tệp này.
+
+`output/msg-validation/index.html` trong thư mục gốc repo là báo cáo đọc được bằng trình duyệt; các bản HTML email đi kèm được giải mã từ chính tệp tải xuống. Trang Email Previews trên Confluence cũng đã được thay bằng nội dung lấy từ các tệp tải xuống thực tế, kèm SHA-256 từng tệp.
+
+Khả năng mở bằng Outlook vẫn chưa được kiểm chứng. Báo cáo chỉ xác nhận các phép kiểm tra đã thực hiện, không khẳng định toàn bộ định dạng MS-OXMSG đã được xác nhận hoặc tương thích mọi ứng dụng. Script `verify_remote_messages.py` nhận đường dẫn JSON chứa các URL tải ngắn hạn; không lưu JSON chứa URL đó vào repo.
+
+Bản sửa `msg-fix-1` bổ sung cờ Unicode `PidTagStoreSupportMask` và named-property mapping storage theo MS-OXMSG. Xem `msg-structure-validation.json` cho kiểm tra cấu trúc 42 tệp. Việc đọc được bằng thư viện và kiểm tra cấu trúc chưa thay thế việc mở thử bằng Outlook. Ubuntu cần ứng dụng có hỗ trợ .msg; nếu máy chưa có, sử dụng Email Previews để đọc nội dung.
 
 Yêu cầu Python và `extract-msg==0.58.1`. Chạy `python build_dataset.py` từ môi trường đã cài thư viện. Script đọc `remote-resources.json`, dựng gói đầu vào và ground truth cục bộ; không tạo lại ticket/trang Confluence và không gửi email. Không chạy lại script trong lúc đang sửa fixture thủ công vì nó ghi lại các file dữ liệu do script sinh.
 

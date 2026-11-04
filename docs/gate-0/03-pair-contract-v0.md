@@ -1,71 +1,64 @@
-# Pair contract v0 — Đề xuất phối hợp Cặp C
+# Pair contract v0 — Cặp C
 
-- Thành viên: Nguyễn Đức Anh và Nguyễn Ngọc Vĩnh.
-- Cập nhật: 02/11/2026.
-- Trạng thái: Bản đề xuất từ phía bài toán CIP, chưa được Vĩnh thống nhất.
-- Đầu việc hôm nay: C2-003. Thống nhất contract tại C2-006 ngày 03/11.
+- **Thành viên** — Nguyễn Đức Anh và Nguyễn Ngọc Vĩnh
+- **Mốc nộp** — Gate 0, 04/11/2026
+- **Trạng thái** — Hai thành viên đã thống nhất nội dung phối hợp.
 
-## 1. Điểm giao nhau và giá trị cộng hưởng
+## 1. Hai bài toán giao nhau ở đâu và giá trị cộng hưởng là gì?
 
-Đức Anh xây công cụ AI Gate kiểm tra MC trên Confluence và soạn email xin phê duyệt CIP. Vĩnh phụ trách MVP SDLC AI: framework điều phối phát triển và kiểm thử bằng AI, SOX-ready, định hướng TDD.
+Đức Anh xây **AI Gate** để kiểm tra MC trên Confluence và soạn email xin phê duyệt CIP. Vĩnh xây **AI SDLC Orchestrator** để điều phối phát triển và kiểm thử phần mềm có AI hỗ trợ, theo định hướng SOX và TDD.
 
-Đề xuất sử dụng framework của Vĩnh để điều phối chạy bộ đánh giá công cụ CIP, tổng hợp sai lệch và chạy lại sau thay đổi. Giá trị cần đo là giảm thao tác đánh giá thủ công và phát hiện suy giảm chất lượng khi thay đổi mã nguồn, checklist hoặc prompt.
+Hai sản phẩm kết nối tại **điểm kiểm soát trước phê duyệt CIP**. Orchestrator thu thập ngữ cảnh từ requirement, task, kiểm thử, review và artifact rồi gửi tham chiếu MC/CIP cho Gate. Gate chạy ruleset và trả kết quả, findings, tham chiếu evidence và thông tin bản nháp email. Orchestrator gắn kết quả vào workflow, chuyển đến bước xử lý hoặc phê duyệt và tổng hợp hồ sơ audit.
 
-Đây là phương án cần trao đổi; chưa có bằng chứng tích hợp hoặc giá trị thực đo.
+Giá trị kỳ vọng là truy vết được từ thay đổi phần mềm đến kết quả kiểm tra MC/CIP và quyết định phê duyệt, đồng thời tăng độ đầy đủ của evidence và giảm thời gian, công sức xử lý thủ công.
 
-## 2. Trách nhiệm và ranh giới
+## 2. Mỗi người chịu trách nhiệm phần nào và ranh giới ở đâu?
 
-| Đức Anh | Vĩnh — đề xuất, chờ thống nhất |
+| Thành viên | Trách nhiệm |
 | --- | --- |
-| Xây công cụ kiểm tra MC và soạn email | Cung cấp cơ chế điều phối chạy đánh giá |
-| Sở hữu checklist nghiệp vụ, mẫu email | Thu thập, tổng hợp kết quả chạy |
-| Tạo mockup và đáp án kỳ vọng | Hỗ trợ đưa đánh giá vào quy trình phát triển |
-| Cung cấp giao diện chạy và kết quả có cấu trúc | Gọi giao diện, báo cáo lỗi và chạy lại |
-| Sửa lỗi thuộc công cụ CIP | Sửa lỗi thuộc framework điều phối |
+| **Đức Anh — AI Gate** | Sở hữu logic kiểm tra MC/CIP, checklist và ruleset, findings, mẫu và bản nháp email CIP. Chuẩn bị mockup và đáp án kỳ vọng, cung cấp giao diện chạy và kết quả có cấu trúc, sửa lỗi thuộc Gate. |
+| **Vĩnh — AI SDLC Orchestrator** | Sở hữu workflow và trạng thái SDLC, điều phối requirement/task/agent, thu thập ngữ cảnh và artifact. Tích hợp Gate Adapter, xử lý kết quả trong workflow, quản lý approval task, RBAC/SoD, audit trail và hồ sơ evidence tổng thể. |
 
-Công cụ CIP phải có cách chạy và đánh giá độc lập. Framework của Vĩnh có thể dùng dữ liệu mẫu để phát triển mà không chờ công cụ CIP. Không mặc định framework hoặc tài liệu này đã đáp ứng yêu cầu SOX.
+Gate đánh giá theo ruleset và chỉ tạo bản nháp email trong phạm vi MVP. Orchestrator giữ workflow ở bước xử lý hoặc rà soát khi nhận `FAIL` hoặc `NEEDS_REVIEW`. Khi nhận `PASS`, Orchestrator chuyển đến bước phê duyệt của người có thẩm quyền theo RBAC/SoD. Merge và deploy production vẫn theo quy trình phê duyệt.
 
-## 3. Nội dung và định dạng trao đổi
+Gate có thể chạy và đánh giá độc lập. Orchestrator có thể phát triển và demo với mock/stub. SOX là định hướng thiết kế.
 
-| Chiều trao đổi | Nội dung | Định dạng đề xuất |
+## 3. Hai bên trao đổi gì và theo định dạng nào?
+
+| Chiều trao đổi | Nội dung | Định dạng |
 | --- | --- | --- |
-| Đức Anh → Vĩnh | Tình huống mockup, đáp án kỳ vọng | JSON và tệp mockup |
-| Đức Anh → Vĩnh | Giao diện chạy, phiên bản checklist | Tài liệu và cấu hình |
-| Framework → công cụ CIP | Yêu cầu chạy bộ đánh giá | CLI hoặc API, cần chọn một phương thức |
-| Công cụ CIP → framework | Kết quả từng tiêu chí, lỗi xử lý, thời gian | JSON |
-| Framework → Đức Anh | Báo cáo sai lệch, kết quả chạy lại | JSON hoặc Markdown |
+| Đức Anh → Vĩnh | Bộ tình huống mockup, đáp án kỳ vọng, hướng dẫn chạy và phiên bản checklist. | JSON, tệp mockup, tài liệu và cấu hình. |
+| Orchestrator → Gate | `workflow_id`, `task_id`, `correlation_id`, người yêu cầu, checkpoint, metadata MC/CIP và ngữ cảnh cần thiết. Artifact được tham chiếu bằng URI, phiên bản và hash theo schema. | REST API qua HTTP, JSON request. |
+| Gate → Orchestrator | ID truy vết, `gate_run_id`, `PASS` / `FAIL` / `NEEDS_REVIEW`, phiên bản ruleset, kết quả từng tiêu chí, findings (mã control/rule, mức độ, mô tả, tham chiếu evidence), trạng thái hoặc URI email draft và thời điểm hoàn tất. | JSON response. |
+| Orchestrator → Đức Anh | Kết quả Gate gắn với workflow, findings, evidence và thông tin lỗi cần xử lý. | JSON hoặc giao diện workflow. |
 
-Các trường giao diện tối thiểu dự kiến: mã lần chạy, mã tình huống, phiên bản ứng dụng/checklist, kết quả từng tiêu chí, lỗi xử lý và thời gian. Schema chính thức, vị trí lưu và cách xử lý lỗi cần hai bên thống nhất.
+OpenAPI/JSON Schema là đặc tả chung. Request và response có phiên bản schema hoặc API. Lỗi kỹ thuật như input không hợp lệ, timeout hoặc Gate unavailable được xử lý riêng với kết quả kiểm soát. Log truy vết ghi mã tình huống/change, phiên bản ứng dụng/checklist/ruleset, kết quả, lỗi và thời gian xử lý cùng các ID ở trên.
 
-Toàn bộ nội dung trao đổi phục vụ phát triển hiện tại là mockup tự dựng: MC theo sáu mục đã xác nhận, link giả lập, tệp .msg và đáp án kỳ vọng. Không phụ thuộc dữ liệu nội bộ thật. Việc tích hợp với dữ liệu masked về sau phải theo phạm vi mentor cho phép; không đưa masked vào repo.
+Khi triển khai, hai bên đưa vào đặc tả các chi tiết đã thống nhất về endpoint, loại MC document và metadata được nhận, trường bắt buộc/tùy chọn, cách lưu và truy cập artifact, xác thực, service identity, phân quyền, error schema, timeout/retry, idempotency và versioning. Bộ mockup chung gồm MC theo sáu mục đã xác nhận, link giả lập, tệp `.msg` và đáp án kỳ vọng.
 
-## 4. Mốc tích hợp và cách đo
+## 4. Khi nào tích hợp và đo giá trị cộng hưởng bằng gì?
 
-| Mốc | Mục tiêu đề xuất |
+| Mốc | Kết quả cần có |
 | --- | --- |
-| 03/11 | Thống nhất contract, trách nhiệm và giao diện trao đổi |
-| Gate 1 — 11/11 | Có mẫu trao đổi, hai bên chạy độc lập |
-| CP1 — 18/11 | Thử điều phối đánh giá trên mockup |
-| CP2 — 25/11 | Demo luồng tích hợp và xử lý lỗi |
-| CP3 — 09/12 | Demo luồng hoàn thiện và số liệu cộng hưởng |
+| **Gate 0 — 04/11** | Nộp Pair contract v0 với mục tiêu cộng hưởng, phân công, ranh giới và đặc tả trao đổi ở mức v0. |
+| **Gate 1 — 11/11** | Chạy skeleton end-to-end với Gate mock/stub và kiểm chứng rủi ro API lớn nhất. |
+| **CP1 — 18/11** | Demo MVP trên mockup, kiểm chứng request/response, trạng thái workflow và truy vết cơ bản. |
+| **CP2 — 25/11** | Hoàn thiện luồng tích hợp, xử lý lỗi và evidence. |
+| **CP3 — 09/12** | Demo end-to-end, đo giá trị cộng hưởng và bàn giao tài liệu. |
 
-Metric đề xuất:
+Hai bên dùng mockup tự dựng đến hết CP1. CP2–CP3 chỉ dùng dữ liệu masked do mentor cung cấp và cho phép. Dữ liệu masked nằm ngoài repo. Dữ liệu thật nằm ngoài phạm vi ở mọi mốc.
 
-- Thời gian và số thao tác chạy cùng một bộ đánh giá trước/sau tích hợp.
-- Số tình huống được chạy tự động / tổng tình huống dự kiến tự động hóa.
-- Số lỗi suy giảm được phát hiện qua các lần thay đổi, có đối chiếu xác nhận.
+Đo trên cùng bộ mockup và cùng loại thay đổi qua ba kịch bản **A — xử lý MC/CIP và evidence thủ công**, **B — chạy Orchestrator riêng**, và **C — tích hợp Orchestrator với Gate, human approval và hồ sơ evidence**.
 
-Chưa cam kết mức điểm cộng hoặc tích hợp hai chiều. Mức tích hợp và ngưỡng metric phải được hai bên thống nhất theo khả năng thực hiện.
+| Chỉ số | Cách đo |
+| --- | --- |
+| Tỷ lệ tích hợp thành công | Request hợp lệ nhận response đúng schema / tổng request hợp lệ. |
+| Độ bao phủ kiểm soát | Rule/control được đánh giá / tổng rule/control trong bộ test. |
+| Độ đầy đủ truy vết | Workflow có đủ liên kết request → Gate run → finding/evidence → approval / tổng workflow. |
+| Độ đầy đủ evidence | Evidence bắt buộc có đủ metadata và tham chiếu / tổng evidence bắt buộc. |
+| Thời gian xử lý | Thời gian từ lúc gửi request đến khi nhận response. |
+| Công sức thủ công tiết kiệm | Thời gian thao tác thủ công ở A trừ thời gian thao tác thủ công ở C. |
+| Xử lý ngoại lệ | Timeout hoặc response không hợp lệ được ghi nhận và đưa workflow về trạng thái an toàn / tổng số ngoại lệ này. |
+| Tuân thủ phê duyệt | Số lượt phê duyệt đúng role và đúng SoD / tổng lượt phê duyệt. |
 
-## 5. Nội dung cần thống nhất ngày 03/11
-
-- [ ] Vĩnh xác nhận hướng phối hợp có phù hợp bài toán của mình.
-- [ ] Hai bên xác nhận trách nhiệm và người phụ trách việc phối hợp.
-- [ ] Chọn CLI hoặc API; chốt schema, phiên bản và cách báo lỗi.
-- [ ] Chốt mốc tích hợp, bộ mockup dùng chung và metric cộng hưởng.
-- [ ] Ghi nhận nội dung đã thống nhất và các thay đổi trong repo khi triển khai.
-
-## Nguồn
-
-- [Kế hoạch thực tập 6 tuần](../../Kế%20hoạch%20thực%20tập%206%20tuần.pdf), phần Teamwork và Pair contract v0.
-- [Kế hoạch MVP của Đức Anh](01-ke-hoach-mvp.md).
+Hai bên ghi nhận baseline từ bộ test chung để xác định ngưỡng mục tiêu và trình mentor duyệt. Khi triển khai, phân công đầu mối cho contract test, integration test và demo, đồng thời trình mentor xác nhận ranh giới và mức độ phù hợp với quy trình công ty.

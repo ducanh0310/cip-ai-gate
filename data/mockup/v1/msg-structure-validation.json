@@ -1,0 +1,266 @@
+{
+  "revision": "msg-fix-1",
+  "checked_files": 42,
+  "checks": [
+    "message root CLSID",
+    "named-property mapping storage and three streams",
+    "Unicode store support mask",
+    "property entry sizes",
+    "recipient header counts"
+  ],
+  "outlook_open_test": "not_performed",
+  "files": [
+    {
+      "case_id": "CIP-D01",
+      "file": "CIP-D01_bo-sign-off.msg",
+      "sha256": "fa82168cae79e7917f42989988edf9cf0bce3cf5077740ba12bb8bcc70a53542",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D01",
+      "file": "CIP-D01_request.msg",
+      "sha256": "c095012b8debaf917cdca094175e7ac7b9261ffe3aad484281fec53e2a6263f8",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D02",
+      "file": "CIP-D02_bo-sign-off.msg",
+      "sha256": "8e15733a453602f7168d307e3354e6bafe100769d2bb3a8c2087cbd67a3e7201",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D02",
+      "file": "CIP-D02_request.msg",
+      "sha256": "18208dcc6d10a32ae6c7baf464a9abac592d5588925465c862632a44efcb7ea1",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D03",
+      "file": "CIP-D03_bo-sign-off.msg",
+      "sha256": "c3132c7a4baf993bd3da84f222561693b590b15be7b458f516eedb6218f3661d",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D03",
+      "file": "CIP-D03_request.msg",
+      "sha256": "1d336af76a31b7d58227688b68d958490ce27dd046ab455e2196061fdfa144ab",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D04",
+      "file": "CIP-D04_bo-sign-off.msg",
+      "sha256": "b45f2558d189845be92d6017c985858d5472af8873a90348570940e5db8b769b",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D04",
+      "file": "CIP-D04_request.msg",
+      "sha256": "9dc1d7d80ab95d6c439ddef76e269ebe203fafcef491a823175d4da22d5fb4f3",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D05",
+      "file": "CIP-D05_request.msg",
+      "sha256": "88bfbc296cb65300d97214550fc49d4bee262ebf87db10db0254a46ac2469b85",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D06",
+      "file": "CIP-D06_bo-sign-off.msg",
+      "sha256": "7e5204da08bf0a696ac6777e591b75464933d338be7c6810b86a6d9c2a60aa6a",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D07",
+      "file": "CIP-D07_bo-sign-off.msg",
+      "sha256": "20d129abc412e9d15f5baf36d99a2029da38ca331b88fc2cbd6ef3a61e262eaa",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D07",
+      "file": "CIP-D07_request.msg",
+      "sha256": "44f628997a6eb09218a4d04d380e6554d002631c9affc773406e452d87ab80d9",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D08",
+      "file": "CIP-D08_request.msg",
+      "sha256": "d9775fe39dcb65e94e428c7db3a20db78cebcda391d59391eda3b6e259897d38",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D09",
+      "file": "CIP-D09_bo-sign-off.msg",
+      "sha256": "d0b12c6281402ec3aeb2412d1cdeb5483333a79d00d36c5144c751a036d96498",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D09",
+      "file": "CIP-D09_request.msg",
+      "sha256": "840bf15d2fa3466ad1dda91d517b4e562fb51cd77a5eb4f2e088bee29377b9ba",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D10",
+      "file": "CIP-D10_bo-sign-off.msg",
+      "sha256": "1de350a342cd385e01c1ac8c5807c925cb6b65da88a68c11a7e326f35ae3fcad",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D10",
+      "file": "CIP-D10_request.msg",
+      "sha256": "88dbcd35dcfea33acf1044f1282cdfc7e038c4dbd4c87ed56ff9ee20e524db44",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D11",
+      "file": "CIP-D11_bo-sign-off.msg",
+      "sha256": "2c07175bf082dac2944dcb94ad781413f9905e3f939819be4ebe3294ad7450f2",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D11",
+      "file": "CIP-D11_request.msg",
+      "sha256": "91ef04c42f1a20bf9e69fd147292a8f81e9a0e1c28fa54cf261993c00cf4fbc4",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D12",
+      "file": "CIP-D12_bo-sign-off.msg",
+      "sha256": "b156cd94c2e8c22ad70e3e3d5955c7fc3a5b4291d7a0f7bfb242e9ec5b1f3e35",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-D12",
+      "file": "CIP-D12_request.msg",
+      "sha256": "45e83e54e134c6a95b56ec7205dbedc0f18a4408454141af2ee31584061e6d8d",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E01",
+      "file": "CIP-E01_bo-sign-off.msg",
+      "sha256": "6a74ab14e9f8e0c2e7ce070e6d23d6ab7ed4b4466efbe2368e4abe088640b97c",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E01",
+      "file": "CIP-E01_request.msg",
+      "sha256": "01b4fe267ee9a91e8d3b7aff0af891ec3bd9f80a6ecef5a22ca78e39d3c9b642",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E02",
+      "file": "CIP-E02_bo-sign-off.msg",
+      "sha256": "f232bf025a5ae089ed03ffc0d46d06f9367f5825d3c30668f8bdf923f372204e",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E02",
+      "file": "CIP-E02_request.msg",
+      "sha256": "b0952904895937c0e353b8757835efe019cc896569216cc769e0dc8f68fa9dce",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E03",
+      "file": "CIP-E03_bo-sign-off.msg",
+      "sha256": "f1f4322ffbd46feb4dfbb1c3f93f16358392fb8a2e83b4466459f68d3ffbee0c",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E03",
+      "file": "CIP-E03_request.msg",
+      "sha256": "f1b53a38d4f6132e1c0d6aed45789e19042e50bf653058a1056b4de4609c3221",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E04",
+      "file": "CIP-E04_bo-sign-off.msg",
+      "sha256": "f7d7cb61bcb8c3fcf83d85bc64604ebc20f9290ec2acfc34b4026edd04962fb9",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E04",
+      "file": "CIP-E04_request.msg",
+      "sha256": "951c95267db1422b43dce13b7937fc4d55824715a991add0af7cae64d0227aa9",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E05",
+      "file": "CIP-E05_request.msg",
+      "sha256": "7768a3b892a1cafef9adb07612ab4dce16e76d8a5b37c7c9413063ceeb4e8fe6",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E06",
+      "file": "CIP-E06_bo-sign-off.msg",
+      "sha256": "f1c49dfea5e1dc1e6378cf8ba09d442a9f955ec0bcf4dd4ebdee2b3a64241fc0",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E07",
+      "file": "CIP-E07_bo-sign-off.msg",
+      "sha256": "45bca9c6fb7b4afc17b7db34e6c7439f3347cc857a9e7a47a331d975e279e832",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E08",
+      "file": "CIP-E08_bo-sign-off.msg",
+      "sha256": "dd87dd5b2037925519243e104e4808395ac7e1904681542f36a88e4d19fd4cde",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E08",
+      "file": "CIP-E08_request.msg",
+      "sha256": "c563b5ce5687954f75e8d00f87be04cc7534d661e5e5139b6bd71ef88ead22a2",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E09",
+      "file": "CIP-E09_bo-sign-off.msg",
+      "sha256": "ad72aa7d6da7e5ce0a22251a6001ee8d36c0f30405624e0d9a695694c8abe527",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E09",
+      "file": "CIP-E09_request.msg",
+      "sha256": "665a4eb4ee1fb373666479087219c64550aadb6ae8fcc96200481b58abb80651",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E10",
+      "file": "CIP-E10_bo-sign-off.msg",
+      "sha256": "cd1fafa44fdc34585e7397b62b03dab0fc4a348393bb4f99d5eab154ddcfc146",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E10",
+      "file": "CIP-E10_request.msg",
+      "sha256": "15644a6509f09427749049f1e83a417a4c0d9aa10088afe9509d3c0481ae7fca",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E11",
+      "file": "CIP-E11_bo-sign-off.msg",
+      "sha256": "8aa92d702146dae7ef835efc12dae7339f717ab080a519e9adaebbf2f2cf112a",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E11",
+      "file": "CIP-E11_request.msg",
+      "sha256": "055d138ef3c3b55bf5c384c08eef95d412291ce98a5270c63e08e98977697370",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E12",
+      "file": "CIP-E12_bo-sign-off.msg",
+      "sha256": "75032015f1dd27ceefd80472daaca8a526fb228304dbb7629a9d0cafdbf9a953",
+      "required_structural_checks": "pass"
+    },
+    {
+      "case_id": "CIP-E12",
+      "file": "CIP-E12_request.msg",
+      "sha256": "dd96a7fa620b20c642f9321d7f4958e7a0f6e2cd7518f651df38b5992a9a481a",
+      "required_structural_checks": "pass"
+    }
+  ]
+}

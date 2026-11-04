@@ -81,28 +81,42 @@
       "attachments": [
         {
           "id": "att1179905",
-          "fileId": "4c1e26ce-df4e-4930-9b1a-03ea29f268ee",
+          "fileId": "b34146d6-c642-4418-a32e-2ae8c1aac909",
           "title": "CIP-D01_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179774",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179774/child/attachment/att1179905/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179774&preview=%2F1179774%2F1179905%2FCIP-D01_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T09:59:04.187Z"
           }
         },
         {
           "id": "att1278040",
-          "fileId": "60849f2e-a08f-4381-9f34-13bd6bcc3aa3",
+          "fileId": "fc449ba3-cfc3-42f8-8f14-14fa64da7787",
           "title": "CIP-D01_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179774",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179774/child/attachment/att1278040/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179774&preview=%2F1179774%2F1278040%2FCIP-D01_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:10.477Z"
           }
         }
       ],
@@ -146,28 +160,42 @@
       "attachments": [
         {
           "id": "att1278046",
-          "fileId": "035493b6-1274-4925-bb89-4465369bae6a",
+          "fileId": "872aeb53-70be-44e1-bdb2-d605934ac989",
           "title": "CIP-D02_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179793",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179793/child/attachment/att1278046/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179793&preview=%2F1179793%2F1278046%2FCIP-D02_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:12.121Z"
           }
         },
         {
           "id": "att1015934",
-          "fileId": "6bc54274-194e-43cf-9af6-14465eafe31e",
+          "fileId": "a2057ba9-de59-476a-a45d-01d491bd42c3",
           "title": "CIP-D02_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179793",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179793/child/attachment/att1015934/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179793&preview=%2F1179793%2F1015934%2FCIP-D02_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:13.649Z"
           }
         }
       ],
@@ -211,28 +239,42 @@
       "attachments": [
         {
           "id": "att1343519",
-          "fileId": "31eec255-cf88-40a6-8735-92dda181cab9",
+          "fileId": "e9643a37-bc20-4814-bc92-1630369160ce",
           "title": "CIP-D03_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114238",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114238/child/attachment/att1343519/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114238&preview=%2F1114238%2F1343519%2FCIP-D03_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:15.035Z"
           }
         },
         {
           "id": "att1278052",
-          "fileId": "f2aa35ee-63ea-4811-b12b-0bb58323c879",
+          "fileId": "e8b750e4-fb84-42c7-b0b2-231d74fc7195",
           "title": "CIP-D03_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114238",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114238/child/attachment/att1278052/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114238&preview=%2F1114238%2F1278052%2FCIP-D03_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:16.435Z"
           }
         }
       ],
@@ -276,28 +318,42 @@
       "attachments": [
         {
           "id": "att1015940",
-          "fileId": "ecfd6e5d-ea2e-4bdd-afa2-dfc596231c8e",
+          "fileId": "c0973d3b-03ea-42f9-a650-fd2ad54a4308",
           "title": "CIP-D04_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1343500",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1343500/child/attachment/att1015940/download",
             "webui": "/pages/viewpageattachments.action?pageId=1343500&preview=%2F1343500%2F1015940%2FCIP-D04_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:17.781Z"
           }
         },
         {
           "id": "att1310825",
-          "fileId": "560ab298-a696-4229-b1fb-4fc46dbf58db",
+          "fileId": "f93bb84c-54a6-4dec-9a37-54b21a1e6af1",
           "title": "CIP-D04_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1343500",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1343500/child/attachment/att1310825/download",
             "webui": "/pages/viewpageattachments.action?pageId=1343500&preview=%2F1343500%2F1310825%2FCIP-D04_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:19.339Z"
           }
         }
       ],
@@ -341,15 +397,22 @@
       "attachments": [
         {
           "id": "att1278058",
-          "fileId": "358d9139-ced7-4768-b0db-b821e050568d",
+          "fileId": "9b3ae080-5320-4617-9e39-9277fdf0660e",
           "title": "CIP-D05_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179812",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179812/child/attachment/att1278058/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179812&preview=%2F1179812%2F1278058%2FCIP-D05_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:20.674Z"
           }
         }
       ],
@@ -393,15 +456,22 @@
       "attachments": [
         {
           "id": "att1081532",
-          "fileId": "e2082375-8c4e-4c46-9fc1-847a293b62ff",
+          "fileId": "ecd44825-00dc-435f-8934-747a31951ca3",
           "title": "CIP-D06_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1277985",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1277985/child/attachment/att1081532/download",
             "webui": "/pages/viewpageattachments.action?pageId=1277985&preview=%2F1277985%2F1081532%2FCIP-D06_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:21.946Z"
           }
         }
       ],
@@ -445,28 +515,42 @@
       "attachments": [
         {
           "id": "att1114331",
-          "fileId": "845ad14e-fc5b-4255-81f2-a941c7a8577c",
+          "fileId": "4325f415-c504-41ab-b742-52c3eb450402",
           "title": "CIP-D07_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179831",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179831/child/attachment/att1114331/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179831&preview=%2F1179831%2F1114331%2FCIP-D07_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:23.242Z"
           }
         },
         {
           "id": "att1081538",
-          "fileId": "7cd92032-ef78-415b-ab02-16f7a8cad3cf",
+          "fileId": "4ae04528-0438-4151-9031-0e948b5fe9a6",
           "title": "CIP-D07_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179831",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179831/child/attachment/att1081538/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179831&preview=%2F1179831%2F1081538%2FCIP-D07_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:24.576Z"
           }
         }
       ],
@@ -523,15 +607,22 @@
         },
         {
           "id": "att1278064",
-          "fileId": "826c7118-f8ae-4569-9950-2d2b7c1ad0c7",
+          "fileId": "58f74957-8cf8-460b-80d9-32f122d6e982",
           "title": "CIP-D08_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1081475",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1081475/child/attachment/att1278064/download",
             "webui": "/pages/viewpageattachments.action?pageId=1081475&preview=%2F1081475%2F1278064%2FCIP-D08_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:26.073Z"
           }
         }
       ],
@@ -575,28 +666,42 @@
       "attachments": [
         {
           "id": "att1081550",
-          "fileId": "8b1b3818-2a8e-4e12-a71a-e446949f73e0",
+          "fileId": "14b6b56e-6b5f-4b1f-b486-c93bcd8c2601",
           "title": "CIP-D09_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1278004",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1278004/child/attachment/att1081550/download",
             "webui": "/pages/viewpageattachments.action?pageId=1278004&preview=%2F1278004%2F1081550%2FCIP-D09_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:27.463Z"
           }
         },
         {
           "id": "att1081556",
-          "fileId": "c9432787-07a5-42a3-8820-98ad710f5259",
+          "fileId": "5cc580eb-9fa9-4eba-9337-763d0f2295f1",
           "title": "CIP-D09_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1278004",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1278004/child/attachment/att1081556/download",
             "webui": "/pages/viewpageattachments.action?pageId=1278004&preview=%2F1278004%2F1081556%2FCIP-D09_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:28.936Z"
           }
         }
       ],
@@ -640,28 +745,42 @@
       "attachments": [
         {
           "id": "att1081562",
-          "fileId": "c4044151-d22c-4b43-88f2-505cb864a5bf",
+          "fileId": "c91090b3-1615-4cb9-a823-0a3e936493a7",
           "title": "CIP-D10_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179848",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179848/child/attachment/att1081562/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179848&preview=%2F1179848%2F1081562%2FCIP-D10_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:30.311Z"
           }
         },
         {
           "id": "att1015946",
-          "fileId": "3ad82110-209c-4652-973d-6b245b5c062b",
+          "fileId": "112871ac-682d-4ae8-8113-a884c833d79a",
           "title": "CIP-D10_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179848",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179848/child/attachment/att1015946/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179848&preview=%2F1179848%2F1015946%2FCIP-D10_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:31.547Z"
           }
         }
       ],
@@ -705,28 +824,42 @@
       "attachments": [
         {
           "id": "att1179912",
-          "fileId": "8f43c0be-fad8-4d93-898a-91f83c3649bc",
+          "fileId": "308260b9-faa9-4b6a-8dc8-df4e0b6d6c75",
           "title": "CIP-D11_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310730",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310730/child/attachment/att1179912/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310730&preview=%2F1310730%2F1179912%2FCIP-D11_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:33.095Z"
           }
         },
         {
           "id": "att1278070",
-          "fileId": "af6b24df-fc58-429c-98f7-ff24c24e5fb6",
+          "fileId": "90a9b66a-e0ef-4021-8e30-765b222c3630",
           "title": "CIP-D11_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310730",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310730/child/attachment/att1278070/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310730&preview=%2F1310730%2F1278070%2FCIP-D11_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:34.743Z"
           }
         }
       ],
@@ -770,28 +903,42 @@
       "attachments": [
         {
           "id": "att1278076",
-          "fileId": "3eaa5dac-34b4-4050-8159-2cac7d1dfa47",
+          "fileId": "5bd1f42e-84d0-454b-82ef-8df0cf58ab6e",
           "title": "CIP-D12_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310749",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310749/child/attachment/att1278076/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310749&preview=%2F1310749%2F1278076%2FCIP-D12_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:36.123Z"
           }
         },
         {
           "id": "att1081568",
-          "fileId": "4dc79b43-ed31-45d4-a320-809dd38c97e6",
+          "fileId": "60be09e0-3ffa-41f2-aadf-861fed5b475c",
           "title": "CIP-D12_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310749",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310749/child/attachment/att1081568/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310749&preview=%2F1310749%2F1081568%2FCIP-D12_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:37.499Z"
           }
         }
       ],
@@ -835,28 +982,42 @@
       "attachments": [
         {
           "id": "att1114337",
-          "fileId": "72df7f93-0a9f-43e4-99e3-f00753994b20",
+          "fileId": "a68bc204-d30a-4462-b733-9f7420ee801c",
           "title": "CIP-E01_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1081494",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1081494/child/attachment/att1114337/download",
             "webui": "/pages/viewpageattachments.action?pageId=1081494&preview=%2F1081494%2F1114337%2FCIP-E01_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:38.736Z"
           }
         },
         {
           "id": "att1310831",
-          "fileId": "09a085e2-a8da-4c23-8eba-515817a89b41",
+          "fileId": "029598a0-c0f9-493f-8db7-fdc4d6e769b3",
           "title": "CIP-E01_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1081494",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1081494/child/attachment/att1310831/download",
             "webui": "/pages/viewpageattachments.action?pageId=1081494&preview=%2F1081494%2F1310831%2FCIP-E01_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:39.996Z"
           }
         }
       ],
@@ -900,28 +1061,42 @@
       "attachments": [
         {
           "id": "att1310837",
-          "fileId": "28cd910a-0425-4675-9336-4327163b4bd0",
+          "fileId": "a69839fa-2554-4efb-a6fe-40d670ed6fd5",
           "title": "CIP-E02_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310768",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310768/child/attachment/att1310837/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310768&preview=%2F1310768%2F1310837%2FCIP-E02_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:41.306Z"
           }
         },
         {
           "id": "att1278082",
-          "fileId": "c0ab3a35-25c7-4978-bee4-66a55d790349",
+          "fileId": "1f7ca208-9bfc-4382-a517-2a479e1b1a6b",
           "title": "CIP-E02_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310768",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310768/child/attachment/att1278082/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310768&preview=%2F1310768%2F1278082%2FCIP-E02_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:42.641Z"
           }
         }
       ],
@@ -965,28 +1140,42 @@
       "attachments": [
         {
           "id": "att1343525",
-          "fileId": "3e071523-2a1d-4597-b630-48243dfc8d92",
+          "fileId": "02d64cbb-86a1-438d-b8fc-065833dfebdf",
           "title": "CIP-E03_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179867",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179867/child/attachment/att1343525/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179867&preview=%2F1179867%2F1343525%2FCIP-E03_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:43.993Z"
           }
         },
         {
           "id": "att1179918",
-          "fileId": "d53ebf2b-97f2-4249-8ebb-14942d122593",
+          "fileId": "385b35e7-2474-4f0f-a31d-1a82388d9333",
           "title": "CIP-E03_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179867",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179867/child/attachment/att1179918/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179867&preview=%2F1179867%2F1179918%2FCIP-E03_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:45.500Z"
           }
         }
       ],
@@ -1030,28 +1219,42 @@
       "attachments": [
         {
           "id": "att1310843",
-          "fileId": "5d4a6655-64ee-4542-90d2-93293104179b",
+          "fileId": "35f5564c-4615-4980-80e0-431ef5a950e6",
           "title": "CIP-E04_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114255",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114255/child/attachment/att1310843/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114255&preview=%2F1114255%2F1310843%2FCIP-E04_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:47.135Z"
           }
         },
         {
           "id": "att1015952",
-          "fileId": "1f962192-43a3-4307-82fe-2d6394be75b2",
+          "fileId": "0aad86c7-598c-46d5-bafb-8d1d9e6aff5d",
           "title": "CIP-E04_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114255",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114255/child/attachment/att1015952/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114255&preview=%2F1114255%2F1015952%2FCIP-E04_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:48.809Z"
           }
         }
       ],
@@ -1095,15 +1298,22 @@
       "attachments": [
         {
           "id": "att1278088",
-          "fileId": "f1707c83-11ac-4fd4-bbb3-e55c37f91be0",
+          "fileId": "f7e6e0a6-6057-4f61-aa92-15822118a76a",
           "title": "CIP-E05_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114274",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114274/child/attachment/att1278088/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114274&preview=%2F1114274%2F1278088%2FCIP-E05_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:50.163Z"
           }
         }
       ],
@@ -1147,15 +1357,22 @@
       "attachments": [
         {
           "id": "att1114343",
-          "fileId": "5cdcbe92-7eb3-4f57-974e-46250f7a5d77",
+          "fileId": "805feb6d-29fb-4562-9a67-0956cb09fe79",
           "title": "CIP-E06_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1081513",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1081513/child/attachment/att1114343/download",
             "webui": "/pages/viewpageattachments.action?pageId=1081513&preview=%2F1081513%2F1114343%2FCIP-E06_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:51.528Z"
           }
         }
       ],
@@ -1199,15 +1416,22 @@
       "attachments": [
         {
           "id": "att1310849",
-          "fileId": "8b1ad598-9b8a-4674-b3a2-44e5b8737ab4",
+          "fileId": "0a469d78-6824-4d14-8e88-2cc0229cbb8e",
           "title": "CIP-E07_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114293",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114293/child/attachment/att1310849/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114293&preview=%2F1114293%2F1310849%2FCIP-E07_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:53.029Z"
           }
         },
         {
@@ -1264,28 +1488,42 @@
       "attachments": [
         {
           "id": "att1310861",
-          "fileId": "51beede6-04cf-42b2-9cd6-254e93e1b093",
+          "fileId": "feea9297-daca-4bd2-96d4-d1350c2b1eeb",
           "title": "CIP-E08_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1278023",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1278023/child/attachment/att1310861/download",
             "webui": "/pages/viewpageattachments.action?pageId=1278023&preview=%2F1278023%2F1310861%2FCIP-E08_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:54.702Z"
           }
         },
         {
           "id": "att1310867",
-          "fileId": "cfdb5025-2c47-4054-904d-b0dd089bc1ed",
+          "fileId": "8513f3b2-decf-4959-9412-046f7b4fe868",
           "title": "CIP-E08_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1278023",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1278023/child/attachment/att1310867/download",
             "webui": "/pages/viewpageattachments.action?pageId=1278023&preview=%2F1278023%2F1310867%2FCIP-E08_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:56.194Z"
           }
         }
       ],
@@ -1329,28 +1567,42 @@
       "attachments": [
         {
           "id": "att1278094",
-          "fileId": "05011c62-7cd7-40c5-bf5e-3d2725890ef5",
+          "fileId": "dd414975-2850-4898-8c33-6f688efe3dfc",
           "title": "CIP-E09_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179886",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179886/child/attachment/att1278094/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179886&preview=%2F1179886%2F1278094%2FCIP-E09_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:57.909Z"
           }
         },
         {
           "id": "att1310873",
-          "fileId": "b4815765-c0ea-47cf-a168-0d63bc169393",
+          "fileId": "16544acf-8ce7-4c27-b5c6-0cfac49d07e4",
           "title": "CIP-E09_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1179886",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1179886/child/attachment/att1310873/download",
             "webui": "/pages/viewpageattachments.action?pageId=1179886&preview=%2F1179886%2F1310873%2FCIP-E09_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:00:59.215Z"
           }
         }
       ],
@@ -1394,28 +1646,42 @@
       "attachments": [
         {
           "id": "att1081574",
-          "fileId": "ec3e4142-4bae-4654-b0db-c98ad69a3ad1",
+          "fileId": "cc3eb1d7-437b-47c0-a563-25fcf6cd2d69",
           "title": "CIP-E10_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114312",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114312/child/attachment/att1081574/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114312&preview=%2F1114312%2F1081574%2FCIP-E10_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:01:00.816Z"
           }
         },
         {
           "id": "att1179924",
-          "fileId": "4c988a19-3406-425a-8c27-7f7ea43ac52f",
+          "fileId": "f73e3bbe-6084-4dc4-82c7-184d9b10064d",
           "title": "CIP-E10_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1114312",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1114312/child/attachment/att1179924/download",
             "webui": "/pages/viewpageattachments.action?pageId=1114312&preview=%2F1114312%2F1179924%2FCIP-E10_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:01:02.259Z"
           }
         }
       ],
@@ -1459,28 +1725,42 @@
       "attachments": [
         {
           "id": "att1179930",
-          "fileId": "54c18df9-6a15-4ac3-868e-a8ea234ae6aa",
+          "fileId": "6b3a37db-1ccb-4283-a282-fd791e9277bf",
           "title": "CIP-E11_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310787",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310787/child/attachment/att1179930/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310787&preview=%2F1310787%2F1179930%2FCIP-E11_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:01:03.620Z"
           }
         },
         {
           "id": "att1081580",
-          "fileId": "a6d11d56-20db-46a4-9370-1b28e886de52",
+          "fileId": "1aedff98-5447-4407-a9f0-7cb3df495163",
           "title": "CIP-E11_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310787",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310787/child/attachment/att1081580/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310787&preview=%2F1310787%2F1081580%2FCIP-E11_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:01:05.080Z"
           }
         }
       ],
@@ -1524,28 +1804,42 @@
       "attachments": [
         {
           "id": "att1310879",
-          "fileId": "53278e1d-49a3-4e7e-a61d-66670f30e0ab",
+          "fileId": "6ce8d431-6666-461d-b000-32d845ece7d3",
           "title": "CIP-E12_bo-sign-off.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310806",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310806/child/attachment/att1310879/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310806&preview=%2F1310806%2F1310879%2FCIP-E12_bo-sign-off.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:01:06.327Z"
           }
         },
         {
           "id": "att1179936",
-          "fileId": "9ca7fe7a-715c-4533-a2fa-eaad741db934",
+          "fileId": "3fe10a5f-275a-4a7a-9f01-3dd135393a4c",
           "title": "CIP-E12_request.msg",
-          "fileSize": 7168,
+          "fileSize": 7680,
           "pageId": "1310806",
           "mediaType": "application/vnd.ms-outlook",
           "_links": {
             "download": "/rest/api/content/1310806/child/attachment/att1179936/download",
             "webui": "/pages/viewpageattachments.action?pageId=1310806&preview=%2F1310806%2F1179936%2FCIP-E12_request.msg",
             "base": "https://nguyenducanhflm.atlassian.net/wiki"
+          },
+          "version": {
+            "number": 2,
+            "message": "msg-fix-1: Unicode flag and named-property mapping storage; synthetic only",
+            "minorEdit": false,
+            "authorId": "712020:f60ce436-ed20-48ad-9592-263bde80cdfe",
+            "createdAt": "2026-11-03T10:01:07.659Z"
           }
         }
       ],
